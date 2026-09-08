@@ -1,0 +1,64 @@
+{
+  "consistency_groups": {
+    "output_ego_diag_group_anomaly": 794,
+    "v59_d_llm_dout_group_anomaly": 2152,
+    "v59_dout_group_anomaly": 538,
+    "v59_s4_group_anomaly": 5537,
+    "v59_s4_seg_group_anomaly": 1550,
+    "v59_s4_track_group_anomaly": 3987
+  },
+  "diagnostics_source": "/root/autodl-tmp/DriveVLA/output/OpenDriveVLA-0.5B/20260518_v59_3_targeted_feature_formal_8seeds_pos800900/v54_online_exports/v54_online_all_deployable_diagnostics_matrix.csv",
+  "feature_sets": {
+    "old_exact": 2605,
+    "old_exact_plus_scores": 2611,
+    "old_exact_plus_v59_all_plus_scores": 10184,
+    "selected_score_features": 6,
+    "v59_all_plus_scores": 7579,
+    "v59_all_sanitized": 7573,
+    "v59_d_llm_dout_plus_scores": 2126,
+    "v59_s4_plus_scores": 5459
+  },
+  "formal_dir": "/root/autodl-tmp/DriveVLA/output/OpenDriveVLA-0.5B/20260518_v59_3_targeted_feature_formal_8seeds_pos800900",
+  "labels": [
+    "harmful",
+    "severe_harmful",
+    "v31_speed_alter_harmful_compatible"
+  ],
+  "models": [
+    "extra_trees_depth5",
+    "hist_gradient_boosting"
+  ],
+  "note": "2-seed quickcheck is diagnostic only. Use more seeds before making formal claims.",
+  "old_exact_source": "/root/autodl-tmp/DriveVLA/output/OpenDriveVLA-0.5B/20260518_v59_3_targeted_feature_formal_8seeds_pos800900/v54_online_exports/v54_online_deployable_feature_matrix.csv",
+  "outputs": {
+    "best_all": "/root/autodl-tmp/DriveVLA/output/OpenDriveVLA-0.5B/20260518_v59_3_targeted_feature_formal_8seeds_pos800900/v61_1_best_feature_consistency_probe_quickcheck/v61_1_best_candidates_ALL.csv",
+    "incremental_all": "/root/autodl-tmp/DriveVLA/output/OpenDriveVLA-0.5B/20260518_v59_3_targeted_feature_formal_8seeds_pos800900/v61_1_best_feature_consistency_probe_quickcheck/v61_1_incremental_improvement_ALL.csv",
+    "results_by_scope": "/root/autodl-tmp/DriveVLA/output/OpenDriveVLA-0.5B/20260518_v59_3_targeted_feature_formal_8seeds_pos800900/v61_1_best_feature_consistency_probe_quickcheck/v61_1_best_feature_consistency_results_by_scope.csv"
+  },
+  "quantiles": [
+    0.975,
+    0.99,
+    0.995
+  ],
+  "recall_targets": [
+    0.98,
+    0.99,
+    1.0
+  ],
+  "rows": 6000,
+  "score_source": "/root/autodl-tmp/DriveVLA/output/OpenDriveVLA-0.5B/20260518_v59_3_targeted_feature_formal_8seeds_pos800900/v54_online_exports/v54_detector_score_cache.csv",
+  "seeds": [
+    955916,
+    955917,
+    955918,
+    955919,
+    955920
+  ],
+  "version": "v61_1_best_feature_consistency_probe",
+  "veto_thresholds": [
+    0.005,
+    0.01,
+    0.02,
+    0.05
+  ]
+}

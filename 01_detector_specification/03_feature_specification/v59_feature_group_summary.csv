@@ -1,0 +1,4 @@
+group,feature_count,finite_ratio_min,finite_ratio_mean,abs_max_max,p99_abs_max,high_risk_feature_count,drop_raw_high_risk_count
+D_LLM_targeted,318,1.0,1.0,5397.399916484952,4864.0,0,0
+D_out_boundary,106,1.0,1.0,151682.0,151682.0,0,0
+S4_targeted,1116,1.0,1.0,3.39062217724002e+38,10240000.0,127,16

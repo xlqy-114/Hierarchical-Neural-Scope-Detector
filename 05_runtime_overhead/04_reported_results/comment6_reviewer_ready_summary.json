@@ -1,0 +1,81 @@
+{
+  "benchmark_protocol": {
+    "gpu": "NVIDIA H20",
+    "batch_size": 1,
+    "warmup_samples": 20,
+    "measured_samples": 100,
+    "forward_callbacks": 44,
+    "deployment_configuration": "maximal final configuration: base/veto + Table-5 speed targeted branch + D-LLM/D-out consistency; its hook set subsumes the other final targets"
+  },
+  "component_latency_and_memory": [
+    {
+      "component": "Hooks",
+      "mean_ms": 796.5737855434418,
+      "median_ms": 801.372354850173,
+      "p95_ms": 860.3541830554605,
+      "std_ms": 43.593668366708776,
+      "cpu_memory_mib": 0.2094984054565429,
+      "memory_definition": "captured scalar hook state; GPU transient peak is reported separately"
+    },
+    {
+      "component": "Feature extraction",
+      "mean_ms": 9.564701654016972,
+      "median_ms": 9.971609339118004,
+      "p95_ms": 12.210984528064728,
+      "std_ms": 1.946063528197424,
+      "cpu_memory_mib": 0.5698909759521484,
+      "memory_definition": "representative current-sample extraction/runtime-row working buffer"
+    },
+    {
+      "component": "Feature aggregation",
+      "mean_ms": 70.79672385007143,
+      "median_ms": 70.6308726221323,
+      "p95_ms": 72.0589755102992,
+      "std_ms": 0.9247810464164776,
+      "cpu_memory_mib": 0.5696964263916016,
+      "memory_definition": "base detector inputs + compact 256-D targeted input + consistency vector"
+    },
+    {
+      "component": "Detector inference",
+      "mean_ms": 85.1585191488266,
+      "median_ms": 84.99441109597683,
+      "p95_ms": 87.46371436864138,
+      "std_ms": 2.6157149010085847,
+      "cpu_memory_mib": 10.280925750732422,
+      "memory_definition": "directly accounted resident memory of the three base/veto artifacts, compact targeted model, and consistency state"
+    },
+    {
+      "component": "Total online monitor",
+      "mean_ms": 962.0937301963568,
+      "median_ms": 965.1157427579165,
+      "p95_ms": 1028.7232652306557,
+      "std_ms": 44.35173553800112,
+      "cpu_memory_mib": 11.325105667114258,
+      "memory_definition": "persistent process RSS increment after loading monitor artifacts and hooks"
+    }
+  ],
+  "overall": {
+    "mean_relative_latency_overhead_percent": 82.35397744288238,
+    "median_relative_latency_overhead_percent": 82.3564000669763,
+    "p95_relative_latency_overhead_percent": 88.3459251935744,
+    "persistent_cpu_memory_increase_mib": null,
+    "accounted_cpu_memory_increase_percent": 0.08359112840861616,
+    "incremental_gpu_peak_mean_mib": 701.468662109375,
+    "incremental_gpu_peak_p95_mib": 830.3275634765624,
+    "incremental_gpu_peak_mean_percent": 27.358601818289323,
+    "cpu_core_equivalent_increase_percentage_points": -41.4552111212422,
+    "cpu_logical_capacity_increase_percentage_points": -0.3238688368847047
+  },
+  "trajectory_parity": {
+    "compared_samples": 120,
+    "exact_trajectory_matches": 120,
+    "mismatches": 0
+  },
+  "latency_exclusions": "Only required deployment computations. File I/O, logging I/O, dataset initialization, offline training/calibration, fault injection, GT/clean-reference evaluation, post-hoc metrics, memory-size bookkeeping, and archive creation are excluded from the latency intervals.",
+  "deployment_percentile_optimization": {
+    "p95_p99_sample_cap": 4096,
+    "sampling": "deterministic evenly distributed midpoint sampling",
+    "small_tensors_exact": true,
+    "random_sampling": false
+  }
+}

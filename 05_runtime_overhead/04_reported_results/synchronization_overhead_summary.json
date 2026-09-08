@@ -1,0 +1,61 @@
+{
+  "feature_extraction_latency": {
+    "mean_ms_per_sample": 9.564701654016972,
+    "median_ms_per_sample": 9.971609339118004,
+    "p95_ms_per_sample": 12.210984528064728,
+    "std_ms_per_sample": 1.946063528197424
+  },
+  "detector_inference_latency": {
+    "mean_ms_per_sample": 85.1585191488266,
+    "median_ms_per_sample": 84.99441109597683,
+    "p95_ms_per_sample": 87.46371436864138,
+    "std_ms_per_sample": 2.6157149010085847
+  },
+  "synchronization": {
+    "feature_extraction": {
+      "mean_ms_per_sample": 0.0548369437456131,
+      "median_ms_per_sample": 0.0549647957086563,
+      "p95_ms_per_sample": 0.0601923093199729,
+      "std_ms_per_sample": 0.003303273006035
+    },
+    "feature_aggregation": {
+      "mean_ms_per_sample": 0.1108698174357414,
+      "median_ms_per_sample": 0.1107621937990188,
+      "p95_ms_per_sample": 0.1198038458824157,
+      "std_ms_per_sample": 0.0053844269638079
+    },
+    "stage_hook_internal": {
+      "mean_ms_per_sample": 227.53948956727984,
+      "median_ms_per_sample": 228.22327353060248,
+      "p95_ms_per_sample": 239.6385483443737,
+      "std_ms_per_sample": 8.559057786581443
+    },
+    "hook_readout_boundary": {
+      "mean_ms_per_sample": 0.0137504935264587,
+      "median_ms_per_sample": 0.0134110450744628,
+      "p95_ms_per_sample": 0.0154657289385795,
+      "std_ms_per_sample": 0.0015558514515319
+    },
+    "detector_execution_required_cuda_sync": {
+      "mean_ms_per_sample": 0.0,
+      "median_ms_per_sample": 0.0,
+      "p95_ms_per_sample": 0.0,
+      "std_ms_per_sample": 0.0
+    },
+    "total_required_sync": {
+      "mean_ms_per_sample": 227.71894682198763,
+      "median_ms_per_sample": 228.40208001434803,
+      "p95_ms_per_sample": 239.8144368082285,
+      "std_ms_per_sample": 8.560846337143149
+    }
+  },
+  "interpretation": {
+    "detector_execution": "Detector scoring is CPU-side after online evidence has been materialized on the host, so it requires no additional CUDA synchronization step.",
+    "profiling_scope": {
+      "method": "perf_counter placed around synchronization/device-to-host waits that already exist in the deployment path; no new detector-stage CUDA synchronization is added",
+      "feature_extraction": "sum of existing end-of-substage CUDA synchronization waits",
+      "stage_hooks": "device-to-host waits inside the 42 lean stage-summary hooks",
+      "detector_execution": "CPU-side sklearn/tree scoring after host feature materialization; requires no additional CUDA synchronization"
+    }
+  }
+}

@@ -1,0 +1,48 @@
+{
+  "rows": 6000,
+  "seed_count": 5,
+  "columns": {
+    "base_alarm": "Base detector decision for each OOF sample.",
+    "consistency_alarm": "Consistency decision at the selected operating point.",
+    "conservative_veto_reject": "1 means the conservative veto rejects the suspicious alarm.",
+    "<target>__targeted_alarm": "Selected targeted-evidence model alarm for that target.",
+    "<target>__after_targeted": "Base OR targeted alarm.",
+    "<target>__after_consistency": "Base OR targeted OR consistency alarm.",
+    "<target>__veto_candidate_alarm": "Candidate model alarm used by the recall-matched veto policy.",
+    "<target>__recall_matched_veto_prediction": "Final recall-matched veto-enhanced prediction."
+  },
+  "selected_targeted_branches": {
+    "harmful": {
+      "feature_family": "scene_branch_plus_scores",
+      "model": "extra_trees_depth5",
+      "training_recall_target": 1.0
+    },
+    "severe_harmful": {
+      "feature_family": "targeted_all_sanitized",
+      "model": "extra_trees_depth5",
+      "training_recall_target": 1.0
+    },
+    "speed_alter": {
+      "feature_family": "scene_branch_plus_scores",
+      "model": "extra_trees_depth5",
+      "training_recall_target": 1.0
+    }
+  },
+  "selected_recall_matched_veto_policies": {
+    "harmful": {
+      "feature_family": "retained_online_plus_scores",
+      "model": "extra_trees_depth5",
+      "training_recall_target": 0.99
+    },
+    "severe_harmful": {
+      "feature_family": "retained_online",
+      "model": "extra_trees_depth5",
+      "training_recall_target": 1.0
+    },
+    "speed_alter": {
+      "feature_family": "retained_online",
+      "model": "extra_trees_depth5",
+      "training_recall_target": 0.99
+    }
+  }
+}

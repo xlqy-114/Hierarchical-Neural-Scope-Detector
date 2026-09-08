@@ -1,0 +1,6 @@
+component,mean_ms,median_ms,p95_ms,std_ms,cpu_memory_mib,memory_definition
+Hooks,796.5737855434418,801.372354850173,860.3541830554605,43.593668366708776,0.2094984054565429,captured scalar hook state; GPU transient peak is reported separately
+Feature extraction,9.564701654016972,9.971609339118004,12.210984528064728,1.946063528197424,0.5698909759521484,representative current-sample extraction/runtime-row working buffer
+Feature aggregation,70.79672385007143,70.6308726221323,72.0589755102992,0.9247810464164776,0.5696964263916016,base detector inputs + compact 256-D targeted input + consistency vector
+Detector inference,85.1585191488266,84.99441109597683,87.46371436864138,2.6157149010085847,10.280925750732422,"directly accounted resident memory of the three base/veto artifacts, compact targeted model, and consistency state"
+Total online monitor,962.0937301963568,965.1157427579165,1028.7232652306557,44.35173553800112,11.325105667114258,persistent process RSS increment after loading monitor artifacts and hooks

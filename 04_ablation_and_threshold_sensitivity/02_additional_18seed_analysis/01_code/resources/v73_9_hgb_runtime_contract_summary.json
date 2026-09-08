@@ -1,0 +1,214 @@
+{
+  "version": "v73_9_hgb_no_detector_bulk_feature_contract",
+  "basis": "v73_8f split-used extraction from v73_8e full-feature HGB/HGB-C2 models",
+  "hgb_online_feature_union_excluding_c1_internal": 1502,
+  "hgb_online_source_counts": {
+    "old_exact": 759,
+    "v63_full": 706,
+    "generated_consistency": 37
+  },
+  "selected_generated_consistency_features": 37,
+  "generated_consistency_families_needed": [
+    "C",
+    "D_LLM",
+    "D_out",
+    "S4",
+    "decode_token"
+  ],
+  "generated_consistency_source_columns_needed": 1234,
+  "runtime_collection_columns_before_generated_consistency": 2399,
+  "runtime_collection_source_counts": {
+    "v63_full": 1472,
+    "old_exact": 927
+  },
+  "top_runtime_stage_counts": [
+    {
+      "stage_name": "v63_dout_decode_token",
+      "io_or_stat_root": "output",
+      "source": "v63_full",
+      "needed_for": "hgb_model_input_feature",
+      "feature_count": 175
+    },
+    {
+      "stage_name": "old_exact::v26",
+      "io_or_stat_root": "old_exact_feature",
+      "source": "old_exact",
+      "needed_for": "hgb_model_input_feature",
+      "feature_count": 113
+    },
+    {
+      "stage_name": "old_exact::stage",
+      "io_or_stat_root": "old_exact_feature",
+      "source": "old_exact",
+      "needed_for": "hgb_model_input_feature",
+      "feature_count": 89
+    },
+    {
+      "stage_name": "v59_dout_model_norm",
+      "io_or_stat_root": "input",
+      "source": "v63_full",
+      "needed_for": "generated_consistency_source",
+      "feature_count": 63
+    },
+    {
+      "stage_name": "v59_dout_lm_head",
+      "io_or_stat_root": "input",
+      "source": "v63_full",
+      "needed_for": "generated_consistency_source",
+      "feature_count": 60
+    },
+    {
+      "stage_name": "v59_d_llm_l0_mlp_down_proj",
+      "io_or_stat_root": "output",
+      "source": "v63_full",
+      "needed_for": "generated_consistency_source",
+      "feature_count": 59
+    },
+    {
+      "stage_name": "v59_d_llm_l0_attn_o_proj",
+      "io_or_stat_root": "input",
+      "source": "v63_full",
+      "needed_for": "generated_consistency_source",
+      "feature_count": 58
+    },
+    {
+      "stage_name": "v59_d_llm_l0_attn_o_proj",
+      "io_or_stat_root": "output",
+      "source": "v63_full",
+      "needed_for": "generated_consistency_source",
+      "feature_count": 58
+    },
+    {
+      "stage_name": "v59_d_llm_l0_mlp_down_proj",
+      "io_or_stat_root": "input",
+      "source": "v63_full",
+      "needed_for": "generated_consistency_source",
+      "feature_count": 58
+    },
+    {
+      "stage_name": "v59_s4_seg_encoder_l0",
+      "io_or_stat_root": "input",
+      "source": "v63_full",
+      "needed_for": "generated_consistency_source",
+      "feature_count": 58
+    },
+    {
+      "stage_name": "v59_s4_seg_encoder_l3",
+      "io_or_stat_root": "input",
+      "source": "v63_full",
+      "needed_for": "generated_consistency_source",
+      "feature_count": 57
+    },
+    {
+      "stage_name": "old_exact::s0",
+      "io_or_stat_root": "old_exact_feature",
+      "source": "old_exact",
+      "needed_for": "hgb_model_input_feature",
+      "feature_count": 50
+    },
+    {
+      "stage_name": "v59_dout_model_norm",
+      "io_or_stat_root": "output",
+      "source": "v63_full",
+      "needed_for": "generated_consistency_source",
+      "feature_count": 36
+    },
+    {
+      "stage_name": "v59_d_llm_l12_attn_o_proj",
+      "io_or_stat_root": "output",
+      "source": "v63_full",
+      "needed_for": "generated_consistency_source",
+      "feature_count": 33
+    },
+    {
+      "stage_name": "v59_d_llm_l12_mlp_down_proj",
+      "io_or_stat_root": "output",
+      "source": "v63_full",
+      "needed_for": "generated_consistency_source",
+      "feature_count": 33
+    },
+    {
+      "stage_name": "v59_d_llm_l23_attn_o_proj",
+      "io_or_stat_root": "output",
+      "source": "v63_full",
+      "needed_for": "generated_consistency_source",
+      "feature_count": 32
+    },
+    {
+      "stage_name": "old_exact::behctx",
+      "io_or_stat_root": "old_exact_feature",
+      "source": "old_exact",
+      "needed_for": "hgb_model_input_feature",
+      "feature_count": 31
+    },
+    {
+      "stage_name": "v59_d_llm_l23_mlp_down_proj",
+      "io_or_stat_root": "output",
+      "source": "v63_full",
+      "needed_for": "generated_consistency_source",
+      "feature_count": 31
+    },
+    {
+      "stage_name": "c_mm_projector_scene_layer0",
+      "io_or_stat_root": "input",
+      "source": "old_exact",
+      "needed_for": "generated_consistency_source",
+      "feature_count": 26
+    },
+    {
+      "stage_name": "c_mm_projector_scene_layer1",
+      "io_or_stat_root": "input",
+      "source": "old_exact",
+      "needed_for": "generated_consistency_source",
+      "feature_count": 26
+    },
+    {
+      "stage_name": "c_mm_projector_scene_layer2",
+      "io_or_stat_root": "input",
+      "source": "old_exact",
+      "needed_for": "generated_consistency_source",
+      "feature_count": 26
+    },
+    {
+      "stage_name": "v59_dout_lm_head",
+      "io_or_stat_root": "output",
+      "source": "v63_full",
+      "needed_for": "generated_consistency_source",
+      "feature_count": 26
+    },
+    {
+      "stage_name": "v59_s4_seg_encoder_l0",
+      "io_or_stat_root": "output",
+      "source": "v63_full",
+      "needed_for": "generated_consistency_source",
+      "feature_count": 25
+    },
+    {
+      "stage_name": "v59_s4_seg_encoder",
+      "io_or_stat_root": "output",
+      "source": "v63_full",
+      "needed_for": "generated_consistency_source",
+      "feature_count": 22
+    },
+    {
+      "stage_name": "d_llm_layer18",
+      "io_or_stat_root": "input",
+      "source": "old_exact",
+      "needed_for": "hgb_model_input_feature",
+      "feature_count": 21
+    }
+  ],
+  "forbidden_runtime": [
+    "previous detector/classifier outputs: score__, alarm__, threshold__, hgbmax, lineA*",
+    "labels/GT/clean/delta/fault metadata as model input",
+    "this-round C1 internal scores during this data-generation inference"
+  ],
+  "outputs_should_keep": [
+    "selected online source features",
+    "selected generated consistency features",
+    "posthoc labels if available",
+    "raw label ingredients/metrics/fault metadata for later evaluation",
+    "audit columns such as exact_layer only outside model input"
+  ],
+  "no_inline_detector": true
+}

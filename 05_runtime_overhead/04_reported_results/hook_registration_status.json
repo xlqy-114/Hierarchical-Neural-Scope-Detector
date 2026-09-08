@@ -1,0 +1,2242 @@
+{
+  "can_bus_mlp": "model.vision_tower.vision_tower.vision_model.pts_bbox_head.transformer.can_bus_mlp",
+  "stage_hooks": {
+    "c_mm_projector_scene": {
+      "registered": 1,
+      "suffix": "mm_projector_scene",
+      "module_name": "model.mm_projector_scene",
+      "module_class": "Sequential",
+      "requirements": {
+        "input_last": [
+          "l2_norm",
+          "mean",
+          "mean_abs",
+          "neg_ratio",
+          "p95_abs",
+          "p99_abs",
+          "pos_ratio",
+          "std",
+          "top1_over_mean"
+        ],
+        "output_last": [
+          "abs_max",
+          "finite_ratio",
+          "mean",
+          "mean_abs",
+          "neg_ratio",
+          "p95_abs",
+          "p99_abs",
+          "pos_ratio",
+          "std",
+          "top1_over_mean"
+        ],
+        "input_avg": [
+          "abs_max",
+          "finite_ratio",
+          "l2_norm",
+          "mean",
+          "mean_abs",
+          "neg_ratio",
+          "p95_abs",
+          "p99_abs",
+          "pos_ratio",
+          "std",
+          "top1_over_mean"
+        ],
+        "output_avg": [
+          "abs_max",
+          "l2_norm",
+          "mean",
+          "mean_abs",
+          "neg_ratio",
+          "p95_abs",
+          "p99_abs",
+          "pos_ratio",
+          "std",
+          "top1_over_mean"
+        ],
+        "call_count": false
+      }
+    },
+    "c_mm_projector_scene_layer0": {
+      "registered": 1,
+      "suffix": "mm_projector_scene.0",
+      "module_name": "model.mm_projector_scene.0",
+      "module_class": "Linear",
+      "requirements": {
+        "input_last": [
+          "abs_max",
+          "l2_norm",
+          "mean",
+          "mean_abs",
+          "neg_ratio",
+          "p95_abs",
+          "p99_abs",
+          "pos_ratio",
+          "std"
+        ],
+        "output_last": [
+          "abs_max",
+          "finite_ratio",
+          "l2_norm",
+          "mean",
+          "mean_abs",
+          "neg_ratio",
+          "p95_abs",
+          "p99_abs",
+          "pos_ratio",
+          "std",
+          "top1_over_mean"
+        ],
+        "input_avg": [
+          "abs_max",
+          "finite_ratio",
+          "l2_norm",
+          "mean",
+          "mean_abs",
+          "neg_ratio",
+          "p95_abs",
+          "pos_ratio",
+          "std",
+          "top1_over_mean"
+        ],
+        "output_avg": [
+          "abs_max",
+          "finite_ratio",
+          "l2_norm",
+          "mean",
+          "mean_abs",
+          "neg_ratio",
+          "p95_abs",
+          "p99_abs",
+          "pos_ratio",
+          "std",
+          "top1_over_mean"
+        ],
+        "call_count": false
+      }
+    },
+    "c_mm_projector_scene_layer1": {
+      "registered": 1,
+      "suffix": "mm_projector_scene.1",
+      "module_name": "model.mm_projector_scene.1",
+      "module_class": "GELU",
+      "requirements": {
+        "input_last": [
+          "abs_max",
+          "finite_ratio",
+          "l2_norm",
+          "mean",
+          "mean_abs",
+          "neg_ratio",
+          "p95_abs",
+          "p99_abs",
+          "pos_ratio",
+          "std",
+          "top1_over_mean"
+        ],
+        "output_last": [
+          "abs_max",
+          "finite_ratio",
+          "l2_norm",
+          "mean",
+          "neg_ratio",
+          "p95_abs",
+          "p99_abs",
+          "pos_ratio",
+          "std",
+          "top1_over_mean",
+          "zero_ratio"
+        ],
+        "input_avg": [
+          "abs_max",
+          "l2_norm",
+          "mean",
+          "mean_abs",
+          "neg_ratio",
+          "p95_abs",
+          "p99_abs",
+          "pos_ratio",
+          "std",
+          "top1_over_mean"
+        ],
+        "output_avg": [
+          "abs_max",
+          "l2_norm",
+          "mean",
+          "mean_abs",
+          "neg_ratio",
+          "p95_abs",
+          "p99_abs",
+          "pos_ratio",
+          "std",
+          "top1_over_mean",
+          "zero_ratio"
+        ],
+        "call_count": false
+      }
+    },
+    "c_mm_projector_scene_layer2": {
+      "registered": 1,
+      "suffix": "mm_projector_scene.2",
+      "module_name": "model.mm_projector_scene.2",
+      "module_class": "Linear",
+      "requirements": {
+        "input_last": [
+          "abs_max",
+          "finite_ratio",
+          "l2_norm",
+          "mean",
+          "mean_abs",
+          "neg_ratio",
+          "p95_abs",
+          "p99_abs",
+          "pos_ratio",
+          "top1_over_mean",
+          "zero_ratio"
+        ],
+        "output_last": [
+          "abs_max",
+          "l2_norm",
+          "mean",
+          "mean_abs",
+          "neg_ratio",
+          "p95_abs",
+          "p99_abs",
+          "pos_ratio",
+          "std",
+          "top1_over_mean"
+        ],
+        "input_avg": [
+          "abs_max",
+          "finite_ratio",
+          "l2_norm",
+          "mean",
+          "mean_abs",
+          "neg_ratio",
+          "p95_abs",
+          "p99_abs",
+          "pos_ratio",
+          "std",
+          "top1_over_mean",
+          "zero_ratio"
+        ],
+        "output_avg": [
+          "abs_max",
+          "finite_ratio",
+          "l2_norm",
+          "mean",
+          "mean_abs",
+          "neg_ratio",
+          "p95_abs",
+          "p99_abs",
+          "pos_ratio",
+          "std",
+          "top1_over_mean"
+        ],
+        "call_count": false
+      }
+    },
+    "d_llm_layer0": {
+      "registered": 1,
+      "suffix": "model.layers.0",
+      "module_name": "model.layers.0",
+      "module_class": "Qwen2DecoderLayer",
+      "requirements": {
+        "input_last": [
+          "abs_max",
+          "l2_norm",
+          "mean",
+          "mean_abs",
+          "neg_ratio",
+          "p95_abs",
+          "p99_abs",
+          "std",
+          "top1_over_mean"
+        ],
+        "output_last": [
+          "abs_max",
+          "finite_ratio",
+          "l2_norm",
+          "mean",
+          "mean_abs",
+          "neg_ratio",
+          "p95_abs",
+          "p99_abs",
+          "pos_ratio",
+          "std",
+          "zero_ratio"
+        ],
+        "input_avg": [
+          "abs_max",
+          "finite_ratio",
+          "l2_norm",
+          "mean",
+          "mean_abs",
+          "neg_ratio",
+          "p95_abs",
+          "p99_abs",
+          "pos_ratio",
+          "std",
+          "top1_over_mean",
+          "zero_ratio"
+        ],
+        "output_avg": [
+          "abs_max",
+          "finite_ratio",
+          "mean",
+          "mean_abs",
+          "neg_ratio",
+          "p95_abs",
+          "pos_ratio",
+          "std",
+          "top1_over_mean",
+          "zero_ratio"
+        ],
+        "call_count": true
+      }
+    },
+    "d_llm_layer12": {
+      "registered": 1,
+      "suffix": "model.layers.12",
+      "module_name": "model.layers.12",
+      "module_class": "Qwen2DecoderLayer",
+      "requirements": {
+        "input_last": [
+          "l2_norm",
+          "mean_abs",
+          "neg_ratio",
+          "p95_abs",
+          "p99_abs",
+          "pos_ratio",
+          "zero_ratio"
+        ],
+        "output_last": [
+          "abs_max",
+          "finite_ratio",
+          "l2_norm",
+          "mean_abs",
+          "neg_ratio",
+          "p99_abs",
+          "pos_ratio",
+          "std",
+          "zero_ratio"
+        ],
+        "input_avg": [
+          "finite_ratio",
+          "l2_norm",
+          "mean",
+          "mean_abs",
+          "neg_ratio",
+          "p95_abs",
+          "p99_abs",
+          "pos_ratio",
+          "std",
+          "top1_over_mean",
+          "zero_ratio"
+        ],
+        "output_avg": [
+          "finite_ratio",
+          "l2_norm",
+          "mean",
+          "mean_abs",
+          "neg_ratio",
+          "p95_abs",
+          "p99_abs",
+          "pos_ratio",
+          "std",
+          "top1_over_mean",
+          "zero_ratio"
+        ],
+        "call_count": true
+      }
+    },
+    "d_llm_layer18": {
+      "registered": 1,
+      "suffix": "model.layers.18",
+      "module_name": "model.layers.18",
+      "module_class": "Qwen2DecoderLayer",
+      "requirements": {
+        "input_last": [
+          "abs_max",
+          "mean",
+          "mean_abs",
+          "neg_ratio",
+          "p95_abs",
+          "p99_abs",
+          "pos_ratio",
+          "top1_over_mean",
+          "zero_ratio"
+        ],
+        "output_last": [
+          "abs_max",
+          "finite_ratio",
+          "l2_norm",
+          "mean",
+          "mean_abs",
+          "neg_ratio",
+          "p95_abs",
+          "p99_abs",
+          "pos_ratio",
+          "std",
+          "zero_ratio"
+        ],
+        "input_avg": [
+          "abs_max",
+          "finite_ratio",
+          "l2_norm",
+          "mean",
+          "mean_abs",
+          "neg_ratio",
+          "p95_abs",
+          "p99_abs",
+          "pos_ratio",
+          "std",
+          "top1_over_mean",
+          "zero_ratio"
+        ],
+        "output_avg": [
+          "finite_ratio",
+          "l2_norm",
+          "mean",
+          "mean_abs",
+          "neg_ratio",
+          "p95_abs",
+          "p99_abs",
+          "pos_ratio",
+          "std",
+          "top1_over_mean",
+          "zero_ratio"
+        ],
+        "call_count": true
+      }
+    },
+    "d_llm_layer23": {
+      "registered": 1,
+      "suffix": "model.layers.23",
+      "module_name": "model.layers.23",
+      "module_class": "Qwen2DecoderLayer",
+      "requirements": {
+        "input_last": [
+          "abs_max",
+          "l2_norm",
+          "mean",
+          "neg_ratio",
+          "p95_abs",
+          "p99_abs",
+          "pos_ratio",
+          "std",
+          "top1_over_mean"
+        ],
+        "output_last": [
+          "abs_max",
+          "finite_ratio",
+          "l2_norm",
+          "mean",
+          "mean_abs",
+          "neg_ratio",
+          "p95_abs",
+          "p99_abs",
+          "pos_ratio",
+          "std",
+          "top1_over_mean",
+          "zero_ratio"
+        ],
+        "input_avg": [
+          "abs_max",
+          "finite_ratio",
+          "l2_norm",
+          "mean",
+          "mean_abs",
+          "neg_ratio",
+          "p95_abs",
+          "p99_abs",
+          "pos_ratio",
+          "std",
+          "top1_over_mean",
+          "zero_ratio"
+        ],
+        "output_avg": [
+          "abs_max",
+          "finite_ratio",
+          "l2_norm",
+          "mean",
+          "mean_abs",
+          "neg_ratio",
+          "p95_abs",
+          "p99_abs",
+          "pos_ratio",
+          "std",
+          "top1_over_mean",
+          "zero_ratio"
+        ],
+        "call_count": true
+      }
+    },
+    "d_llm_layer6": {
+      "registered": 1,
+      "suffix": "model.layers.6",
+      "module_name": "model.layers.6",
+      "module_class": "Qwen2DecoderLayer",
+      "requirements": {
+        "input_last": [
+          "abs_max",
+          "finite_ratio",
+          "l2_norm",
+          "mean",
+          "mean_abs",
+          "neg_ratio",
+          "p95_abs",
+          "p99_abs",
+          "pos_ratio",
+          "std",
+          "top1_over_mean"
+        ],
+        "output_last": [
+          "abs_max",
+          "finite_ratio",
+          "l2_norm",
+          "mean",
+          "mean_abs",
+          "neg_ratio",
+          "p95_abs",
+          "p99_abs",
+          "pos_ratio",
+          "top1_over_mean",
+          "zero_ratio"
+        ],
+        "input_avg": [
+          "abs_max",
+          "finite_ratio",
+          "mean",
+          "mean_abs",
+          "neg_ratio",
+          "p95_abs",
+          "p99_abs",
+          "pos_ratio",
+          "std",
+          "top1_over_mean",
+          "zero_ratio"
+        ],
+        "output_avg": [
+          "finite_ratio",
+          "l2_norm",
+          "mean",
+          "mean_abs",
+          "neg_ratio",
+          "p95_abs",
+          "p99_abs",
+          "pos_ratio",
+          "std",
+          "top1_over_mean",
+          "zero_ratio"
+        ],
+        "call_count": true
+      }
+    },
+    "s0_can_bus_mlp": {
+      "registered": 1,
+      "suffix": "vision_tower.vision_tower.vision_model.pts_bbox_head.transformer.can_bus_mlp",
+      "module_name": "model.vision_tower.vision_tower.vision_model.pts_bbox_head.transformer.can_bus_mlp",
+      "module_class": "Sequential",
+      "requirements": {
+        "input_last": [
+          "abs_max",
+          "l2_norm",
+          "mean",
+          "mean_abs",
+          "neg_ratio",
+          "p95_abs",
+          "p99_abs",
+          "pos_ratio",
+          "std",
+          "top1_over_mean",
+          "zero_ratio"
+        ],
+        "output_last": [
+          "abs_max",
+          "l2_norm",
+          "mean",
+          "mean_abs",
+          "p95_abs",
+          "pos_ratio",
+          "std",
+          "top1_over_mean"
+        ],
+        "input_avg": [
+          "abs_max",
+          "l2_norm",
+          "mean",
+          "mean_abs",
+          "neg_ratio",
+          "p95_abs",
+          "p99_abs",
+          "pos_ratio",
+          "std",
+          "top1_over_mean",
+          "zero_ratio"
+        ],
+        "output_avg": [
+          "abs_max",
+          "mean",
+          "mean_abs",
+          "p95_abs",
+          "p99_abs",
+          "std",
+          "top1_over_mean"
+        ],
+        "call_count": false
+      }
+    },
+    "s_bev_encoder": {
+      "registered": 1,
+      "suffix": "vision_tower.vision_tower.vision_model.pts_bbox_head.transformer.encoder",
+      "module_name": "model.vision_tower.vision_tower.vision_model.pts_bbox_head.transformer.encoder",
+      "module_class": "BEVFormerEncoder",
+      "requirements": {
+        "input_last": [
+          "abs_max",
+          "mean",
+          "mean_abs",
+          "neg_ratio",
+          "p95_abs",
+          "pos_ratio",
+          "std",
+          "top1_over_mean",
+          "zero_ratio"
+        ],
+        "output_last": [
+          "abs_max",
+          "finite_ratio",
+          "l2_norm",
+          "mean",
+          "mean_abs",
+          "neg_ratio",
+          "p95_abs",
+          "p99_abs",
+          "pos_ratio",
+          "std",
+          "top1_over_mean",
+          "zero_ratio"
+        ],
+        "input_avg": [
+          "l2_norm",
+          "mean",
+          "mean_abs",
+          "neg_ratio",
+          "p95_abs",
+          "p99_abs",
+          "std",
+          "top1_over_mean",
+          "zero_ratio"
+        ],
+        "output_avg": [
+          "abs_max",
+          "finite_ratio",
+          "l2_norm",
+          "mean",
+          "mean_abs",
+          "p95_abs",
+          "pos_ratio",
+          "std"
+        ],
+        "call_count": false
+      }
+    },
+    "s_bev_encoder_layer0": {
+      "registered": 1,
+      "suffix": "vision_tower.vision_tower.vision_model.pts_bbox_head.transformer.encoder.layers.0",
+      "module_name": "model.vision_tower.vision_tower.vision_model.pts_bbox_head.transformer.encoder.layers.0",
+      "module_class": "BEVFormerLayer",
+      "requirements": {
+        "input_last": [
+          "abs_max",
+          "l2_norm",
+          "mean",
+          "mean_abs",
+          "neg_ratio",
+          "p95_abs",
+          "p99_abs",
+          "pos_ratio",
+          "std",
+          "top1_over_mean"
+        ],
+        "output_last": [
+          "abs_max",
+          "l2_norm",
+          "mean",
+          "mean_abs",
+          "neg_ratio",
+          "p95_abs",
+          "p99_abs",
+          "std",
+          "top1_over_mean"
+        ],
+        "input_avg": [
+          "abs_max",
+          "l2_norm",
+          "mean",
+          "mean_abs",
+          "neg_ratio",
+          "p95_abs",
+          "p99_abs",
+          "pos_ratio",
+          "std",
+          "top1_over_mean"
+        ],
+        "output_avg": [
+          "abs_max",
+          "finite_ratio",
+          "l2_norm",
+          "mean",
+          "mean_abs",
+          "p95_abs",
+          "p99_abs",
+          "pos_ratio",
+          "std",
+          "top1_over_mean"
+        ],
+        "call_count": false
+      }
+    },
+    "s_bev_encoder_layer1": {
+      "registered": 1,
+      "suffix": "vision_tower.vision_tower.vision_model.pts_bbox_head.transformer.encoder.layers.1",
+      "module_name": "model.vision_tower.vision_tower.vision_model.pts_bbox_head.transformer.encoder.layers.1",
+      "module_class": "BEVFormerLayer",
+      "requirements": {
+        "input_last": [
+          "abs_max",
+          "l2_norm",
+          "mean",
+          "mean_abs",
+          "neg_ratio",
+          "pos_ratio",
+          "std",
+          "top1_over_mean"
+        ],
+        "output_last": [
+          "abs_max",
+          "finite_ratio",
+          "l2_norm",
+          "mean",
+          "mean_abs",
+          "p99_abs",
+          "std",
+          "top1_over_mean"
+        ],
+        "input_avg": [
+          "abs_max",
+          "mean",
+          "mean_abs",
+          "neg_ratio",
+          "p95_abs",
+          "std",
+          "top1_over_mean"
+        ],
+        "output_avg": [
+          "abs_max",
+          "finite_ratio",
+          "l2_norm",
+          "mean",
+          "p95_abs",
+          "p99_abs",
+          "pos_ratio",
+          "std",
+          "top1_over_mean"
+        ],
+        "call_count": false
+      }
+    },
+    "s_bev_encoder_layer2": {
+      "registered": 1,
+      "suffix": "vision_tower.vision_tower.vision_model.pts_bbox_head.transformer.encoder.layers.2",
+      "module_name": "model.vision_tower.vision_tower.vision_model.pts_bbox_head.transformer.encoder.layers.2",
+      "module_class": "BEVFormerLayer",
+      "requirements": {
+        "input_last": [
+          "abs_max",
+          "l2_norm",
+          "mean",
+          "mean_abs",
+          "p95_abs",
+          "pos_ratio",
+          "std",
+          "top1_over_mean"
+        ],
+        "output_last": [
+          "abs_max",
+          "mean",
+          "p95_abs",
+          "p99_abs",
+          "std",
+          "top1_over_mean"
+        ],
+        "input_avg": [
+          "abs_max",
+          "l2_norm",
+          "mean",
+          "mean_abs",
+          "neg_ratio",
+          "p95_abs",
+          "p99_abs",
+          "pos_ratio",
+          "std",
+          "top1_over_mean"
+        ],
+        "output_avg": [
+          "abs_max",
+          "finite_ratio",
+          "l2_norm",
+          "mean",
+          "mean_abs",
+          "neg_ratio",
+          "p95_abs",
+          "p99_abs",
+          "pos_ratio",
+          "std",
+          "top1_over_mean"
+        ],
+        "call_count": false
+      }
+    },
+    "s_bev_encoder_layer3": {
+      "registered": 1,
+      "suffix": "vision_tower.vision_tower.vision_model.pts_bbox_head.transformer.encoder.layers.3",
+      "module_name": "model.vision_tower.vision_tower.vision_model.pts_bbox_head.transformer.encoder.layers.3",
+      "module_class": "BEVFormerLayer",
+      "requirements": {
+        "input_last": [
+          "abs_max",
+          "finite_ratio",
+          "l2_norm",
+          "mean",
+          "neg_ratio",
+          "p95_abs",
+          "std",
+          "top1_over_mean"
+        ],
+        "output_last": [
+          "abs_max",
+          "l2_norm",
+          "mean_abs",
+          "neg_ratio",
+          "p95_abs",
+          "p99_abs",
+          "std",
+          "top1_over_mean"
+        ],
+        "input_avg": [
+          "abs_max",
+          "finite_ratio",
+          "l2_norm",
+          "mean",
+          "mean_abs",
+          "neg_ratio",
+          "p95_abs",
+          "std",
+          "top1_over_mean"
+        ],
+        "output_avg": [
+          "abs_max",
+          "finite_ratio",
+          "mean",
+          "mean_abs",
+          "neg_ratio",
+          "p95_abs",
+          "p99_abs",
+          "pos_ratio",
+          "std",
+          "top1_over_mean"
+        ],
+        "call_count": false
+      }
+    },
+    "s_bev_encoder_layer4": {
+      "registered": 1,
+      "suffix": "vision_tower.vision_tower.vision_model.pts_bbox_head.transformer.encoder.layers.4",
+      "module_name": "model.vision_tower.vision_tower.vision_model.pts_bbox_head.transformer.encoder.layers.4",
+      "module_class": "BEVFormerLayer",
+      "requirements": {
+        "input_last": [
+          "abs_max",
+          "mean",
+          "mean_abs",
+          "neg_ratio",
+          "p95_abs",
+          "pos_ratio",
+          "std",
+          "top1_over_mean"
+        ],
+        "output_last": [
+          "abs_max",
+          "l2_norm",
+          "mean",
+          "mean_abs",
+          "p95_abs",
+          "pos_ratio",
+          "std"
+        ],
+        "input_avg": [
+          "abs_max",
+          "l2_norm",
+          "mean",
+          "mean_abs",
+          "neg_ratio",
+          "p95_abs",
+          "p99_abs",
+          "pos_ratio",
+          "std",
+          "top1_over_mean"
+        ],
+        "output_avg": [
+          "abs_max",
+          "l2_norm",
+          "mean",
+          "mean_abs",
+          "neg_ratio",
+          "p95_abs",
+          "p99_abs",
+          "pos_ratio",
+          "std"
+        ],
+        "call_count": false
+      }
+    },
+    "s_bev_encoder_layer5": {
+      "registered": 1,
+      "suffix": "vision_tower.vision_tower.vision_model.pts_bbox_head.transformer.encoder.layers.5",
+      "module_name": "model.vision_tower.vision_tower.vision_model.pts_bbox_head.transformer.encoder.layers.5",
+      "module_class": "BEVFormerLayer",
+      "requirements": {
+        "input_last": [
+          "abs_max",
+          "l2_norm",
+          "mean",
+          "mean_abs",
+          "neg_ratio",
+          "p95_abs",
+          "p99_abs",
+          "pos_ratio",
+          "std",
+          "top1_over_mean"
+        ],
+        "output_last": [
+          "abs_max",
+          "mean",
+          "mean_abs",
+          "neg_ratio",
+          "p95_abs",
+          "p99_abs",
+          "pos_ratio",
+          "std"
+        ],
+        "input_avg": [
+          "abs_max",
+          "finite_ratio",
+          "l2_norm",
+          "mean",
+          "mean_abs",
+          "neg_ratio",
+          "p95_abs",
+          "p99_abs",
+          "pos_ratio",
+          "std",
+          "top1_over_mean"
+        ],
+        "output_avg": [
+          "abs_max",
+          "l2_norm",
+          "mean",
+          "mean_abs",
+          "neg_ratio",
+          "p95_abs",
+          "pos_ratio",
+          "std",
+          "top1_over_mean"
+        ],
+        "call_count": false
+      }
+    },
+    "v26_mm_projector_map": {
+      "registered": 1,
+      "suffix": "mm_projector_map",
+      "module_name": "model.mm_projector_map",
+      "module_class": "Sequential",
+      "requirements": {
+        "input_last": [
+          "abs_max",
+          "neg_ratio",
+          "numel",
+          "p99_abs",
+          "pos_ratio",
+          "std"
+        ],
+        "output_last": [
+          "abs_max",
+          "l2_norm",
+          "mean",
+          "neg_ratio",
+          "numel",
+          "pos_ratio",
+          "std"
+        ],
+        "input_avg": [
+          "abs_max",
+          "l2_norm",
+          "mean",
+          "mean_abs",
+          "neg_ratio",
+          "p95_abs",
+          "p99_abs",
+          "pos_ratio",
+          "std"
+        ],
+        "output_avg": [
+          "abs_max",
+          "finite_ratio",
+          "l2_norm",
+          "mean",
+          "mean_abs",
+          "p95_abs",
+          "p99_abs",
+          "std",
+          "top1_over_mean"
+        ],
+        "call_count": false
+      }
+    },
+    "v26_mm_projector_track": {
+      "registered": 1,
+      "suffix": "mm_projector_track",
+      "module_name": "model.mm_projector_track",
+      "module_class": "Sequential",
+      "requirements": {
+        "input_last": [
+          "abs_max",
+          "l2_norm",
+          "mean_abs",
+          "neg_ratio",
+          "numel",
+          "p95_abs",
+          "p99_abs",
+          "std",
+          "top1_over_mean"
+        ],
+        "output_last": [
+          "abs_max",
+          "mean_abs",
+          "neg_ratio",
+          "p95_abs",
+          "p99_abs",
+          "pos_ratio",
+          "std",
+          "top1_over_mean"
+        ],
+        "input_avg": [
+          "abs_max",
+          "mean_abs",
+          "p95_abs",
+          "pos_ratio",
+          "std",
+          "top1_over_mean"
+        ],
+        "output_avg": [
+          "mean_abs",
+          "p95_abs",
+          "p99_abs",
+          "top1_over_mean"
+        ],
+        "call_count": false
+      }
+    },
+    "v26_seg_head": {
+      "registered": 1,
+      "suffix": "vision_tower.vision_tower.vision_model.seg_head",
+      "module_name": "model.vision_tower.vision_tower.vision_model.seg_head",
+      "module_class": "PansegformerHead",
+      "requirements": {
+        "input_last": [
+          "abs_max",
+          "finite_ratio",
+          "l2_norm",
+          "mean",
+          "mean_abs",
+          "neg_ratio",
+          "p95_abs",
+          "p99_abs",
+          "pos_ratio",
+          "std",
+          "top1_over_mean"
+        ],
+        "output_last": [
+          "abs_max",
+          "l2_norm",
+          "mean",
+          "mean_abs",
+          "neg_ratio",
+          "p95_abs",
+          "p99_abs",
+          "pos_ratio",
+          "std",
+          "top1_over_mean"
+        ],
+        "input_avg": [
+          "abs_max",
+          "l2_norm",
+          "mean",
+          "mean_abs",
+          "neg_ratio",
+          "p95_abs",
+          "p99_abs",
+          "pos_ratio",
+          "std",
+          "top1_over_mean"
+        ],
+        "output_avg": [
+          "mean",
+          "mean_abs",
+          "neg_ratio",
+          "p99_abs",
+          "pos_ratio",
+          "top1_over_mean"
+        ],
+        "call_count": false
+      }
+    },
+    "v26_track_cls_branch0": {
+      "registered": 1,
+      "suffix": "vision_tower.vision_tower.vision_model.pts_bbox_head.cls_branches.0",
+      "module_name": "model.vision_tower.vision_tower.vision_model.pts_bbox_head.cls_branches.0",
+      "module_class": "Sequential",
+      "requirements": {
+        "input_last": [
+          "abs_max",
+          "mean",
+          "mean_abs",
+          "neg_ratio",
+          "p95_abs",
+          "p99_abs",
+          "pos_ratio",
+          "std",
+          "top1_over_mean"
+        ],
+        "output_last": [
+          "abs_max",
+          "l2_norm",
+          "mean",
+          "mean_abs",
+          "neg_ratio",
+          "p95_abs",
+          "p99_abs",
+          "pos_ratio",
+          "std"
+        ],
+        "input_avg": [
+          "abs_max",
+          "l2_norm",
+          "mean",
+          "mean_abs",
+          "neg_ratio",
+          "p95_abs",
+          "p99_abs",
+          "pos_ratio",
+          "top1_over_mean"
+        ],
+        "output_avg": [
+          "abs_max",
+          "l2_norm",
+          "mean",
+          "mean_abs",
+          "neg_ratio",
+          "p95_abs",
+          "p99_abs",
+          "pos_ratio",
+          "std",
+          "top1_over_mean"
+        ],
+        "call_count": false
+      }
+    },
+    "v26_track_cls_branch5": {
+      "registered": 1,
+      "suffix": "vision_tower.vision_tower.vision_model.pts_bbox_head.cls_branches.5",
+      "module_name": "model.vision_tower.vision_tower.vision_model.pts_bbox_head.cls_branches.5",
+      "module_class": "Sequential",
+      "requirements": {
+        "input_last": [
+          "abs_max",
+          "finite_ratio",
+          "mean",
+          "mean_abs",
+          "neg_ratio",
+          "p95_abs",
+          "p99_abs",
+          "pos_ratio",
+          "top1_over_mean"
+        ],
+        "output_last": [
+          "abs_max",
+          "mean",
+          "mean_abs",
+          "p95_abs",
+          "p99_abs",
+          "pos_ratio",
+          "std",
+          "top1_over_mean"
+        ],
+        "input_avg": [
+          "abs_max",
+          "finite_ratio",
+          "l2_norm",
+          "mean",
+          "mean_abs",
+          "neg_ratio",
+          "p95_abs",
+          "p99_abs",
+          "pos_ratio",
+          "top1_over_mean"
+        ],
+        "output_avg": [
+          "abs_max",
+          "mean_abs",
+          "p95_abs",
+          "p99_abs",
+          "std",
+          "top1_over_mean"
+        ],
+        "call_count": false
+      }
+    },
+    "v26_track_decoder": {
+      "registered": 1,
+      "suffix": "vision_tower.vision_tower.vision_model.pts_bbox_head.transformer.decoder",
+      "module_name": "model.vision_tower.vision_tower.vision_model.pts_bbox_head.transformer.decoder",
+      "module_class": "DetectionTransformerDecoder",
+      "requirements": {
+        "input_last": [],
+        "output_last": [
+          "abs_max",
+          "mean",
+          "neg_ratio",
+          "p95_abs",
+          "p99_abs",
+          "pos_ratio",
+          "std",
+          "top1_over_mean"
+        ],
+        "input_avg": [],
+        "output_avg": [
+          "abs_max",
+          "l2_norm",
+          "mean",
+          "mean_abs",
+          "neg_ratio",
+          "p95_abs",
+          "p99_abs",
+          "std",
+          "top1_over_mean"
+        ],
+        "call_count": false
+      }
+    },
+    "v26_track_past_traj_branch0": {
+      "registered": 1,
+      "suffix": "vision_tower.vision_tower.vision_model.pts_bbox_head.past_traj_reg_branches.0",
+      "module_name": "model.vision_tower.vision_tower.vision_model.pts_bbox_head.past_traj_reg_branches.0",
+      "module_class": "Sequential",
+      "requirements": {
+        "input_last": [
+          "abs_max",
+          "l2_norm",
+          "mean",
+          "mean_abs",
+          "neg_ratio",
+          "p95_abs",
+          "p99_abs",
+          "pos_ratio",
+          "std",
+          "top1_over_mean"
+        ],
+        "output_last": [
+          "abs_max",
+          "finite_ratio",
+          "l2_norm",
+          "mean",
+          "neg_ratio",
+          "p95_abs",
+          "pos_ratio",
+          "std",
+          "top1_over_mean"
+        ],
+        "input_avg": [
+          "abs_max",
+          "finite_ratio",
+          "l2_norm",
+          "mean",
+          "mean_abs",
+          "neg_ratio",
+          "p95_abs",
+          "p99_abs",
+          "pos_ratio",
+          "top1_over_mean"
+        ],
+        "output_avg": [
+          "abs_max",
+          "l2_norm",
+          "mean",
+          "mean_abs",
+          "neg_ratio",
+          "p95_abs",
+          "p99_abs",
+          "pos_ratio",
+          "std",
+          "top1_over_mean"
+        ],
+        "call_count": false
+      }
+    },
+    "v26_track_past_traj_branch5": {
+      "registered": 1,
+      "suffix": "vision_tower.vision_tower.vision_model.pts_bbox_head.past_traj_reg_branches.5",
+      "module_name": "model.vision_tower.vision_tower.vision_model.pts_bbox_head.past_traj_reg_branches.5",
+      "module_class": "Sequential",
+      "requirements": {
+        "input_last": [
+          "abs_max",
+          "l2_norm",
+          "mean",
+          "mean_abs",
+          "neg_ratio",
+          "p95_abs",
+          "p99_abs",
+          "pos_ratio",
+          "top1_over_mean"
+        ],
+        "output_last": [
+          "abs_max",
+          "neg_ratio",
+          "p95_abs",
+          "p99_abs",
+          "pos_ratio",
+          "zero_ratio"
+        ],
+        "input_avg": [
+          "abs_max",
+          "finite_ratio",
+          "l2_norm",
+          "mean",
+          "mean_abs",
+          "neg_ratio",
+          "p95_abs",
+          "p99_abs",
+          "pos_ratio",
+          "std",
+          "top1_over_mean"
+        ],
+        "output_avg": [
+          "abs_max",
+          "l2_norm",
+          "mean",
+          "mean_abs",
+          "neg_ratio",
+          "p95_abs",
+          "p99_abs",
+          "pos_ratio",
+          "top1_over_mean",
+          "zero_ratio"
+        ],
+        "call_count": false
+      }
+    },
+    "v26_track_reg_branch0": {
+      "registered": 1,
+      "suffix": "vision_tower.vision_tower.vision_model.pts_bbox_head.reg_branches.0",
+      "module_name": "model.vision_tower.vision_tower.vision_model.pts_bbox_head.reg_branches.0",
+      "module_class": "Sequential",
+      "requirements": {
+        "input_last": [
+          "abs_max",
+          "l2_norm",
+          "mean",
+          "neg_ratio",
+          "p95_abs",
+          "p99_abs",
+          "pos_ratio",
+          "top1_over_mean"
+        ],
+        "output_last": [
+          "finite_ratio",
+          "l2_norm",
+          "mean",
+          "mean_abs",
+          "neg_ratio",
+          "p95_abs",
+          "p99_abs",
+          "pos_ratio",
+          "std",
+          "top1_over_mean",
+          "zero_ratio"
+        ],
+        "input_avg": [
+          "abs_max",
+          "mean",
+          "mean_abs",
+          "neg_ratio",
+          "p95_abs",
+          "std"
+        ],
+        "output_avg": [
+          "abs_max",
+          "l2_norm",
+          "mean",
+          "mean_abs",
+          "neg_ratio",
+          "p95_abs",
+          "p99_abs",
+          "pos_ratio",
+          "std",
+          "top1_over_mean",
+          "zero_ratio"
+        ],
+        "call_count": false
+      }
+    },
+    "v26_track_reg_branch5": {
+      "registered": 1,
+      "suffix": "vision_tower.vision_tower.vision_model.pts_bbox_head.reg_branches.5",
+      "module_name": "model.vision_tower.vision_tower.vision_model.pts_bbox_head.reg_branches.5",
+      "module_class": "Sequential",
+      "requirements": {
+        "input_last": [
+          "abs_max",
+          "finite_ratio",
+          "l2_norm",
+          "mean",
+          "mean_abs",
+          "neg_ratio",
+          "p95_abs",
+          "p99_abs",
+          "pos_ratio",
+          "top1_over_mean"
+        ],
+        "output_last": [
+          "finite_ratio",
+          "l2_norm",
+          "mean",
+          "mean_abs",
+          "neg_ratio",
+          "p95_abs",
+          "p99_abs",
+          "pos_ratio",
+          "std",
+          "top1_over_mean"
+        ],
+        "input_avg": [
+          "abs_max",
+          "mean",
+          "mean_abs",
+          "neg_ratio",
+          "p95_abs",
+          "p99_abs",
+          "pos_ratio",
+          "std",
+          "top1_over_mean"
+        ],
+        "output_avg": [
+          "abs_max",
+          "l2_norm",
+          "mean",
+          "neg_ratio",
+          "p95_abs",
+          "p99_abs",
+          "pos_ratio",
+          "std",
+          "top1_over_mean"
+        ],
+        "call_count": false
+      }
+    },
+    "v26_vision_model": {
+      "registered": 1,
+      "suffix": "vision_tower.vision_tower.vision_model",
+      "module_name": "model.vision_tower.vision_tower.vision_model",
+      "module_class": "UniAD",
+      "requirements": {
+        "input_last": [],
+        "output_last": [
+          "l2_norm",
+          "numel",
+          "p95_abs",
+          "std",
+          "top1_over_mean"
+        ],
+        "input_avg": [],
+        "output_avg": [
+          "l2_norm",
+          "mean",
+          "mean_abs",
+          "std",
+          "top1_over_mean"
+        ],
+        "call_count": false
+      }
+    },
+    "v59_d_llm_l0_attn_o_proj": {
+      "registered": 1,
+      "suffix": "model.layers.0.self_attn.o_proj",
+      "module_name": "model.layers.0.self_attn.o_proj",
+      "module_class": "Linear",
+      "requirements": {
+        "input_last": [
+          "abs_max",
+          "available",
+          "finite_ratio",
+          "l2_norm",
+          "mean",
+          "mean_abs",
+          "neg_ratio",
+          "numel",
+          "p95_abs",
+          "p99_abs",
+          "pos_ratio",
+          "std",
+          "top1_over_mean",
+          "zero_ratio"
+        ],
+        "output_last": [
+          "abs_max",
+          "available",
+          "finite_ratio",
+          "l2_norm",
+          "mean",
+          "mean_abs",
+          "neg_ratio",
+          "numel",
+          "p95_abs",
+          "p99_abs",
+          "pos_ratio",
+          "std",
+          "top1_over_mean",
+          "zero_ratio"
+        ],
+        "input_avg": [
+          "abs_max",
+          "finite_ratio",
+          "l2_norm",
+          "mean",
+          "mean_abs",
+          "neg_ratio",
+          "p95_abs",
+          "p99_abs",
+          "pos_ratio",
+          "std",
+          "top1_over_mean",
+          "zero_ratio"
+        ],
+        "output_avg": [
+          "abs_max",
+          "finite_ratio",
+          "l2_norm",
+          "mean",
+          "mean_abs",
+          "neg_ratio",
+          "p95_abs",
+          "p99_abs",
+          "pos_ratio",
+          "std",
+          "top1_over_mean",
+          "zero_ratio"
+        ],
+        "call_count": true
+      }
+    },
+    "v59_d_llm_l0_mlp_down_proj": {
+      "registered": 1,
+      "suffix": "model.layers.0.mlp.down_proj",
+      "module_name": "model.layers.0.mlp.down_proj",
+      "module_class": "Linear",
+      "requirements": {
+        "input_last": [
+          "abs_max",
+          "available",
+          "finite_ratio",
+          "l2_norm",
+          "mean",
+          "mean_abs",
+          "neg_ratio",
+          "numel",
+          "p95_abs",
+          "p99_abs",
+          "pos_ratio",
+          "std",
+          "top1_over_mean",
+          "zero_ratio"
+        ],
+        "output_last": [
+          "abs_max",
+          "available",
+          "finite_ratio",
+          "l2_norm",
+          "mean",
+          "mean_abs",
+          "neg_ratio",
+          "numel",
+          "p95_abs",
+          "p99_abs",
+          "pos_ratio",
+          "std",
+          "top1_over_mean",
+          "zero_ratio"
+        ],
+        "input_avg": [
+          "abs_max",
+          "finite_ratio",
+          "l2_norm",
+          "mean",
+          "mean_abs",
+          "neg_ratio",
+          "p95_abs",
+          "p99_abs",
+          "pos_ratio",
+          "std",
+          "top1_over_mean",
+          "zero_ratio"
+        ],
+        "output_avg": [
+          "abs_max",
+          "finite_ratio",
+          "l2_norm",
+          "mean",
+          "mean_abs",
+          "neg_ratio",
+          "p95_abs",
+          "p99_abs",
+          "pos_ratio",
+          "std",
+          "top1_over_mean",
+          "zero_ratio"
+        ],
+        "call_count": true
+      }
+    },
+    "v59_d_llm_l12_attn_o_proj": {
+      "registered": 1,
+      "suffix": "model.layers.12.self_attn.o_proj",
+      "module_name": "model.layers.12.self_attn.o_proj",
+      "module_class": "Linear",
+      "requirements": {
+        "input_last": [
+          "abs_max",
+          "available",
+          "finite_ratio",
+          "l2_norm",
+          "mean",
+          "mean_abs",
+          "neg_ratio",
+          "numel",
+          "p95_abs",
+          "p99_abs",
+          "pos_ratio",
+          "std",
+          "top1_over_mean",
+          "zero_ratio"
+        ],
+        "output_last": [
+          "abs_max",
+          "available",
+          "finite_ratio",
+          "l2_norm",
+          "mean",
+          "mean_abs",
+          "neg_ratio",
+          "numel",
+          "p95_abs",
+          "p99_abs",
+          "pos_ratio",
+          "std",
+          "top1_over_mean",
+          "zero_ratio"
+        ],
+        "input_avg": [
+          "abs_max",
+          "finite_ratio",
+          "l2_norm",
+          "mean",
+          "mean_abs",
+          "neg_ratio",
+          "p95_abs",
+          "p99_abs",
+          "pos_ratio",
+          "std",
+          "top1_over_mean",
+          "zero_ratio"
+        ],
+        "output_avg": [
+          "abs_max",
+          "finite_ratio",
+          "l2_norm",
+          "mean",
+          "mean_abs",
+          "neg_ratio",
+          "p95_abs",
+          "p99_abs",
+          "pos_ratio",
+          "std",
+          "top1_over_mean",
+          "zero_ratio"
+        ],
+        "call_count": true
+      }
+    },
+    "v59_d_llm_l12_mlp_down_proj": {
+      "registered": 1,
+      "suffix": "model.layers.12.mlp.down_proj",
+      "module_name": "model.layers.12.mlp.down_proj",
+      "module_class": "Linear",
+      "requirements": {
+        "input_last": [
+          "abs_max",
+          "available",
+          "finite_ratio",
+          "l2_norm",
+          "mean",
+          "mean_abs",
+          "neg_ratio",
+          "numel",
+          "p95_abs",
+          "p99_abs",
+          "pos_ratio",
+          "std",
+          "top1_over_mean",
+          "zero_ratio"
+        ],
+        "output_last": [
+          "abs_max",
+          "available",
+          "finite_ratio",
+          "l2_norm",
+          "mean",
+          "mean_abs",
+          "neg_ratio",
+          "numel",
+          "p95_abs",
+          "p99_abs",
+          "pos_ratio",
+          "std",
+          "top1_over_mean",
+          "zero_ratio"
+        ],
+        "input_avg": [
+          "abs_max",
+          "finite_ratio",
+          "l2_norm",
+          "mean",
+          "mean_abs",
+          "neg_ratio",
+          "p95_abs",
+          "p99_abs",
+          "pos_ratio",
+          "std",
+          "top1_over_mean",
+          "zero_ratio"
+        ],
+        "output_avg": [
+          "abs_max",
+          "finite_ratio",
+          "l2_norm",
+          "mean",
+          "mean_abs",
+          "neg_ratio",
+          "p95_abs",
+          "p99_abs",
+          "pos_ratio",
+          "std",
+          "top1_over_mean",
+          "zero_ratio"
+        ],
+        "call_count": true
+      }
+    },
+    "v59_d_llm_l23_attn_o_proj": {
+      "registered": 1,
+      "suffix": "model.layers.23.self_attn.o_proj",
+      "module_name": "model.layers.23.self_attn.o_proj",
+      "module_class": "Linear",
+      "requirements": {
+        "input_last": [
+          "abs_max",
+          "available",
+          "finite_ratio",
+          "l2_norm",
+          "mean",
+          "mean_abs",
+          "neg_ratio",
+          "numel",
+          "p95_abs",
+          "p99_abs",
+          "pos_ratio",
+          "std",
+          "top1_over_mean",
+          "zero_ratio"
+        ],
+        "output_last": [
+          "abs_max",
+          "available",
+          "finite_ratio",
+          "l2_norm",
+          "mean",
+          "mean_abs",
+          "neg_ratio",
+          "numel",
+          "p95_abs",
+          "p99_abs",
+          "pos_ratio",
+          "std",
+          "top1_over_mean",
+          "zero_ratio"
+        ],
+        "input_avg": [
+          "abs_max",
+          "finite_ratio",
+          "l2_norm",
+          "mean",
+          "mean_abs",
+          "neg_ratio",
+          "p95_abs",
+          "p99_abs",
+          "pos_ratio",
+          "std",
+          "top1_over_mean",
+          "zero_ratio"
+        ],
+        "output_avg": [
+          "abs_max",
+          "finite_ratio",
+          "l2_norm",
+          "mean",
+          "mean_abs",
+          "neg_ratio",
+          "p95_abs",
+          "p99_abs",
+          "pos_ratio",
+          "std",
+          "top1_over_mean",
+          "zero_ratio"
+        ],
+        "call_count": true
+      }
+    },
+    "v59_d_llm_l23_mlp_down_proj": {
+      "registered": 1,
+      "suffix": "model.layers.23.mlp.down_proj",
+      "module_name": "model.layers.23.mlp.down_proj",
+      "module_class": "Linear",
+      "requirements": {
+        "input_last": [
+          "abs_max",
+          "available",
+          "finite_ratio",
+          "l2_norm",
+          "mean",
+          "mean_abs",
+          "neg_ratio",
+          "numel",
+          "p95_abs",
+          "p99_abs",
+          "pos_ratio",
+          "std",
+          "top1_over_mean",
+          "zero_ratio"
+        ],
+        "output_last": [
+          "abs_max",
+          "available",
+          "finite_ratio",
+          "l2_norm",
+          "mean",
+          "mean_abs",
+          "neg_ratio",
+          "numel",
+          "p95_abs",
+          "p99_abs",
+          "pos_ratio",
+          "std",
+          "top1_over_mean",
+          "zero_ratio"
+        ],
+        "input_avg": [
+          "abs_max",
+          "finite_ratio",
+          "l2_norm",
+          "mean",
+          "mean_abs",
+          "neg_ratio",
+          "p95_abs",
+          "p99_abs",
+          "pos_ratio",
+          "std",
+          "top1_over_mean",
+          "zero_ratio"
+        ],
+        "output_avg": [
+          "abs_max",
+          "finite_ratio",
+          "l2_norm",
+          "mean",
+          "mean_abs",
+          "neg_ratio",
+          "p95_abs",
+          "p99_abs",
+          "pos_ratio",
+          "std",
+          "top1_over_mean",
+          "zero_ratio"
+        ],
+        "call_count": true
+      }
+    },
+    "v59_dout_lm_head": {
+      "registered": 1,
+      "suffix": "lm_head",
+      "module_name": "lm_head",
+      "module_class": "Linear",
+      "requirements": {
+        "input_last": [
+          "abs_max",
+          "available",
+          "finite_ratio",
+          "l2_norm",
+          "mean",
+          "mean_abs",
+          "neg_ratio",
+          "numel",
+          "p95_abs",
+          "p99_abs",
+          "pos_ratio",
+          "std",
+          "top1_over_mean",
+          "zero_ratio"
+        ],
+        "output_last": [
+          "abs_max",
+          "available",
+          "finite_ratio",
+          "l2_norm",
+          "mean",
+          "mean_abs",
+          "neg_ratio",
+          "numel",
+          "p95_abs",
+          "p99_abs",
+          "pos_ratio",
+          "std",
+          "top1_over_mean",
+          "zero_ratio"
+        ],
+        "input_avg": [
+          "abs_max",
+          "finite_ratio",
+          "l2_norm",
+          "mean",
+          "mean_abs",
+          "neg_ratio",
+          "p95_abs",
+          "p99_abs",
+          "pos_ratio",
+          "std",
+          "top1_over_mean",
+          "zero_ratio"
+        ],
+        "output_avg": [
+          "abs_max",
+          "finite_ratio",
+          "l2_norm",
+          "mean",
+          "mean_abs",
+          "neg_ratio",
+          "p95_abs",
+          "p99_abs",
+          "pos_ratio",
+          "std",
+          "top1_over_mean",
+          "zero_ratio"
+        ],
+        "call_count": true
+      }
+    },
+    "v59_dout_model_norm": {
+      "registered": 1,
+      "suffix": "model.norm",
+      "module_name": "model.norm",
+      "module_class": "Qwen2RMSNorm",
+      "requirements": {
+        "input_last": [
+          "abs_max",
+          "available",
+          "finite_ratio",
+          "l2_norm",
+          "mean",
+          "mean_abs",
+          "neg_ratio",
+          "numel",
+          "p95_abs",
+          "p99_abs",
+          "pos_ratio",
+          "std",
+          "top1_over_mean",
+          "zero_ratio"
+        ],
+        "output_last": [
+          "abs_max",
+          "available",
+          "finite_ratio",
+          "l2_norm",
+          "mean",
+          "mean_abs",
+          "neg_ratio",
+          "numel",
+          "p95_abs",
+          "p99_abs",
+          "pos_ratio",
+          "std",
+          "top1_over_mean",
+          "zero_ratio"
+        ],
+        "input_avg": [
+          "abs_max",
+          "finite_ratio",
+          "l2_norm",
+          "mean",
+          "mean_abs",
+          "neg_ratio",
+          "p95_abs",
+          "p99_abs",
+          "pos_ratio",
+          "std",
+          "top1_over_mean",
+          "zero_ratio"
+        ],
+        "output_avg": [
+          "abs_max",
+          "finite_ratio",
+          "l2_norm",
+          "mean",
+          "mean_abs",
+          "neg_ratio",
+          "p95_abs",
+          "p99_abs",
+          "pos_ratio",
+          "std",
+          "top1_over_mean",
+          "zero_ratio"
+        ],
+        "call_count": true
+      }
+    },
+    "v59_s4_seg_decoder": {
+      "registered": 1,
+      "suffix": "vision_tower.vision_tower.vision_model.seg_head.transformer.decoder",
+      "module_name": "model.vision_tower.vision_tower.vision_model.seg_head.transformer.decoder",
+      "module_class": "DeformableDetrTransformerDecoder",
+      "requirements": {
+        "input_last": [],
+        "output_last": [
+          "finite_ratio",
+          "l2_norm"
+        ],
+        "input_avg": [],
+        "output_avg": [
+          "finite_ratio",
+          "l2_norm"
+        ],
+        "call_count": false
+      }
+    },
+    "v59_s4_track_decoder_l3": {
+      "registered": 1,
+      "suffix": "vision_tower.vision_tower.vision_model.pts_bbox_head.transformer.decoder.layers.3",
+      "module_name": "model.vision_tower.vision_tower.vision_model.pts_bbox_head.transformer.decoder.layers.3",
+      "module_class": "DetrTransformerDecoderLayer",
+      "requirements": {
+        "input_last": [
+          "abs_max",
+          "finite_ratio",
+          "l2_norm",
+          "mean",
+          "mean_abs",
+          "neg_ratio",
+          "p95_abs",
+          "p99_abs",
+          "pos_ratio",
+          "std",
+          "top1_over_mean"
+        ],
+        "output_last": [
+          "l2_norm",
+          "p99_abs",
+          "pos_ratio",
+          "std"
+        ],
+        "input_avg": [
+          "abs_max",
+          "finite_ratio",
+          "l2_norm",
+          "mean",
+          "mean_abs",
+          "neg_ratio",
+          "p95_abs",
+          "p99_abs",
+          "pos_ratio",
+          "std",
+          "top1_over_mean"
+        ],
+        "output_avg": [
+          "l2_norm",
+          "p99_abs",
+          "pos_ratio",
+          "std"
+        ],
+        "call_count": false
+      }
+    },
+    "v59_s4_track_decoder_l3_attn0": {
+      "registered": 1,
+      "suffix": "vision_tower.vision_tower.vision_model.pts_bbox_head.transformer.decoder.layers.3.attentions.0",
+      "module_name": "model.vision_tower.vision_tower.vision_model.pts_bbox_head.transformer.decoder.layers.3.attentions.0",
+      "module_class": "MultiheadAttention",
+      "requirements": {
+        "input_last": [
+          "abs_max",
+          "finite_ratio",
+          "l2_norm",
+          "mean",
+          "mean_abs",
+          "neg_ratio",
+          "p95_abs",
+          "p99_abs",
+          "pos_ratio",
+          "std",
+          "top1_over_mean"
+        ],
+        "output_last": [
+          "finite_ratio",
+          "neg_ratio"
+        ],
+        "input_avg": [
+          "abs_max",
+          "finite_ratio",
+          "l2_norm",
+          "mean",
+          "mean_abs",
+          "neg_ratio",
+          "p95_abs",
+          "p99_abs",
+          "pos_ratio",
+          "std",
+          "top1_over_mean"
+        ],
+        "output_avg": [
+          "finite_ratio",
+          "neg_ratio"
+        ],
+        "call_count": false
+      }
+    },
+    "v59_s4_track_decoder_l3_attn1": {
+      "registered": 1,
+      "suffix": "vision_tower.vision_tower.vision_model.pts_bbox_head.transformer.decoder.layers.3.attentions.1",
+      "module_name": "model.vision_tower.vision_tower.vision_model.pts_bbox_head.transformer.decoder.layers.3.attentions.1",
+      "module_class": "CustomMSDeformableAttention",
+      "requirements": {
+        "input_last": [
+          "finite_ratio",
+          "l2_norm",
+          "p99_abs",
+          "std"
+        ],
+        "output_last": [
+          "l2_norm",
+          "p99_abs"
+        ],
+        "input_avg": [
+          "finite_ratio",
+          "l2_norm",
+          "p99_abs",
+          "std"
+        ],
+        "output_avg": [
+          "l2_norm",
+          "p99_abs"
+        ],
+        "call_count": false
+      }
+    },
+    "v59_s4_track_decoder_l3_ffn": {
+      "registered": 1,
+      "suffix": "vision_tower.vision_tower.vision_model.pts_bbox_head.transformer.decoder.layers.3.ffns.0",
+      "module_name": "model.vision_tower.vision_tower.vision_model.pts_bbox_head.transformer.decoder.layers.3.ffns.0",
+      "module_class": "FFN",
+      "requirements": {
+        "input_last": [
+          "p95_abs",
+          "p99_abs"
+        ],
+        "output_last": [],
+        "input_avg": [
+          "p95_abs",
+          "p99_abs"
+        ],
+        "output_avg": [],
+        "call_count": false
+      }
+    },
+    "v59_s4_track_decoder_l3_norm0": {
+      "registered": 1,
+      "suffix": "vision_tower.vision_tower.vision_model.pts_bbox_head.transformer.decoder.layers.3.norms.0",
+      "module_name": "model.vision_tower.vision_tower.vision_model.pts_bbox_head.transformer.decoder.layers.3.norms.0",
+      "module_class": "LayerNorm",
+      "requirements": {
+        "input_last": [
+          "finite_ratio",
+          "neg_ratio"
+        ],
+        "output_last": [
+          "abs_max",
+          "finite_ratio",
+          "l2_norm",
+          "mean",
+          "mean_abs",
+          "p95_abs",
+          "p99_abs",
+          "std",
+          "top1_over_mean"
+        ],
+        "input_avg": [
+          "finite_ratio",
+          "neg_ratio"
+        ],
+        "output_avg": [
+          "abs_max",
+          "finite_ratio",
+          "l2_norm",
+          "mean",
+          "mean_abs",
+          "p95_abs",
+          "p99_abs",
+          "std",
+          "top1_over_mean"
+        ],
+        "call_count": false
+      }
+    }
+  },
+  "online_head": {
+    "registered": 1,
+    "suffix": "vision_tower.vision_tower.vision_model",
+    "module_name": "model.vision_tower.vision_tower.vision_model",
+    "module_class": "UniAD"
+  },
+  "stage_hook_count": 42,
+  "total_callbacks": 44
+}

@@ -1,0 +1,28 @@
+{
+  "historical_audit_rows": 7219,
+  "historical_unique_sample_ids": 6019,
+  "historical_duplicate_sample_ids": 1200,
+  "clean_trajectory_rows_compared": 7219,
+  "no_origin_step_mean_exact_matches_at_1e-9": 7219,
+  "origin_inclusive_step_mean_exact_matches_at_1e-9": 852,
+  "no_origin_step_mean_max_abs_error": 8.881784197001252e-16,
+  "origin_inclusive_step_mean_max_abs_error": 0.7263391358388704,
+  "gt_degradation_signed_formula_valid_rows": 7219,
+  "gt_degradation_signed_formula_exact_matches_at_1e-9": 7219,
+  "flag_logic_checks": {
+    "fault_vs_clean_speed_flag_mismatch": 0,
+    "gt_speed_degradation_flag_mismatch": 0,
+    "speed_alter_condition_mismatch": 0,
+    "final_speed_alter_label_mismatch": 0
+  },
+  "confirmed_historical_definition": {
+    "step_construction": "segment_no_origin",
+    "mask_mode": "none",
+    "gt_degradation_form": "signed_error_degradation",
+    "fault_vs_clean_threshold": 0.4,
+    "gt_degradation_threshold": 0.2,
+    "speed_specific_condition": "fault_vs_clean_mean_step_norm_abs_delta >= 0.40 AND degradation_vs_clean_gt_mean_step_norm_abs_delta >= 0.20",
+    "final_speed_alter_label": "old_harmful OR speed_specific_condition"
+  },
+  "selected_candidate": "segment_no_origin__none__signed_error_degradation"
+}

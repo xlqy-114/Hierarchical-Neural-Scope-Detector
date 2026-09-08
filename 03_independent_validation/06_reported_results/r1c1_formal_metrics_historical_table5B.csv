@@ -1,0 +1,2 @@
+policy,threshold,tp,fn,fp,tn,recall,far,precision,rows,severe_positive,severe_negative
+historical_Table5_severe_B,0.2055820757066283,140,2,17,4660,0.9859154929577465,0.0036348086380158223,0.89171974522293,4819,142,4677

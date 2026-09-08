@@ -1,0 +1,14 @@
+component,metric,bytes,mib
+Hooks,working_state_bytes,219675,0.20949840545654297
+Feature extraction,representative_working_buffer_bytes,597574,0.5698909759521484
+Feature aggregation,representative_working_buffer_bytes,597370,0.5696964263916016
+Detector inference,prediction_working_buffer_bytes,1537,0.0014657974243164062
+Detector inference,resident_detector_accounted_bytes,10780332,10.280925750732422
+Hooks,registration_accounted_bytes,277653,0.26479053497314453
+Full online monitor,accounted_cpu_peak_working_bytes,11875234,11.325105667114258
+Full online monitor,raw_persistent_cpu_rss_delta_bytes_diagnostic,671744,0.640625
+Detector inference,raw_detector_rss_delta_bytes_diagnostic,671744,0.640625
+Hooks,raw_hook_registration_rss_delta_bytes_diagnostic,0,0.0
+Full online monitor,persistent_gpu_allocation_increment_bytes,0,0.0
+Full online monitor,paired_incremental_gpu_peak_mean_bytes,735543204,701.468662109375
+Full online monitor,paired_incremental_gpu_peak_p95_bytes,870661555,830.3275634765624

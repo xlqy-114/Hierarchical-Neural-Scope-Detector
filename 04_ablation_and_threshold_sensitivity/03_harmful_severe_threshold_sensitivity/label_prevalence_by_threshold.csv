@@ -1,0 +1,11 @@
+target_family,l2_threshold,positive_total,negative_total
+harmful,0.25,226,5774
+harmful,0.4,211,5789
+harmful,0.5,208,5792
+harmful,0.6,203,5797
+harmful,0.75,200,5800
+severe_harmful,0.75,200,5800
+severe_harmful,0.9,196,5804
+severe_harmful,1.0,195,5805
+severe_harmful,1.1,192,5808
+severe_harmful,1.25,190,5810

@@ -1,0 +1,1 @@
+This policy was frozen before any held-out 4819 inference or held-out label evaluation. Do not modify model, threshold, veto, feature contract, or alarm logic after starting the formal test.

@@ -1,0 +1,50 @@
+{
+  "scope": "Detector component ablation on a fixed 6,000-sample out-of-fold dataset",
+  "rows": 6000,
+  "seed_count": 5,
+  "recovery_stage": {
+    "purpose": "Quantify the recall-oriented contributions of targeted evidence and the consistency signal on the fixed out-of-fold dataset.",
+    "selected_targeted_branches": {
+      "harmful": {
+        "feature_family": "scene_branch_plus_scores",
+        "model": "extra_trees_depth5",
+        "target_train_recall": 1.0
+      },
+      "severe_harmful": {
+        "feature_family": "targeted_all_sanitized",
+        "model": "extra_trees_depth5",
+        "target_train_recall": 1.0
+      },
+      "speed_alter": {
+        "feature_family": "scene_branch_plus_scores",
+        "model": "extra_trees_depth5",
+        "target_train_recall": 1.0
+      }
+    },
+    "consistency": {
+      "scope": "LLM-trunk + output-boundary consistency",
+      "quantile": 0.975
+    }
+  },
+  "recall_matched_veto": {
+    "purpose": "Evaluate false-alarm suppression at unchanged observed recall.",
+    "matching_rule": "For each target, fix the exact TP count of the base detector. Among the available base+model+veto candidate policies with the same TP, select the candidate with minimum FP; ties are resolved deterministically.",
+    "veto_threshold": 0.005,
+    "note": "This is an operating-point comparison over already-generated OOF candidate policies. No new VLA inference or detector fitting is performed."
+  },
+  "main_public_result": "component_ablation_summary.csv",
+  "veto_public_result": "recall_matched_veto_summary.csv",
+  "main_ablation_structure": {
+    "1": "Base detector",
+    "2": "Base + Targeted evidence",
+    "3": "Base + Targeted evidence + Consistency signal",
+    "4": "Conservative veto evaluated at the same observed recall as the base detector"
+  },
+  "important_interpretation": "Rows 1-3 form a cumulative recall-oriented ablation. Row 4 is a recall-matched operating-point ablation for the veto and should not be interpreted as a direct cumulative continuation of row 3.",
+  "components": [
+    "Base detector",
+    "Targeted evidence",
+    "Consistency signal",
+    "Conservative veto"
+  ]
+}

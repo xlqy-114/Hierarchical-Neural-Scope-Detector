@@ -1,0 +1,6 @@
+candidate_id,label,feature_set,input_dim,imputer_dropped_all_missing,post_imputer_dim,post_variance_dim,selected_k,recall_target,threshold,heldout_score_max_abs_full_vs_zero_unselected,heldout_alarm_mismatch_full_vs_zero_unselected
+table5_harmful_high_recall,harmful,old_exact_plus_scores,2611,28,2583,2050,256,0.99,0.29775136127389096,2.220446049250313e-16,0
+table5_severe_high_recall,severe_harmful,old_exact,2605,28,2577,2044,256,1.0,0.1789019173539218,3.3306690738754696e-16,0
+table5_speed_high_recall,speed_alter,v59_s4_plus_scores,5459,0,5459,3546,256,1.0,0.23990174970136277,2.220446049250313e-16,0
+ablation_harmful_targeted,harmful,v59_s4_plus_scores,5459,0,5459,3546,256,1.0,0.22273611887551809,2.220446049250313e-16,0
+ablation_severe_targeted,severe_harmful,v59_all_sanitized,7573,0,7573,5143,256,1.0,0.05088984022153344,2.220446049250313e-16,0

@@ -1,0 +1,17 @@
+{
+  "rows": 108342,
+  "seed_count": 18,
+  "comparison": "Minimum FAR subject to the same Recall >=99% operational requirement.",
+  "columns": {
+    "target_label": "Binary target label retained for retrospective evaluation only.",
+    "primary_detector_score": "OOF primary detector score.",
+    "primary_detector_threshold": "Selected no-veto operating threshold.",
+    "primary_detector_prediction": "No-veto prediction at the selected operating point.",
+    "veto_policy_primary_threshold": "Primary-stage threshold used by the veto-enhanced policy.",
+    "veto_policy_primary_candidate": "Primary-stage suspicious candidate before confirmation.",
+    "veto_confirmation_score": "Secondary confirmation score.",
+    "veto_confirmation_threshold": "Frozen secondary confirmation threshold.",
+    "veto_confirmation_pass": "1 if the suspicious candidate passes secondary confirmation.",
+    "veto_final_prediction": "Final veto-enhanced prediction."
+  }
+}

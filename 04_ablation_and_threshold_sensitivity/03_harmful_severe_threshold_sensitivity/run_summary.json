@@ -1,0 +1,53 @@
+{
+  "rows": 6000,
+  "seeds": [
+    955916,
+    955917,
+    955918,
+    955919,
+    955920
+  ],
+  "sklearn_version": "1.2.2",
+  "original_label_totals": {
+    "harmful": 208,
+    "severe_harmful": 195
+  },
+  "raw_deployed_detector_feature_union_count": 2637,
+  "excluded_by_original_column_screen_count": 32,
+  "feature_union_count": 2605,
+  "score_feature_count": 6,
+  "exact_replay_checks": {
+    "('harmful', 0.5, 'high_recall')": [
+      206,
+      2,
+      28,
+      5764
+    ],
+    "('harmful', 0.5, 'low_far')": [
+      205,
+      3,
+      8,
+      5784
+    ],
+    "('severe_harmful', 1.0, 'high_recall')": [
+      195,
+      0,
+      38,
+      5767
+    ],
+    "('severe_harmful', 1.0, 'low_far')": [
+      194,
+      1,
+      18,
+      5787
+    ]
+  },
+  "outputs": [
+    "retained_online_feature_audit.json",
+    "continuous_label_metrics_6000.csv",
+    "label_prevalence_by_threshold.csv",
+    "harmful_severe_threshold_sensitivity_summary.csv",
+    "harmful_severe_threshold_sensitivity_seedwise.csv",
+    "harmful_severe_threshold_sensitivity_oof_predictions.csv"
+  ]
+}

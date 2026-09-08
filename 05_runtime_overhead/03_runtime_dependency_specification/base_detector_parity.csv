@@ -1,0 +1,4 @@
+detector,artifact_class,input_features,used_features,introspection_success,max_abs_full_vs_zero_unused,alarm_mismatch_full_vs_zero_unused,max_abs_full_vs_stored_record_score,alarm_mismatch_full_vs_stored_record_score
+lineA_old_extra_trees_high_recall_online_all_no_temporal,Pipeline,2597,1515,1,2.220446049250313e-16,0,3.3306690738754696e-16,0
+lineA_old_hgb_online_all_no_temporal,HistGradientBoostingClassifier,2597,343,1,0.0,0,0.0,0
+lineA_speed_alter_hgb_online_compact,HistGradientBoostingClassifier,707,170,1,0.0,0,0.0,0

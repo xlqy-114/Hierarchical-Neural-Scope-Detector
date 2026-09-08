@@ -1,0 +1,53 @@
+{
+  "gpu": "NVIDIA H20",
+  "gpu_total_memory_bytes": 102085492736,
+  "torch": "2.1.2+cu118",
+  "torch_cuda": "11.8",
+  "sklearn": "1.2.2",
+  "numpy": "1.26.4",
+  "python": "3.10.8 (main, Nov 24 2022, 14:13:03) [GCC 11.2.0]",
+  "platform": "Linux-5.15.0-130-generic-x86_64-with-glibc2.35",
+  "cpu_logical_count": 128,
+  "cpu_physical_count": 64,
+  "batch_size": 1,
+  "warmup_samples": 20,
+  "measured_samples": 100,
+  "max_new_tokens": 192,
+  "fp16": true,
+  "attn_implementation": "sdpa",
+  "stage_summary_hooks": 42,
+  "separate_can_bus_capture": 1,
+  "separate_online_head_capture": 1,
+  "total_forward_callbacks": 44,
+  "baseline_process_rss_bytes": 14206332928,
+  "raw_persistent_cpu_rss_delta_bytes_diagnostic": 671744,
+  "raw_detector_rss_delta_bytes_diagnostic": 671744,
+  "raw_hook_registration_rss_delta_bytes_diagnostic": 0,
+  "accounted_detector_resident_bytes": 10780332,
+  "accounted_hook_registration_bytes": 277653,
+  "accounted_cpu_peak_working_bytes": 11875234,
+  "accounted_cpu_memory_increase_percent": 0.08359112840861616,
+  "baseline_gpu_allocated_bytes": 1487724032,
+  "persistent_gpu_allocated_increment_bytes": 0,
+  "paired_incremental_gpu_peak_mean_bytes": 735543203.84,
+  "paired_incremental_gpu_peak_p95_bytes": 870661555.1999999,
+  "paired_incremental_gpu_peak_mean_percent_of_baseline_peak": 27.358601818289323,
+  "baseline_cpu_utilization": {
+    "core_equivalent_percent": 202.05626995186446,
+    "logical_cpu_capacity_percent": 1.5785646089989411
+  },
+  "monitor_cpu_utilization": {
+    "core_equivalent_percent": 160.60105883062226,
+    "logical_cpu_capacity_percent": 1.2546957721142364
+  },
+  "cpu_core_equivalent_increase_percentage_points": -41.4552111212422,
+  "cpu_capacity_increase_percentage_points": -0.3238688368847047,
+  "latency_scope": "Only required deployment computations. File I/O, logging I/O, dataset initialization, offline training/calibration, fault injection, GT/clean-reference evaluation, post-hoc metrics, memory-size bookkeeping, and archive creation are excluded from the latency intervals.",
+  "deployment_configuration": "maximal final configuration: base/veto + Table-5 speed targeted branch + D-LLM/D-out consistency; its hook set subsumes the other final targets",
+  "synchronization_profiling": {
+    "method": "perf_counter placed around synchronization/device-to-host waits that already exist in the deployment path; no new detector-stage CUDA synchronization is added",
+    "feature_extraction": "sum of existing end-of-substage CUDA synchronization waits",
+    "stage_hooks": "device-to-host waits inside the 42 lean stage-summary hooks",
+    "detector_execution": "CPU-side sklearn/tree scoring after host feature materialization; requires no additional CUDA synchronization"
+  }
+}

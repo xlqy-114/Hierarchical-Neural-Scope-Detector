@@ -1,0 +1,10 @@
+label,operating_point,report_policy_name,tp,fn,fp,historical_candidate_matches,unique_combinations,policy_identity_status
+harmful,A,v35.1 ExtraTrees baseline,205,3,27,1,base_only,unique
+harmful,B,v61.4 low-FAR policy,205,3,8,15,base_or_model_and_not_veto | base_or_model_or_consistency_and_not_veto | model_only,outcome-equivalent candidates retained; freeze one exact candidate before any new test
+harmful,C,near-99 recall fusion,206,2,28,14,base_or_model | base_or_model_or_consistency,outcome-equivalent candidates retained; freeze one exact candidate before any new test
+severe_harmful,A,v35.1 ExtraTrees baseline,194,1,38,1,base_only,unique
+severe_harmful,B,v61.4 low-FAR policy,194,1,18,7,base_or_model_and_not_veto | base_or_model_or_consistency_and_not_veto,outcome-equivalent candidates retained; freeze one exact candidate before any new test
+severe_harmful,C,100% recall fusion,195,0,38,7,base_or_model | base_or_model_or_consistency,outcome-equivalent candidates retained; freeze one exact candidate before any new test
+v31_speed_alter_harmful_compatible,A,v35.1 ExtraTrees baseline,205,4,27,1,base_only,unique
+v31_speed_alter_harmful_compatible,B,score-HGB low-FAR policy,205,4,7,1,model_only,unique
+v31_speed_alter_harmful_compatible,C,near-99 recall v61.4 fusion,207,2,37,7,base_or_model_and_not_veto | base_or_model_or_consistency_and_not_veto,outcome-equivalent candidates retained; freeze one exact candidate before any new test

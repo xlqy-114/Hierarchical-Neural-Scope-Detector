@@ -1,0 +1,10 @@
+{
+  "version": "R1C1_unused4819_v1_1",
+  "official_full_count": 6019,
+  "historical_subset_count": 1200,
+  "unused_count": 4819,
+  "overlap_count": 0,
+  "selection_rule": "all sample_id values in frozen full-6019 clean per-sample metrics absent from historical subset1200; ordering inherited from full reference; no labels/scores/fault outcomes used",
+  "unused_sha256": "015454db9f3718f634ba12a49fa310c9451bfd3d8094a46e0e6ab098e77290f7",
+  "smoke12_sha256": "6033fc3c562bf61e4e728d5d87d10092ba257ba12510d13ccd546911d20015c4"
+}

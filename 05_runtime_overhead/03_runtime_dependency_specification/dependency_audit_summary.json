@@ -1,0 +1,19 @@
+{
+  "sklearn": "1.2.2",
+  "rows": 6000,
+  "train_rows": 4800,
+  "heldout_rows": 1200,
+  "old_exact_feature_count": 2605,
+  "all_sanitized_feature_count": 7573,
+  "s4_sanitized_feature_count": 5453,
+  "consistency_transformed_feature_count": 2120,
+  "consistency_unique_source_scalar_count": 424,
+  "safe_base_or_veto_source_count": 1594,
+  "targeted_unique_source_scalar_count": 465,
+  "union_required_source_count": 2205,
+  "union_required_stage_hook_count": 43,
+  "base_pruning_parity_all_alarm_exact": true,
+  "base_runtime_replay_all_alarm_exact": true,
+  "targeted_pruning_all_alarm_exact_on_heldout": true,
+  "next_step": "Use this manifest to build the lean collector. Do not start the final 20+100 runtime benchmark until the required hook/statistic set has been manually audited."
+}

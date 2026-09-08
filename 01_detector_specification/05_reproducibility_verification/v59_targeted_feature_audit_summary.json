@@ -1,0 +1,82 @@
+{
+  "abs_cap_for_sanitization": 1000000.0,
+  "campaign_dir": "/root/autodl-tmp/DriveVLA/output/OpenDriveVLA-0.5B/20260518_v59_3_targeted_feature_formal_8seeds_pos800900",
+  "d_related_feature_count": 424,
+  "expected_rows_total": 6000,
+  "file_rows": [
+    {
+      "exists": true,
+      "path": "/root/autodl-tmp/DriveVLA/output/OpenDriveVLA-0.5B/20260518_v59_3_targeted_feature_formal_8seeds_pos800900/A1_internal_neural_scdout_v54_2_online_singlefault/seed955916/results/v53_inline_detector_records.jsonl",
+      "rows": 1200,
+      "seed": "955916"
+    },
+    {
+      "exists": true,
+      "path": "/root/autodl-tmp/DriveVLA/output/OpenDriveVLA-0.5B/20260518_v59_3_targeted_feature_formal_8seeds_pos800900/A1_internal_neural_scdout_v54_2_online_singlefault/seed955917/results/v53_inline_detector_records.jsonl",
+      "rows": 1200,
+      "seed": "955917"
+    },
+    {
+      "exists": true,
+      "path": "/root/autodl-tmp/DriveVLA/output/OpenDriveVLA-0.5B/20260518_v59_3_targeted_feature_formal_8seeds_pos800900/A1_internal_neural_scdout_v54_2_online_singlefault/seed955918/results/v53_inline_detector_records.jsonl",
+      "rows": 1200,
+      "seed": "955918"
+    },
+    {
+      "exists": true,
+      "path": "/root/autodl-tmp/DriveVLA/output/OpenDriveVLA-0.5B/20260518_v59_3_targeted_feature_formal_8seeds_pos800900/A1_internal_neural_scdout_v54_2_online_singlefault/seed955919/results/v53_inline_detector_records.jsonl",
+      "rows": 1200,
+      "seed": "955919"
+    },
+    {
+      "exists": true,
+      "path": "/root/autodl-tmp/DriveVLA/output/OpenDriveVLA-0.5B/20260518_v59_3_targeted_feature_formal_8seeds_pos800900/A1_internal_neural_scdout_v54_2_online_singlefault/seed955920/results/v53_inline_detector_records.jsonl",
+      "rows": 1200,
+      "seed": "955920"
+    }
+  ],
+  "high_risk_feature_count": 127,
+  "high_risk_p99_cap": 1000000.0,
+  "hook_registered_counts_by_group": {
+    "C_existing": 20,
+    "D_LLM_targeted": 55,
+    "D_out_boundary": 20,
+    "S4_existing_or_targeted": 40,
+    "S4_targeted": 110,
+    "S_existing": 60
+  },
+  "leakage_bad_feature_name_count": 0,
+  "outputs": {
+    "feature_group_summary_csv": "/root/autodl-tmp/DriveVLA/output/OpenDriveVLA-0.5B/20260518_v59_3_targeted_feature_formal_8seeds_pos800900/v59_targeted_feature_audit/v59_targeted_feature_group_summary.csv",
+    "feature_name_leakage_audit_csv": "/root/autodl-tmp/DriveVLA/output/OpenDriveVLA-0.5B/20260518_v59_3_targeted_feature_formal_8seeds_pos800900/v59_targeted_feature_audit/v59_targeted_feature_name_leakage_audit.csv",
+    "feature_value_audit_csv": "/root/autodl-tmp/DriveVLA/output/OpenDriveVLA-0.5B/20260518_v59_3_targeted_feature_formal_8seeds_pos800900/v59_targeted_feature_audit/v59_targeted_feature_value_audit.csv",
+    "high_risk_feature_columns_csv": "/root/autodl-tmp/DriveVLA/output/OpenDriveVLA-0.5B/20260518_v59_3_targeted_feature_formal_8seeds_pos800900/v59_targeted_feature_audit/v59_high_risk_feature_columns.csv",
+    "sample_coverage_csv": "/root/autodl-tmp/DriveVLA/output/OpenDriveVLA-0.5B/20260518_v59_3_targeted_feature_formal_8seeds_pos800900/v59_targeted_feature_audit/v59_targeted_feature_sample_coverage.csv",
+    "stage_hook_status_summary_csv": "/root/autodl-tmp/DriveVLA/output/OpenDriveVLA-0.5B/20260518_v59_3_targeted_feature_formal_8seeds_pos800900/v59_targeted_feature_audit/v59_stage_hook_status_summary.csv",
+    "targeted_feature_matrix_compact_raw_csv": "/root/autodl-tmp/DriveVLA/output/OpenDriveVLA-0.5B/20260518_v59_3_targeted_feature_formal_8seeds_pos800900/v59_targeted_feature_audit/v59_targeted_feature_matrix_compact_raw.csv",
+    "targeted_feature_matrix_sanitized_csv": "/root/autodl-tmp/DriveVLA/output/OpenDriveVLA-0.5B/20260518_v59_3_targeted_feature_formal_8seeds_pos800900/v59_targeted_feature_audit/v59_targeted_feature_matrix_sanitized.csv"
+  },
+  "pass": true,
+  "pass_features": true,
+  "pass_finite": true,
+  "pass_leakage": true,
+  "pass_rows": true,
+  "policy": "Scalar summaries only; no full tensor dumps. v59.2 adds clipped/log/missing/extreme sanitized matrix. High-risk raw values are diagnostic-only and not recommended for training.",
+  "rows": 6000,
+  "s4_related_feature_count": 1116,
+  "seed_root": "A1_internal_neural_scdout_v54_2_online_singlefault",
+  "seeds": [
+    "955916",
+    "955917",
+    "955918",
+    "955919",
+    "955920"
+  ],
+  "targeted_feature_count_by_group": {
+    "D_LLM_targeted": 318,
+    "D_out_boundary": 106,
+    "S4_targeted": 1116
+  },
+  "targeted_feature_count_total": 1540,
+  "version": "v59_3_targeted_feature_audit_sanitized"
+}

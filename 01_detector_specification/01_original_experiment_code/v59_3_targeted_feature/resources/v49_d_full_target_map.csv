@@ -1,0 +1,340 @@
+logical_name,module_name,module_class,abcde_subregion,existing_coverage,gap_status,runtime_hit,runtime_expbit_candidate,hit_count,first_tensor_shape,first_tensor_dtype,priority
+d_lm_head,lm_head,Linear,D_out_lm_head_logits,none,major gap: D_out/final hidden/logits not explicitly covered,1,1,148.0,"[1, 581, 151682]",torch.float16,1
+d_model_norm,model.norm,Qwen2RMSNorm,D_final_norm_hidden,none,major gap: D_out/final hidden/logits not explicitly covered,1,1,148.0,"[1, 581, 896]",torch.float16,1
+d_model_embed_tokens,model.embed_tokens,Embedding,D_embedding_input,none_or_indirect,D gap: not covered by current sampled D targets,1,1,148.0,"[465, 896]",torch.float16,3
+d_model_layers_1,model.layers.1,Qwen2DecoderLayer,D_layer1,none_or_indirect,D gap: not covered by current sampled D targets,1,1,148.0,"[1, 581, 896]",torch.float16,3
+d_model_layers_1_input_layernorm,model.layers.1.input_layernorm,Qwen2RMSNorm,D_layer1_norm_residual,none_or_indirect,D gap: not covered by current sampled D targets,1,1,148.0,"[1, 581, 896]",torch.float16,3
+d_model_layers_1_mlp,model.layers.1.mlp,Qwen2MLP,D_layer1_mlp,none_or_indirect,D gap: not covered by current sampled D targets,1,1,148.0,"[1, 581, 896]",torch.float16,3
+d_model_layers_1_mlp_act_fn,model.layers.1.mlp.act_fn,SiLU,D_layer1_mlp,none_or_indirect,D gap: not covered by current sampled D targets,1,1,148.0,"[1, 581, 4864]",torch.float16,3
+d_model_layers_1_mlp_down_proj,model.layers.1.mlp.down_proj,Linear,D_layer1_mlp,none_or_indirect,D gap: not covered by current sampled D targets,1,1,148.0,"[1, 581, 896]",torch.float16,3
+d_model_layers_1_mlp_gate_proj,model.layers.1.mlp.gate_proj,Linear,D_layer1_mlp,none_or_indirect,D gap: not covered by current sampled D targets,1,1,148.0,"[1, 581, 4864]",torch.float16,3
+d_model_layers_1_mlp_up_proj,model.layers.1.mlp.up_proj,Linear,D_layer1_mlp,none_or_indirect,D gap: not covered by current sampled D targets,1,1,148.0,"[1, 581, 4864]",torch.float16,3
+d_model_layers_1_post_attention_layernorm,model.layers.1.post_attention_layernorm,Qwen2RMSNorm,D_layer1_norm_residual,none_or_indirect,D gap: not covered by current sampled D targets,1,1,148.0,"[1, 581, 896]",torch.float16,3
+d_model_layers_1_self_attn,model.layers.1.self_attn,Qwen2SdpaAttention,D_layer1_attention,none_or_indirect,D gap: not covered by current sampled D targets,1,1,148.0,"[1, 581, 896]",torch.float16,3
+d_model_layers_1_self_attn_k_proj,model.layers.1.self_attn.k_proj,Linear,D_layer1_attention,none_or_indirect,D gap: not covered by current sampled D targets,1,1,148.0,"[1, 581, 128]",torch.float16,3
+d_model_layers_1_self_attn_o_proj,model.layers.1.self_attn.o_proj,Linear,D_layer1_attention,none_or_indirect,D gap: not covered by current sampled D targets,1,1,148.0,"[1, 581, 896]",torch.float16,3
+d_model_layers_1_self_attn_q_proj,model.layers.1.self_attn.q_proj,Linear,D_layer1_attention,none_or_indirect,D gap: not covered by current sampled D targets,1,1,148.0,"[1, 581, 896]",torch.float16,3
+d_model_layers_1_self_attn_rotary_emb,model.layers.1.self_attn.rotary_emb,Qwen2RotaryEmbedding,D_layer1_attention,none_or_indirect,D gap: not covered by current sampled D targets,1,1,148.0,"[581, 64]",torch.float16,3
+d_model_layers_1_self_attn_v_proj,model.layers.1.self_attn.v_proj,Linear,D_layer1_attention,none_or_indirect,D gap: not covered by current sampled D targets,1,1,148.0,"[1, 581, 128]",torch.float16,3
+d_model_layers_10,model.layers.10,Qwen2DecoderLayer,D_layer10,none_or_indirect,D gap: not covered by current sampled D targets,1,1,148.0,"[1, 581, 896]",torch.float16,3
+d_model_layers_10_input_layernorm,model.layers.10.input_layernorm,Qwen2RMSNorm,D_layer10_norm_residual,none_or_indirect,D gap: not covered by current sampled D targets,1,1,148.0,"[1, 581, 896]",torch.float16,3
+d_model_layers_10_mlp,model.layers.10.mlp,Qwen2MLP,D_layer10_mlp,none_or_indirect,D gap: not covered by current sampled D targets,1,1,148.0,"[1, 581, 896]",torch.float16,3
+d_model_layers_10_mlp_act_fn,model.layers.10.mlp.act_fn,SiLU,D_layer10_mlp,none_or_indirect,D gap: not covered by current sampled D targets,1,1,148.0,"[1, 581, 4864]",torch.float16,3
+d_model_layers_10_mlp_down_proj,model.layers.10.mlp.down_proj,Linear,D_layer10_mlp,none_or_indirect,D gap: not covered by current sampled D targets,1,1,148.0,"[1, 581, 896]",torch.float16,3
+d_model_layers_10_mlp_gate_proj,model.layers.10.mlp.gate_proj,Linear,D_layer10_mlp,none_or_indirect,D gap: not covered by current sampled D targets,1,1,148.0,"[1, 581, 4864]",torch.float16,3
+d_model_layers_10_mlp_up_proj,model.layers.10.mlp.up_proj,Linear,D_layer10_mlp,none_or_indirect,D gap: not covered by current sampled D targets,1,1,148.0,"[1, 581, 4864]",torch.float16,3
+d_model_layers_10_post_attention_layernorm,model.layers.10.post_attention_layernorm,Qwen2RMSNorm,D_layer10_norm_residual,none_or_indirect,D gap: not covered by current sampled D targets,1,1,148.0,"[1, 581, 896]",torch.float16,3
+d_model_layers_10_self_attn,model.layers.10.self_attn,Qwen2SdpaAttention,D_layer10_attention,none_or_indirect,D gap: not covered by current sampled D targets,1,1,148.0,"[1, 581, 896]",torch.float16,3
+d_model_layers_10_self_attn_k_proj,model.layers.10.self_attn.k_proj,Linear,D_layer10_attention,none_or_indirect,D gap: not covered by current sampled D targets,1,1,148.0,"[1, 581, 128]",torch.float16,3
+d_model_layers_10_self_attn_o_proj,model.layers.10.self_attn.o_proj,Linear,D_layer10_attention,none_or_indirect,D gap: not covered by current sampled D targets,1,1,148.0,"[1, 581, 896]",torch.float16,3
+d_model_layers_10_self_attn_q_proj,model.layers.10.self_attn.q_proj,Linear,D_layer10_attention,none_or_indirect,D gap: not covered by current sampled D targets,1,1,148.0,"[1, 581, 896]",torch.float16,3
+d_model_layers_10_self_attn_rotary_emb,model.layers.10.self_attn.rotary_emb,Qwen2RotaryEmbedding,D_layer10_attention,none_or_indirect,D gap: not covered by current sampled D targets,1,1,148.0,"[581, 64]",torch.float16,3
+d_model_layers_10_self_attn_v_proj,model.layers.10.self_attn.v_proj,Linear,D_layer10_attention,none_or_indirect,D gap: not covered by current sampled D targets,1,1,148.0,"[1, 581, 128]",torch.float16,3
+d_model_layers_11,model.layers.11,Qwen2DecoderLayer,D_layer11,none_or_indirect,D gap: not covered by current sampled D targets,1,1,148.0,"[1, 581, 896]",torch.float16,3
+d_model_layers_11_input_layernorm,model.layers.11.input_layernorm,Qwen2RMSNorm,D_layer11_norm_residual,none_or_indirect,D gap: not covered by current sampled D targets,1,1,148.0,"[1, 581, 896]",torch.float16,3
+d_model_layers_11_mlp,model.layers.11.mlp,Qwen2MLP,D_layer11_mlp,none_or_indirect,D gap: not covered by current sampled D targets,1,1,148.0,"[1, 581, 896]",torch.float16,3
+d_model_layers_11_mlp_act_fn,model.layers.11.mlp.act_fn,SiLU,D_layer11_mlp,none_or_indirect,D gap: not covered by current sampled D targets,1,1,148.0,"[1, 581, 4864]",torch.float16,3
+d_model_layers_11_mlp_down_proj,model.layers.11.mlp.down_proj,Linear,D_layer11_mlp,none_or_indirect,D gap: not covered by current sampled D targets,1,1,148.0,"[1, 581, 896]",torch.float16,3
+d_model_layers_11_mlp_gate_proj,model.layers.11.mlp.gate_proj,Linear,D_layer11_mlp,none_or_indirect,D gap: not covered by current sampled D targets,1,1,148.0,"[1, 581, 4864]",torch.float16,3
+d_model_layers_11_mlp_up_proj,model.layers.11.mlp.up_proj,Linear,D_layer11_mlp,none_or_indirect,D gap: not covered by current sampled D targets,1,1,148.0,"[1, 581, 4864]",torch.float16,3
+d_model_layers_11_post_attention_layernorm,model.layers.11.post_attention_layernorm,Qwen2RMSNorm,D_layer11_norm_residual,none_or_indirect,D gap: not covered by current sampled D targets,1,1,148.0,"[1, 581, 896]",torch.float16,3
+d_model_layers_11_self_attn,model.layers.11.self_attn,Qwen2SdpaAttention,D_layer11_attention,none_or_indirect,D gap: not covered by current sampled D targets,1,1,148.0,"[1, 581, 896]",torch.float16,3
+d_model_layers_11_self_attn_k_proj,model.layers.11.self_attn.k_proj,Linear,D_layer11_attention,none_or_indirect,D gap: not covered by current sampled D targets,1,1,148.0,"[1, 581, 128]",torch.float16,3
+d_model_layers_11_self_attn_o_proj,model.layers.11.self_attn.o_proj,Linear,D_layer11_attention,none_or_indirect,D gap: not covered by current sampled D targets,1,1,148.0,"[1, 581, 896]",torch.float16,3
+d_model_layers_11_self_attn_q_proj,model.layers.11.self_attn.q_proj,Linear,D_layer11_attention,none_or_indirect,D gap: not covered by current sampled D targets,1,1,148.0,"[1, 581, 896]",torch.float16,3
+d_model_layers_11_self_attn_rotary_emb,model.layers.11.self_attn.rotary_emb,Qwen2RotaryEmbedding,D_layer11_attention,none_or_indirect,D gap: not covered by current sampled D targets,1,1,148.0,"[581, 64]",torch.float16,3
+d_model_layers_11_self_attn_v_proj,model.layers.11.self_attn.v_proj,Linear,D_layer11_attention,none_or_indirect,D gap: not covered by current sampled D targets,1,1,148.0,"[1, 581, 128]",torch.float16,3
+d_model_layers_13,model.layers.13,Qwen2DecoderLayer,D_layer13,none_or_indirect,D gap: not covered by current sampled D targets,1,1,148.0,"[1, 581, 896]",torch.float16,3
+d_model_layers_13_input_layernorm,model.layers.13.input_layernorm,Qwen2RMSNorm,D_layer13_norm_residual,none_or_indirect,D gap: not covered by current sampled D targets,1,1,148.0,"[1, 581, 896]",torch.float16,3
+d_model_layers_13_mlp,model.layers.13.mlp,Qwen2MLP,D_layer13_mlp,none_or_indirect,D gap: not covered by current sampled D targets,1,1,148.0,"[1, 581, 896]",torch.float16,3
+d_model_layers_13_mlp_act_fn,model.layers.13.mlp.act_fn,SiLU,D_layer13_mlp,none_or_indirect,D gap: not covered by current sampled D targets,1,1,148.0,"[1, 581, 4864]",torch.float16,3
+d_model_layers_13_mlp_down_proj,model.layers.13.mlp.down_proj,Linear,D_layer13_mlp,none_or_indirect,D gap: not covered by current sampled D targets,1,1,148.0,"[1, 581, 896]",torch.float16,3
+d_model_layers_13_mlp_gate_proj,model.layers.13.mlp.gate_proj,Linear,D_layer13_mlp,none_or_indirect,D gap: not covered by current sampled D targets,1,1,148.0,"[1, 581, 4864]",torch.float16,3
+d_model_layers_13_mlp_up_proj,model.layers.13.mlp.up_proj,Linear,D_layer13_mlp,none_or_indirect,D gap: not covered by current sampled D targets,1,1,148.0,"[1, 581, 4864]",torch.float16,3
+d_model_layers_13_post_attention_layernorm,model.layers.13.post_attention_layernorm,Qwen2RMSNorm,D_layer13_norm_residual,none_or_indirect,D gap: not covered by current sampled D targets,1,1,148.0,"[1, 581, 896]",torch.float16,3
+d_model_layers_13_self_attn,model.layers.13.self_attn,Qwen2SdpaAttention,D_layer13_attention,none_or_indirect,D gap: not covered by current sampled D targets,1,1,148.0,"[1, 581, 896]",torch.float16,3
+d_model_layers_13_self_attn_k_proj,model.layers.13.self_attn.k_proj,Linear,D_layer13_attention,none_or_indirect,D gap: not covered by current sampled D targets,1,1,148.0,"[1, 581, 128]",torch.float16,3
+d_model_layers_13_self_attn_o_proj,model.layers.13.self_attn.o_proj,Linear,D_layer13_attention,none_or_indirect,D gap: not covered by current sampled D targets,1,1,148.0,"[1, 581, 896]",torch.float16,3
+d_model_layers_13_self_attn_q_proj,model.layers.13.self_attn.q_proj,Linear,D_layer13_attention,none_or_indirect,D gap: not covered by current sampled D targets,1,1,148.0,"[1, 581, 896]",torch.float16,3
+d_model_layers_13_self_attn_rotary_emb,model.layers.13.self_attn.rotary_emb,Qwen2RotaryEmbedding,D_layer13_attention,none_or_indirect,D gap: not covered by current sampled D targets,1,1,148.0,"[581, 64]",torch.float16,3
+d_model_layers_13_self_attn_v_proj,model.layers.13.self_attn.v_proj,Linear,D_layer13_attention,none_or_indirect,D gap: not covered by current sampled D targets,1,1,148.0,"[1, 581, 128]",torch.float16,3
+d_model_layers_14,model.layers.14,Qwen2DecoderLayer,D_layer14,none_or_indirect,D gap: not covered by current sampled D targets,1,1,148.0,"[1, 581, 896]",torch.float16,3
+d_model_layers_14_input_layernorm,model.layers.14.input_layernorm,Qwen2RMSNorm,D_layer14_norm_residual,none_or_indirect,D gap: not covered by current sampled D targets,1,1,148.0,"[1, 581, 896]",torch.float16,3
+d_model_layers_14_mlp,model.layers.14.mlp,Qwen2MLP,D_layer14_mlp,none_or_indirect,D gap: not covered by current sampled D targets,1,1,148.0,"[1, 581, 896]",torch.float16,3
+d_model_layers_14_mlp_act_fn,model.layers.14.mlp.act_fn,SiLU,D_layer14_mlp,none_or_indirect,D gap: not covered by current sampled D targets,1,1,148.0,"[1, 581, 4864]",torch.float16,3
+d_model_layers_14_mlp_down_proj,model.layers.14.mlp.down_proj,Linear,D_layer14_mlp,none_or_indirect,D gap: not covered by current sampled D targets,1,1,148.0,"[1, 581, 896]",torch.float16,3
+d_model_layers_14_mlp_gate_proj,model.layers.14.mlp.gate_proj,Linear,D_layer14_mlp,none_or_indirect,D gap: not covered by current sampled D targets,1,1,148.0,"[1, 581, 4864]",torch.float16,3
+d_model_layers_14_mlp_up_proj,model.layers.14.mlp.up_proj,Linear,D_layer14_mlp,none_or_indirect,D gap: not covered by current sampled D targets,1,1,148.0,"[1, 581, 4864]",torch.float16,3
+d_model_layers_14_post_attention_layernorm,model.layers.14.post_attention_layernorm,Qwen2RMSNorm,D_layer14_norm_residual,none_or_indirect,D gap: not covered by current sampled D targets,1,1,148.0,"[1, 581, 896]",torch.float16,3
+d_model_layers_14_self_attn,model.layers.14.self_attn,Qwen2SdpaAttention,D_layer14_attention,none_or_indirect,D gap: not covered by current sampled D targets,1,1,148.0,"[1, 581, 896]",torch.float16,3
+d_model_layers_14_self_attn_k_proj,model.layers.14.self_attn.k_proj,Linear,D_layer14_attention,none_or_indirect,D gap: not covered by current sampled D targets,1,1,148.0,"[1, 581, 128]",torch.float16,3
+d_model_layers_14_self_attn_o_proj,model.layers.14.self_attn.o_proj,Linear,D_layer14_attention,none_or_indirect,D gap: not covered by current sampled D targets,1,1,148.0,"[1, 581, 896]",torch.float16,3
+d_model_layers_14_self_attn_q_proj,model.layers.14.self_attn.q_proj,Linear,D_layer14_attention,none_or_indirect,D gap: not covered by current sampled D targets,1,1,148.0,"[1, 581, 896]",torch.float16,3
+d_model_layers_14_self_attn_rotary_emb,model.layers.14.self_attn.rotary_emb,Qwen2RotaryEmbedding,D_layer14_attention,none_or_indirect,D gap: not covered by current sampled D targets,1,1,148.0,"[581, 64]",torch.float16,3
+d_model_layers_14_self_attn_v_proj,model.layers.14.self_attn.v_proj,Linear,D_layer14_attention,none_or_indirect,D gap: not covered by current sampled D targets,1,1,148.0,"[1, 581, 128]",torch.float16,3
+d_model_layers_15,model.layers.15,Qwen2DecoderLayer,D_layer15,none_or_indirect,D gap: not covered by current sampled D targets,1,1,148.0,"[1, 581, 896]",torch.float16,3
+d_model_layers_15_input_layernorm,model.layers.15.input_layernorm,Qwen2RMSNorm,D_layer15_norm_residual,none_or_indirect,D gap: not covered by current sampled D targets,1,1,148.0,"[1, 581, 896]",torch.float16,3
+d_model_layers_15_mlp,model.layers.15.mlp,Qwen2MLP,D_layer15_mlp,none_or_indirect,D gap: not covered by current sampled D targets,1,1,148.0,"[1, 581, 896]",torch.float16,3
+d_model_layers_15_mlp_act_fn,model.layers.15.mlp.act_fn,SiLU,D_layer15_mlp,none_or_indirect,D gap: not covered by current sampled D targets,1,1,148.0,"[1, 581, 4864]",torch.float16,3
+d_model_layers_15_mlp_down_proj,model.layers.15.mlp.down_proj,Linear,D_layer15_mlp,none_or_indirect,D gap: not covered by current sampled D targets,1,1,148.0,"[1, 581, 896]",torch.float16,3
+d_model_layers_15_mlp_gate_proj,model.layers.15.mlp.gate_proj,Linear,D_layer15_mlp,none_or_indirect,D gap: not covered by current sampled D targets,1,1,148.0,"[1, 581, 4864]",torch.float16,3
+d_model_layers_15_mlp_up_proj,model.layers.15.mlp.up_proj,Linear,D_layer15_mlp,none_or_indirect,D gap: not covered by current sampled D targets,1,1,148.0,"[1, 581, 4864]",torch.float16,3
+d_model_layers_15_post_attention_layernorm,model.layers.15.post_attention_layernorm,Qwen2RMSNorm,D_layer15_norm_residual,none_or_indirect,D gap: not covered by current sampled D targets,1,1,148.0,"[1, 581, 896]",torch.float16,3
+d_model_layers_15_self_attn,model.layers.15.self_attn,Qwen2SdpaAttention,D_layer15_attention,none_or_indirect,D gap: not covered by current sampled D targets,1,1,148.0,"[1, 581, 896]",torch.float16,3
+d_model_layers_15_self_attn_k_proj,model.layers.15.self_attn.k_proj,Linear,D_layer15_attention,none_or_indirect,D gap: not covered by current sampled D targets,1,1,148.0,"[1, 581, 128]",torch.float16,3
+d_model_layers_15_self_attn_o_proj,model.layers.15.self_attn.o_proj,Linear,D_layer15_attention,none_or_indirect,D gap: not covered by current sampled D targets,1,1,148.0,"[1, 581, 896]",torch.float16,3
+d_model_layers_15_self_attn_q_proj,model.layers.15.self_attn.q_proj,Linear,D_layer15_attention,none_or_indirect,D gap: not covered by current sampled D targets,1,1,148.0,"[1, 581, 896]",torch.float16,3
+d_model_layers_15_self_attn_rotary_emb,model.layers.15.self_attn.rotary_emb,Qwen2RotaryEmbedding,D_layer15_attention,none_or_indirect,D gap: not covered by current sampled D targets,1,1,148.0,"[581, 64]",torch.float16,3
+d_model_layers_15_self_attn_v_proj,model.layers.15.self_attn.v_proj,Linear,D_layer15_attention,none_or_indirect,D gap: not covered by current sampled D targets,1,1,148.0,"[1, 581, 128]",torch.float16,3
+d_model_layers_16,model.layers.16,Qwen2DecoderLayer,D_layer16,none_or_indirect,D gap: not covered by current sampled D targets,1,1,148.0,"[1, 581, 896]",torch.float16,3
+d_model_layers_16_input_layernorm,model.layers.16.input_layernorm,Qwen2RMSNorm,D_layer16_norm_residual,none_or_indirect,D gap: not covered by current sampled D targets,1,1,148.0,"[1, 581, 896]",torch.float16,3
+d_model_layers_16_mlp,model.layers.16.mlp,Qwen2MLP,D_layer16_mlp,none_or_indirect,D gap: not covered by current sampled D targets,1,1,148.0,"[1, 581, 896]",torch.float16,3
+d_model_layers_16_mlp_act_fn,model.layers.16.mlp.act_fn,SiLU,D_layer16_mlp,none_or_indirect,D gap: not covered by current sampled D targets,1,1,148.0,"[1, 581, 4864]",torch.float16,3
+d_model_layers_16_mlp_down_proj,model.layers.16.mlp.down_proj,Linear,D_layer16_mlp,none_or_indirect,D gap: not covered by current sampled D targets,1,1,148.0,"[1, 581, 896]",torch.float16,3
+d_model_layers_16_mlp_gate_proj,model.layers.16.mlp.gate_proj,Linear,D_layer16_mlp,none_or_indirect,D gap: not covered by current sampled D targets,1,1,148.0,"[1, 581, 4864]",torch.float16,3
+d_model_layers_16_mlp_up_proj,model.layers.16.mlp.up_proj,Linear,D_layer16_mlp,none_or_indirect,D gap: not covered by current sampled D targets,1,1,148.0,"[1, 581, 4864]",torch.float16,3
+d_model_layers_16_post_attention_layernorm,model.layers.16.post_attention_layernorm,Qwen2RMSNorm,D_layer16_norm_residual,none_or_indirect,D gap: not covered by current sampled D targets,1,1,148.0,"[1, 581, 896]",torch.float16,3
+d_model_layers_16_self_attn,model.layers.16.self_attn,Qwen2SdpaAttention,D_layer16_attention,none_or_indirect,D gap: not covered by current sampled D targets,1,1,148.0,"[1, 581, 896]",torch.float16,3
+d_model_layers_16_self_attn_k_proj,model.layers.16.self_attn.k_proj,Linear,D_layer16_attention,none_or_indirect,D gap: not covered by current sampled D targets,1,1,148.0,"[1, 581, 128]",torch.float16,3
+d_model_layers_16_self_attn_o_proj,model.layers.16.self_attn.o_proj,Linear,D_layer16_attention,none_or_indirect,D gap: not covered by current sampled D targets,1,1,148.0,"[1, 581, 896]",torch.float16,3
+d_model_layers_16_self_attn_q_proj,model.layers.16.self_attn.q_proj,Linear,D_layer16_attention,none_or_indirect,D gap: not covered by current sampled D targets,1,1,148.0,"[1, 581, 896]",torch.float16,3
+d_model_layers_16_self_attn_rotary_emb,model.layers.16.self_attn.rotary_emb,Qwen2RotaryEmbedding,D_layer16_attention,none_or_indirect,D gap: not covered by current sampled D targets,1,1,148.0,"[581, 64]",torch.float16,3
+d_model_layers_16_self_attn_v_proj,model.layers.16.self_attn.v_proj,Linear,D_layer16_attention,none_or_indirect,D gap: not covered by current sampled D targets,1,1,148.0,"[1, 581, 128]",torch.float16,3
+d_model_layers_17,model.layers.17,Qwen2DecoderLayer,D_layer17,none_or_indirect,D gap: not covered by current sampled D targets,1,1,148.0,"[1, 581, 896]",torch.float16,3
+d_model_layers_17_input_layernorm,model.layers.17.input_layernorm,Qwen2RMSNorm,D_layer17_norm_residual,none_or_indirect,D gap: not covered by current sampled D targets,1,1,148.0,"[1, 581, 896]",torch.float16,3
+d_model_layers_17_mlp,model.layers.17.mlp,Qwen2MLP,D_layer17_mlp,none_or_indirect,D gap: not covered by current sampled D targets,1,1,148.0,"[1, 581, 896]",torch.float16,3
+d_model_layers_17_mlp_act_fn,model.layers.17.mlp.act_fn,SiLU,D_layer17_mlp,none_or_indirect,D gap: not covered by current sampled D targets,1,1,148.0,"[1, 581, 4864]",torch.float16,3
+d_model_layers_17_mlp_down_proj,model.layers.17.mlp.down_proj,Linear,D_layer17_mlp,none_or_indirect,D gap: not covered by current sampled D targets,1,1,148.0,"[1, 581, 896]",torch.float16,3
+d_model_layers_17_mlp_gate_proj,model.layers.17.mlp.gate_proj,Linear,D_layer17_mlp,none_or_indirect,D gap: not covered by current sampled D targets,1,1,148.0,"[1, 581, 4864]",torch.float16,3
+d_model_layers_17_mlp_up_proj,model.layers.17.mlp.up_proj,Linear,D_layer17_mlp,none_or_indirect,D gap: not covered by current sampled D targets,1,1,148.0,"[1, 581, 4864]",torch.float16,3
+d_model_layers_17_post_attention_layernorm,model.layers.17.post_attention_layernorm,Qwen2RMSNorm,D_layer17_norm_residual,none_or_indirect,D gap: not covered by current sampled D targets,1,1,148.0,"[1, 581, 896]",torch.float16,3
+d_model_layers_17_self_attn,model.layers.17.self_attn,Qwen2SdpaAttention,D_layer17_attention,none_or_indirect,D gap: not covered by current sampled D targets,1,1,148.0,"[1, 581, 896]",torch.float16,3
+d_model_layers_17_self_attn_k_proj,model.layers.17.self_attn.k_proj,Linear,D_layer17_attention,none_or_indirect,D gap: not covered by current sampled D targets,1,1,148.0,"[1, 581, 128]",torch.float16,3
+d_model_layers_17_self_attn_o_proj,model.layers.17.self_attn.o_proj,Linear,D_layer17_attention,none_or_indirect,D gap: not covered by current sampled D targets,1,1,148.0,"[1, 581, 896]",torch.float16,3
+d_model_layers_17_self_attn_q_proj,model.layers.17.self_attn.q_proj,Linear,D_layer17_attention,none_or_indirect,D gap: not covered by current sampled D targets,1,1,148.0,"[1, 581, 896]",torch.float16,3
+d_model_layers_17_self_attn_rotary_emb,model.layers.17.self_attn.rotary_emb,Qwen2RotaryEmbedding,D_layer17_attention,none_or_indirect,D gap: not covered by current sampled D targets,1,1,148.0,"[581, 64]",torch.float16,3
+d_model_layers_17_self_attn_v_proj,model.layers.17.self_attn.v_proj,Linear,D_layer17_attention,none_or_indirect,D gap: not covered by current sampled D targets,1,1,148.0,"[1, 581, 128]",torch.float16,3
+d_model_layers_19,model.layers.19,Qwen2DecoderLayer,D_layer19,none_or_indirect,D gap: not covered by current sampled D targets,1,1,148.0,"[1, 581, 896]",torch.float16,3
+d_model_layers_19_input_layernorm,model.layers.19.input_layernorm,Qwen2RMSNorm,D_layer19_norm_residual,none_or_indirect,D gap: not covered by current sampled D targets,1,1,148.0,"[1, 581, 896]",torch.float16,3
+d_model_layers_19_mlp,model.layers.19.mlp,Qwen2MLP,D_layer19_mlp,none_or_indirect,D gap: not covered by current sampled D targets,1,1,148.0,"[1, 581, 896]",torch.float16,3
+d_model_layers_19_mlp_act_fn,model.layers.19.mlp.act_fn,SiLU,D_layer19_mlp,none_or_indirect,D gap: not covered by current sampled D targets,1,1,148.0,"[1, 581, 4864]",torch.float16,3
+d_model_layers_19_mlp_down_proj,model.layers.19.mlp.down_proj,Linear,D_layer19_mlp,none_or_indirect,D gap: not covered by current sampled D targets,1,1,148.0,"[1, 581, 896]",torch.float16,3
+d_model_layers_19_mlp_gate_proj,model.layers.19.mlp.gate_proj,Linear,D_layer19_mlp,none_or_indirect,D gap: not covered by current sampled D targets,1,1,148.0,"[1, 581, 4864]",torch.float16,3
+d_model_layers_19_mlp_up_proj,model.layers.19.mlp.up_proj,Linear,D_layer19_mlp,none_or_indirect,D gap: not covered by current sampled D targets,1,1,148.0,"[1, 581, 4864]",torch.float16,3
+d_model_layers_19_post_attention_layernorm,model.layers.19.post_attention_layernorm,Qwen2RMSNorm,D_layer19_norm_residual,none_or_indirect,D gap: not covered by current sampled D targets,1,1,148.0,"[1, 581, 896]",torch.float16,3
+d_model_layers_19_self_attn,model.layers.19.self_attn,Qwen2SdpaAttention,D_layer19_attention,none_or_indirect,D gap: not covered by current sampled D targets,1,1,148.0,"[1, 581, 896]",torch.float16,3
+d_model_layers_19_self_attn_k_proj,model.layers.19.self_attn.k_proj,Linear,D_layer19_attention,none_or_indirect,D gap: not covered by current sampled D targets,1,1,148.0,"[1, 581, 128]",torch.float16,3
+d_model_layers_19_self_attn_o_proj,model.layers.19.self_attn.o_proj,Linear,D_layer19_attention,none_or_indirect,D gap: not covered by current sampled D targets,1,1,148.0,"[1, 581, 896]",torch.float16,3
+d_model_layers_19_self_attn_q_proj,model.layers.19.self_attn.q_proj,Linear,D_layer19_attention,none_or_indirect,D gap: not covered by current sampled D targets,1,1,148.0,"[1, 581, 896]",torch.float16,3
+d_model_layers_19_self_attn_rotary_emb,model.layers.19.self_attn.rotary_emb,Qwen2RotaryEmbedding,D_layer19_attention,none_or_indirect,D gap: not covered by current sampled D targets,1,1,148.0,"[581, 64]",torch.float16,3
+d_model_layers_19_self_attn_v_proj,model.layers.19.self_attn.v_proj,Linear,D_layer19_attention,none_or_indirect,D gap: not covered by current sampled D targets,1,1,148.0,"[1, 581, 128]",torch.float16,3
+d_model_layers_2,model.layers.2,Qwen2DecoderLayer,D_layer2,none_or_indirect,D gap: not covered by current sampled D targets,1,1,148.0,"[1, 581, 896]",torch.float16,3
+d_model_layers_2_input_layernorm,model.layers.2.input_layernorm,Qwen2RMSNorm,D_layer2_norm_residual,none_or_indirect,D gap: not covered by current sampled D targets,1,1,148.0,"[1, 581, 896]",torch.float16,3
+d_model_layers_2_mlp,model.layers.2.mlp,Qwen2MLP,D_layer2_mlp,none_or_indirect,D gap: not covered by current sampled D targets,1,1,148.0,"[1, 581, 896]",torch.float16,3
+d_model_layers_2_mlp_act_fn,model.layers.2.mlp.act_fn,SiLU,D_layer2_mlp,none_or_indirect,D gap: not covered by current sampled D targets,1,1,148.0,"[1, 581, 4864]",torch.float16,3
+d_model_layers_2_mlp_down_proj,model.layers.2.mlp.down_proj,Linear,D_layer2_mlp,none_or_indirect,D gap: not covered by current sampled D targets,1,1,148.0,"[1, 581, 896]",torch.float16,3
+d_model_layers_2_mlp_gate_proj,model.layers.2.mlp.gate_proj,Linear,D_layer2_mlp,none_or_indirect,D gap: not covered by current sampled D targets,1,1,148.0,"[1, 581, 4864]",torch.float16,3
+d_model_layers_2_mlp_up_proj,model.layers.2.mlp.up_proj,Linear,D_layer2_mlp,none_or_indirect,D gap: not covered by current sampled D targets,1,1,148.0,"[1, 581, 4864]",torch.float16,3
+d_model_layers_2_post_attention_layernorm,model.layers.2.post_attention_layernorm,Qwen2RMSNorm,D_layer2_norm_residual,none_or_indirect,D gap: not covered by current sampled D targets,1,1,148.0,"[1, 581, 896]",torch.float16,3
+d_model_layers_2_self_attn,model.layers.2.self_attn,Qwen2SdpaAttention,D_layer2_attention,none_or_indirect,D gap: not covered by current sampled D targets,1,1,148.0,"[1, 581, 896]",torch.float16,3
+d_model_layers_2_self_attn_k_proj,model.layers.2.self_attn.k_proj,Linear,D_layer2_attention,none_or_indirect,D gap: not covered by current sampled D targets,1,1,148.0,"[1, 581, 128]",torch.float16,3
+d_model_layers_2_self_attn_o_proj,model.layers.2.self_attn.o_proj,Linear,D_layer2_attention,none_or_indirect,D gap: not covered by current sampled D targets,1,1,148.0,"[1, 581, 896]",torch.float16,3
+d_model_layers_2_self_attn_q_proj,model.layers.2.self_attn.q_proj,Linear,D_layer2_attention,none_or_indirect,D gap: not covered by current sampled D targets,1,1,148.0,"[1, 581, 896]",torch.float16,3
+d_model_layers_2_self_attn_rotary_emb,model.layers.2.self_attn.rotary_emb,Qwen2RotaryEmbedding,D_layer2_attention,none_or_indirect,D gap: not covered by current sampled D targets,1,1,148.0,"[581, 64]",torch.float16,3
+d_model_layers_2_self_attn_v_proj,model.layers.2.self_attn.v_proj,Linear,D_layer2_attention,none_or_indirect,D gap: not covered by current sampled D targets,1,1,148.0,"[1, 581, 128]",torch.float16,3
+d_model_layers_20,model.layers.20,Qwen2DecoderLayer,D_layer20,none_or_indirect,D gap: not covered by current sampled D targets,1,1,148.0,"[1, 581, 896]",torch.float16,3
+d_model_layers_20_input_layernorm,model.layers.20.input_layernorm,Qwen2RMSNorm,D_layer20_norm_residual,none_or_indirect,D gap: not covered by current sampled D targets,1,1,148.0,"[1, 581, 896]",torch.float16,3
+d_model_layers_20_mlp,model.layers.20.mlp,Qwen2MLP,D_layer20_mlp,none_or_indirect,D gap: not covered by current sampled D targets,1,1,148.0,"[1, 581, 896]",torch.float16,3
+d_model_layers_20_mlp_act_fn,model.layers.20.mlp.act_fn,SiLU,D_layer20_mlp,none_or_indirect,D gap: not covered by current sampled D targets,1,1,148.0,"[1, 581, 4864]",torch.float16,3
+d_model_layers_20_mlp_down_proj,model.layers.20.mlp.down_proj,Linear,D_layer20_mlp,none_or_indirect,D gap: not covered by current sampled D targets,1,1,148.0,"[1, 581, 896]",torch.float16,3
+d_model_layers_20_mlp_gate_proj,model.layers.20.mlp.gate_proj,Linear,D_layer20_mlp,none_or_indirect,D gap: not covered by current sampled D targets,1,1,148.0,"[1, 581, 4864]",torch.float16,3
+d_model_layers_20_mlp_up_proj,model.layers.20.mlp.up_proj,Linear,D_layer20_mlp,none_or_indirect,D gap: not covered by current sampled D targets,1,1,148.0,"[1, 581, 4864]",torch.float16,3
+d_model_layers_20_post_attention_layernorm,model.layers.20.post_attention_layernorm,Qwen2RMSNorm,D_layer20_norm_residual,none_or_indirect,D gap: not covered by current sampled D targets,1,1,148.0,"[1, 581, 896]",torch.float16,3
+d_model_layers_20_self_attn,model.layers.20.self_attn,Qwen2SdpaAttention,D_layer20_attention,none_or_indirect,D gap: not covered by current sampled D targets,1,1,148.0,"[1, 581, 896]",torch.float16,3
+d_model_layers_20_self_attn_k_proj,model.layers.20.self_attn.k_proj,Linear,D_layer20_attention,none_or_indirect,D gap: not covered by current sampled D targets,1,1,148.0,"[1, 581, 128]",torch.float16,3
+d_model_layers_20_self_attn_o_proj,model.layers.20.self_attn.o_proj,Linear,D_layer20_attention,none_or_indirect,D gap: not covered by current sampled D targets,1,1,148.0,"[1, 581, 896]",torch.float16,3
+d_model_layers_20_self_attn_q_proj,model.layers.20.self_attn.q_proj,Linear,D_layer20_attention,none_or_indirect,D gap: not covered by current sampled D targets,1,1,148.0,"[1, 581, 896]",torch.float16,3
+d_model_layers_20_self_attn_rotary_emb,model.layers.20.self_attn.rotary_emb,Qwen2RotaryEmbedding,D_layer20_attention,none_or_indirect,D gap: not covered by current sampled D targets,1,1,148.0,"[581, 64]",torch.float16,3
+d_model_layers_20_self_attn_v_proj,model.layers.20.self_attn.v_proj,Linear,D_layer20_attention,none_or_indirect,D gap: not covered by current sampled D targets,1,1,148.0,"[1, 581, 128]",torch.float16,3
+d_model_layers_21,model.layers.21,Qwen2DecoderLayer,D_layer21,none_or_indirect,D gap: not covered by current sampled D targets,1,1,148.0,"[1, 581, 896]",torch.float16,3
+d_model_layers_21_input_layernorm,model.layers.21.input_layernorm,Qwen2RMSNorm,D_layer21_norm_residual,none_or_indirect,D gap: not covered by current sampled D targets,1,1,148.0,"[1, 581, 896]",torch.float16,3
+d_model_layers_21_mlp,model.layers.21.mlp,Qwen2MLP,D_layer21_mlp,none_or_indirect,D gap: not covered by current sampled D targets,1,1,148.0,"[1, 581, 896]",torch.float16,3
+d_model_layers_21_mlp_act_fn,model.layers.21.mlp.act_fn,SiLU,D_layer21_mlp,none_or_indirect,D gap: not covered by current sampled D targets,1,1,148.0,"[1, 581, 4864]",torch.float16,3
+d_model_layers_21_mlp_down_proj,model.layers.21.mlp.down_proj,Linear,D_layer21_mlp,none_or_indirect,D gap: not covered by current sampled D targets,1,1,148.0,"[1, 581, 896]",torch.float16,3
+d_model_layers_21_mlp_gate_proj,model.layers.21.mlp.gate_proj,Linear,D_layer21_mlp,none_or_indirect,D gap: not covered by current sampled D targets,1,1,148.0,"[1, 581, 4864]",torch.float16,3
+d_model_layers_21_mlp_up_proj,model.layers.21.mlp.up_proj,Linear,D_layer21_mlp,none_or_indirect,D gap: not covered by current sampled D targets,1,1,148.0,"[1, 581, 4864]",torch.float16,3
+d_model_layers_21_post_attention_layernorm,model.layers.21.post_attention_layernorm,Qwen2RMSNorm,D_layer21_norm_residual,none_or_indirect,D gap: not covered by current sampled D targets,1,1,148.0,"[1, 581, 896]",torch.float16,3
+d_model_layers_21_self_attn,model.layers.21.self_attn,Qwen2SdpaAttention,D_layer21_attention,none_or_indirect,D gap: not covered by current sampled D targets,1,1,148.0,"[1, 581, 896]",torch.float16,3
+d_model_layers_21_self_attn_k_proj,model.layers.21.self_attn.k_proj,Linear,D_layer21_attention,none_or_indirect,D gap: not covered by current sampled D targets,1,1,148.0,"[1, 581, 128]",torch.float16,3
+d_model_layers_21_self_attn_o_proj,model.layers.21.self_attn.o_proj,Linear,D_layer21_attention,none_or_indirect,D gap: not covered by current sampled D targets,1,1,148.0,"[1, 581, 896]",torch.float16,3
+d_model_layers_21_self_attn_q_proj,model.layers.21.self_attn.q_proj,Linear,D_layer21_attention,none_or_indirect,D gap: not covered by current sampled D targets,1,1,148.0,"[1, 581, 896]",torch.float16,3
+d_model_layers_21_self_attn_rotary_emb,model.layers.21.self_attn.rotary_emb,Qwen2RotaryEmbedding,D_layer21_attention,none_or_indirect,D gap: not covered by current sampled D targets,1,1,148.0,"[581, 64]",torch.float16,3
+d_model_layers_21_self_attn_v_proj,model.layers.21.self_attn.v_proj,Linear,D_layer21_attention,none_or_indirect,D gap: not covered by current sampled D targets,1,1,148.0,"[1, 581, 128]",torch.float16,3
+d_model_layers_22,model.layers.22,Qwen2DecoderLayer,D_layer22,none_or_indirect,D gap: not covered by current sampled D targets,1,1,148.0,"[1, 581, 896]",torch.float16,3
+d_model_layers_22_input_layernorm,model.layers.22.input_layernorm,Qwen2RMSNorm,D_layer22_norm_residual,none_or_indirect,D gap: not covered by current sampled D targets,1,1,148.0,"[1, 581, 896]",torch.float16,3
+d_model_layers_22_mlp,model.layers.22.mlp,Qwen2MLP,D_layer22_mlp,none_or_indirect,D gap: not covered by current sampled D targets,1,1,148.0,"[1, 581, 896]",torch.float16,3
+d_model_layers_22_mlp_act_fn,model.layers.22.mlp.act_fn,SiLU,D_layer22_mlp,none_or_indirect,D gap: not covered by current sampled D targets,1,1,148.0,"[1, 581, 4864]",torch.float16,3
+d_model_layers_22_mlp_down_proj,model.layers.22.mlp.down_proj,Linear,D_layer22_mlp,none_or_indirect,D gap: not covered by current sampled D targets,1,1,148.0,"[1, 581, 896]",torch.float16,3
+d_model_layers_22_mlp_gate_proj,model.layers.22.mlp.gate_proj,Linear,D_layer22_mlp,none_or_indirect,D gap: not covered by current sampled D targets,1,1,148.0,"[1, 581, 4864]",torch.float16,3
+d_model_layers_22_mlp_up_proj,model.layers.22.mlp.up_proj,Linear,D_layer22_mlp,none_or_indirect,D gap: not covered by current sampled D targets,1,1,148.0,"[1, 581, 4864]",torch.float16,3
+d_model_layers_22_post_attention_layernorm,model.layers.22.post_attention_layernorm,Qwen2RMSNorm,D_layer22_norm_residual,none_or_indirect,D gap: not covered by current sampled D targets,1,1,148.0,"[1, 581, 896]",torch.float16,3
+d_model_layers_22_self_attn,model.layers.22.self_attn,Qwen2SdpaAttention,D_layer22_attention,none_or_indirect,D gap: not covered by current sampled D targets,1,1,148.0,"[1, 581, 896]",torch.float16,3
+d_model_layers_22_self_attn_k_proj,model.layers.22.self_attn.k_proj,Linear,D_layer22_attention,none_or_indirect,D gap: not covered by current sampled D targets,1,1,148.0,"[1, 581, 128]",torch.float16,3
+d_model_layers_22_self_attn_o_proj,model.layers.22.self_attn.o_proj,Linear,D_layer22_attention,none_or_indirect,D gap: not covered by current sampled D targets,1,1,148.0,"[1, 581, 896]",torch.float16,3
+d_model_layers_22_self_attn_q_proj,model.layers.22.self_attn.q_proj,Linear,D_layer22_attention,none_or_indirect,D gap: not covered by current sampled D targets,1,1,148.0,"[1, 581, 896]",torch.float16,3
+d_model_layers_22_self_attn_rotary_emb,model.layers.22.self_attn.rotary_emb,Qwen2RotaryEmbedding,D_layer22_attention,none_or_indirect,D gap: not covered by current sampled D targets,1,1,148.0,"[581, 64]",torch.float16,3
+d_model_layers_22_self_attn_v_proj,model.layers.22.self_attn.v_proj,Linear,D_layer22_attention,none_or_indirect,D gap: not covered by current sampled D targets,1,1,148.0,"[1, 581, 128]",torch.float16,3
+d_model_layers_3,model.layers.3,Qwen2DecoderLayer,D_layer3,none_or_indirect,D gap: not covered by current sampled D targets,1,1,148.0,"[1, 581, 896]",torch.float16,3
+d_model_layers_3_input_layernorm,model.layers.3.input_layernorm,Qwen2RMSNorm,D_layer3_norm_residual,none_or_indirect,D gap: not covered by current sampled D targets,1,1,148.0,"[1, 581, 896]",torch.float16,3
+d_model_layers_3_mlp,model.layers.3.mlp,Qwen2MLP,D_layer3_mlp,none_or_indirect,D gap: not covered by current sampled D targets,1,1,148.0,"[1, 581, 896]",torch.float16,3
+d_model_layers_3_mlp_act_fn,model.layers.3.mlp.act_fn,SiLU,D_layer3_mlp,none_or_indirect,D gap: not covered by current sampled D targets,1,1,148.0,"[1, 581, 4864]",torch.float16,3
+d_model_layers_3_mlp_down_proj,model.layers.3.mlp.down_proj,Linear,D_layer3_mlp,none_or_indirect,D gap: not covered by current sampled D targets,1,1,148.0,"[1, 581, 896]",torch.float16,3
+d_model_layers_3_mlp_gate_proj,model.layers.3.mlp.gate_proj,Linear,D_layer3_mlp,none_or_indirect,D gap: not covered by current sampled D targets,1,1,148.0,"[1, 581, 4864]",torch.float16,3
+d_model_layers_3_mlp_up_proj,model.layers.3.mlp.up_proj,Linear,D_layer3_mlp,none_or_indirect,D gap: not covered by current sampled D targets,1,1,148.0,"[1, 581, 4864]",torch.float16,3
+d_model_layers_3_post_attention_layernorm,model.layers.3.post_attention_layernorm,Qwen2RMSNorm,D_layer3_norm_residual,none_or_indirect,D gap: not covered by current sampled D targets,1,1,148.0,"[1, 581, 896]",torch.float16,3
+d_model_layers_3_self_attn,model.layers.3.self_attn,Qwen2SdpaAttention,D_layer3_attention,none_or_indirect,D gap: not covered by current sampled D targets,1,1,148.0,"[1, 581, 896]",torch.float16,3
+d_model_layers_3_self_attn_k_proj,model.layers.3.self_attn.k_proj,Linear,D_layer3_attention,none_or_indirect,D gap: not covered by current sampled D targets,1,1,148.0,"[1, 581, 128]",torch.float16,3
+d_model_layers_3_self_attn_o_proj,model.layers.3.self_attn.o_proj,Linear,D_layer3_attention,none_or_indirect,D gap: not covered by current sampled D targets,1,1,148.0,"[1, 581, 896]",torch.float16,3
+d_model_layers_3_self_attn_q_proj,model.layers.3.self_attn.q_proj,Linear,D_layer3_attention,none_or_indirect,D gap: not covered by current sampled D targets,1,1,148.0,"[1, 581, 896]",torch.float16,3
+d_model_layers_3_self_attn_rotary_emb,model.layers.3.self_attn.rotary_emb,Qwen2RotaryEmbedding,D_layer3_attention,none_or_indirect,D gap: not covered by current sampled D targets,1,1,148.0,"[581, 64]",torch.float16,3
+d_model_layers_3_self_attn_v_proj,model.layers.3.self_attn.v_proj,Linear,D_layer3_attention,none_or_indirect,D gap: not covered by current sampled D targets,1,1,148.0,"[1, 581, 128]",torch.float16,3
+d_model_layers_4,model.layers.4,Qwen2DecoderLayer,D_layer4,none_or_indirect,D gap: not covered by current sampled D targets,1,1,148.0,"[1, 581, 896]",torch.float16,3
+d_model_layers_4_input_layernorm,model.layers.4.input_layernorm,Qwen2RMSNorm,D_layer4_norm_residual,none_or_indirect,D gap: not covered by current sampled D targets,1,1,148.0,"[1, 581, 896]",torch.float16,3
+d_model_layers_4_mlp,model.layers.4.mlp,Qwen2MLP,D_layer4_mlp,none_or_indirect,D gap: not covered by current sampled D targets,1,1,148.0,"[1, 581, 896]",torch.float16,3
+d_model_layers_4_mlp_act_fn,model.layers.4.mlp.act_fn,SiLU,D_layer4_mlp,none_or_indirect,D gap: not covered by current sampled D targets,1,1,148.0,"[1, 581, 4864]",torch.float16,3
+d_model_layers_4_mlp_down_proj,model.layers.4.mlp.down_proj,Linear,D_layer4_mlp,none_or_indirect,D gap: not covered by current sampled D targets,1,1,148.0,"[1, 581, 896]",torch.float16,3
+d_model_layers_4_mlp_gate_proj,model.layers.4.mlp.gate_proj,Linear,D_layer4_mlp,none_or_indirect,D gap: not covered by current sampled D targets,1,1,148.0,"[1, 581, 4864]",torch.float16,3
+d_model_layers_4_mlp_up_proj,model.layers.4.mlp.up_proj,Linear,D_layer4_mlp,none_or_indirect,D gap: not covered by current sampled D targets,1,1,148.0,"[1, 581, 4864]",torch.float16,3
+d_model_layers_4_post_attention_layernorm,model.layers.4.post_attention_layernorm,Qwen2RMSNorm,D_layer4_norm_residual,none_or_indirect,D gap: not covered by current sampled D targets,1,1,148.0,"[1, 581, 896]",torch.float16,3
+d_model_layers_4_self_attn,model.layers.4.self_attn,Qwen2SdpaAttention,D_layer4_attention,none_or_indirect,D gap: not covered by current sampled D targets,1,1,148.0,"[1, 581, 896]",torch.float16,3
+d_model_layers_4_self_attn_k_proj,model.layers.4.self_attn.k_proj,Linear,D_layer4_attention,none_or_indirect,D gap: not covered by current sampled D targets,1,1,148.0,"[1, 581, 128]",torch.float16,3
+d_model_layers_4_self_attn_o_proj,model.layers.4.self_attn.o_proj,Linear,D_layer4_attention,none_or_indirect,D gap: not covered by current sampled D targets,1,1,148.0,"[1, 581, 896]",torch.float16,3
+d_model_layers_4_self_attn_q_proj,model.layers.4.self_attn.q_proj,Linear,D_layer4_attention,none_or_indirect,D gap: not covered by current sampled D targets,1,1,148.0,"[1, 581, 896]",torch.float16,3
+d_model_layers_4_self_attn_rotary_emb,model.layers.4.self_attn.rotary_emb,Qwen2RotaryEmbedding,D_layer4_attention,none_or_indirect,D gap: not covered by current sampled D targets,1,1,148.0,"[581, 64]",torch.float16,3
+d_model_layers_4_self_attn_v_proj,model.layers.4.self_attn.v_proj,Linear,D_layer4_attention,none_or_indirect,D gap: not covered by current sampled D targets,1,1,148.0,"[1, 581, 128]",torch.float16,3
+d_model_layers_5,model.layers.5,Qwen2DecoderLayer,D_layer5,none_or_indirect,D gap: not covered by current sampled D targets,1,1,148.0,"[1, 581, 896]",torch.float16,3
+d_model_layers_5_input_layernorm,model.layers.5.input_layernorm,Qwen2RMSNorm,D_layer5_norm_residual,none_or_indirect,D gap: not covered by current sampled D targets,1,1,148.0,"[1, 581, 896]",torch.float16,3
+d_model_layers_5_mlp,model.layers.5.mlp,Qwen2MLP,D_layer5_mlp,none_or_indirect,D gap: not covered by current sampled D targets,1,1,148.0,"[1, 581, 896]",torch.float16,3
+d_model_layers_5_mlp_act_fn,model.layers.5.mlp.act_fn,SiLU,D_layer5_mlp,none_or_indirect,D gap: not covered by current sampled D targets,1,1,148.0,"[1, 581, 4864]",torch.float16,3
+d_model_layers_5_mlp_down_proj,model.layers.5.mlp.down_proj,Linear,D_layer5_mlp,none_or_indirect,D gap: not covered by current sampled D targets,1,1,148.0,"[1, 581, 896]",torch.float16,3
+d_model_layers_5_mlp_gate_proj,model.layers.5.mlp.gate_proj,Linear,D_layer5_mlp,none_or_indirect,D gap: not covered by current sampled D targets,1,1,148.0,"[1, 581, 4864]",torch.float16,3
+d_model_layers_5_mlp_up_proj,model.layers.5.mlp.up_proj,Linear,D_layer5_mlp,none_or_indirect,D gap: not covered by current sampled D targets,1,1,148.0,"[1, 581, 4864]",torch.float16,3
+d_model_layers_5_post_attention_layernorm,model.layers.5.post_attention_layernorm,Qwen2RMSNorm,D_layer5_norm_residual,none_or_indirect,D gap: not covered by current sampled D targets,1,1,148.0,"[1, 581, 896]",torch.float16,3
+d_model_layers_5_self_attn,model.layers.5.self_attn,Qwen2SdpaAttention,D_layer5_attention,none_or_indirect,D gap: not covered by current sampled D targets,1,1,148.0,"[1, 581, 896]",torch.float16,3
+d_model_layers_5_self_attn_k_proj,model.layers.5.self_attn.k_proj,Linear,D_layer5_attention,none_or_indirect,D gap: not covered by current sampled D targets,1,1,148.0,"[1, 581, 128]",torch.float16,3
+d_model_layers_5_self_attn_o_proj,model.layers.5.self_attn.o_proj,Linear,D_layer5_attention,none_or_indirect,D gap: not covered by current sampled D targets,1,1,148.0,"[1, 581, 896]",torch.float16,3
+d_model_layers_5_self_attn_q_proj,model.layers.5.self_attn.q_proj,Linear,D_layer5_attention,none_or_indirect,D gap: not covered by current sampled D targets,1,1,148.0,"[1, 581, 896]",torch.float16,3
+d_model_layers_5_self_attn_rotary_emb,model.layers.5.self_attn.rotary_emb,Qwen2RotaryEmbedding,D_layer5_attention,none_or_indirect,D gap: not covered by current sampled D targets,1,1,148.0,"[581, 64]",torch.float16,3
+d_model_layers_5_self_attn_v_proj,model.layers.5.self_attn.v_proj,Linear,D_layer5_attention,none_or_indirect,D gap: not covered by current sampled D targets,1,1,148.0,"[1, 581, 128]",torch.float16,3
+d_model_layers_7,model.layers.7,Qwen2DecoderLayer,D_layer7,none_or_indirect,D gap: not covered by current sampled D targets,1,1,148.0,"[1, 581, 896]",torch.float16,3
+d_model_layers_7_input_layernorm,model.layers.7.input_layernorm,Qwen2RMSNorm,D_layer7_norm_residual,none_or_indirect,D gap: not covered by current sampled D targets,1,1,148.0,"[1, 581, 896]",torch.float16,3
+d_model_layers_7_mlp,model.layers.7.mlp,Qwen2MLP,D_layer7_mlp,none_or_indirect,D gap: not covered by current sampled D targets,1,1,148.0,"[1, 581, 896]",torch.float16,3
+d_model_layers_7_mlp_act_fn,model.layers.7.mlp.act_fn,SiLU,D_layer7_mlp,none_or_indirect,D gap: not covered by current sampled D targets,1,1,148.0,"[1, 581, 4864]",torch.float16,3
+d_model_layers_7_mlp_down_proj,model.layers.7.mlp.down_proj,Linear,D_layer7_mlp,none_or_indirect,D gap: not covered by current sampled D targets,1,1,148.0,"[1, 581, 896]",torch.float16,3
+d_model_layers_7_mlp_gate_proj,model.layers.7.mlp.gate_proj,Linear,D_layer7_mlp,none_or_indirect,D gap: not covered by current sampled D targets,1,1,148.0,"[1, 581, 4864]",torch.float16,3
+d_model_layers_7_mlp_up_proj,model.layers.7.mlp.up_proj,Linear,D_layer7_mlp,none_or_indirect,D gap: not covered by current sampled D targets,1,1,148.0,"[1, 581, 4864]",torch.float16,3
+d_model_layers_7_post_attention_layernorm,model.layers.7.post_attention_layernorm,Qwen2RMSNorm,D_layer7_norm_residual,none_or_indirect,D gap: not covered by current sampled D targets,1,1,148.0,"[1, 581, 896]",torch.float16,3
+d_model_layers_7_self_attn,model.layers.7.self_attn,Qwen2SdpaAttention,D_layer7_attention,none_or_indirect,D gap: not covered by current sampled D targets,1,1,148.0,"[1, 581, 896]",torch.float16,3
+d_model_layers_7_self_attn_k_proj,model.layers.7.self_attn.k_proj,Linear,D_layer7_attention,none_or_indirect,D gap: not covered by current sampled D targets,1,1,148.0,"[1, 581, 128]",torch.float16,3
+d_model_layers_7_self_attn_o_proj,model.layers.7.self_attn.o_proj,Linear,D_layer7_attention,none_or_indirect,D gap: not covered by current sampled D targets,1,1,148.0,"[1, 581, 896]",torch.float16,3
+d_model_layers_7_self_attn_q_proj,model.layers.7.self_attn.q_proj,Linear,D_layer7_attention,none_or_indirect,D gap: not covered by current sampled D targets,1,1,148.0,"[1, 581, 896]",torch.float16,3
+d_model_layers_7_self_attn_rotary_emb,model.layers.7.self_attn.rotary_emb,Qwen2RotaryEmbedding,D_layer7_attention,none_or_indirect,D gap: not covered by current sampled D targets,1,1,148.0,"[581, 64]",torch.float16,3
+d_model_layers_7_self_attn_v_proj,model.layers.7.self_attn.v_proj,Linear,D_layer7_attention,none_or_indirect,D gap: not covered by current sampled D targets,1,1,148.0,"[1, 581, 128]",torch.float16,3
+d_model_layers_8,model.layers.8,Qwen2DecoderLayer,D_layer8,none_or_indirect,D gap: not covered by current sampled D targets,1,1,148.0,"[1, 581, 896]",torch.float16,3
+d_model_layers_8_input_layernorm,model.layers.8.input_layernorm,Qwen2RMSNorm,D_layer8_norm_residual,none_or_indirect,D gap: not covered by current sampled D targets,1,1,148.0,"[1, 581, 896]",torch.float16,3
+d_model_layers_8_mlp,model.layers.8.mlp,Qwen2MLP,D_layer8_mlp,none_or_indirect,D gap: not covered by current sampled D targets,1,1,148.0,"[1, 581, 896]",torch.float16,3
+d_model_layers_8_mlp_act_fn,model.layers.8.mlp.act_fn,SiLU,D_layer8_mlp,none_or_indirect,D gap: not covered by current sampled D targets,1,1,148.0,"[1, 581, 4864]",torch.float16,3
+d_model_layers_8_mlp_down_proj,model.layers.8.mlp.down_proj,Linear,D_layer8_mlp,none_or_indirect,D gap: not covered by current sampled D targets,1,1,148.0,"[1, 581, 896]",torch.float16,3
+d_model_layers_8_mlp_gate_proj,model.layers.8.mlp.gate_proj,Linear,D_layer8_mlp,none_or_indirect,D gap: not covered by current sampled D targets,1,1,148.0,"[1, 581, 4864]",torch.float16,3
+d_model_layers_8_mlp_up_proj,model.layers.8.mlp.up_proj,Linear,D_layer8_mlp,none_or_indirect,D gap: not covered by current sampled D targets,1,1,148.0,"[1, 581, 4864]",torch.float16,3
+d_model_layers_8_post_attention_layernorm,model.layers.8.post_attention_layernorm,Qwen2RMSNorm,D_layer8_norm_residual,none_or_indirect,D gap: not covered by current sampled D targets,1,1,148.0,"[1, 581, 896]",torch.float16,3
+d_model_layers_8_self_attn,model.layers.8.self_attn,Qwen2SdpaAttention,D_layer8_attention,none_or_indirect,D gap: not covered by current sampled D targets,1,1,148.0,"[1, 581, 896]",torch.float16,3
+d_model_layers_8_self_attn_k_proj,model.layers.8.self_attn.k_proj,Linear,D_layer8_attention,none_or_indirect,D gap: not covered by current sampled D targets,1,1,148.0,"[1, 581, 128]",torch.float16,3
+d_model_layers_8_self_attn_o_proj,model.layers.8.self_attn.o_proj,Linear,D_layer8_attention,none_or_indirect,D gap: not covered by current sampled D targets,1,1,148.0,"[1, 581, 896]",torch.float16,3
+d_model_layers_8_self_attn_q_proj,model.layers.8.self_attn.q_proj,Linear,D_layer8_attention,none_or_indirect,D gap: not covered by current sampled D targets,1,1,148.0,"[1, 581, 896]",torch.float16,3
+d_model_layers_8_self_attn_rotary_emb,model.layers.8.self_attn.rotary_emb,Qwen2RotaryEmbedding,D_layer8_attention,none_or_indirect,D gap: not covered by current sampled D targets,1,1,148.0,"[581, 64]",torch.float16,3
+d_model_layers_8_self_attn_v_proj,model.layers.8.self_attn.v_proj,Linear,D_layer8_attention,none_or_indirect,D gap: not covered by current sampled D targets,1,1,148.0,"[1, 581, 128]",torch.float16,3
+d_model_layers_9,model.layers.9,Qwen2DecoderLayer,D_layer9,none_or_indirect,D gap: not covered by current sampled D targets,1,1,148.0,"[1, 581, 896]",torch.float16,3
+d_model_layers_9_input_layernorm,model.layers.9.input_layernorm,Qwen2RMSNorm,D_layer9_norm_residual,none_or_indirect,D gap: not covered by current sampled D targets,1,1,148.0,"[1, 581, 896]",torch.float16,3
+d_model_layers_9_mlp,model.layers.9.mlp,Qwen2MLP,D_layer9_mlp,none_or_indirect,D gap: not covered by current sampled D targets,1,1,148.0,"[1, 581, 896]",torch.float16,3
+d_model_layers_9_mlp_act_fn,model.layers.9.mlp.act_fn,SiLU,D_layer9_mlp,none_or_indirect,D gap: not covered by current sampled D targets,1,1,148.0,"[1, 581, 4864]",torch.float16,3
+d_model_layers_9_mlp_down_proj,model.layers.9.mlp.down_proj,Linear,D_layer9_mlp,none_or_indirect,D gap: not covered by current sampled D targets,1,1,148.0,"[1, 581, 896]",torch.float16,3
+d_model_layers_9_mlp_gate_proj,model.layers.9.mlp.gate_proj,Linear,D_layer9_mlp,none_or_indirect,D gap: not covered by current sampled D targets,1,1,148.0,"[1, 581, 4864]",torch.float16,3
+d_model_layers_9_mlp_up_proj,model.layers.9.mlp.up_proj,Linear,D_layer9_mlp,none_or_indirect,D gap: not covered by current sampled D targets,1,1,148.0,"[1, 581, 4864]",torch.float16,3
+d_model_layers_9_post_attention_layernorm,model.layers.9.post_attention_layernorm,Qwen2RMSNorm,D_layer9_norm_residual,none_or_indirect,D gap: not covered by current sampled D targets,1,1,148.0,"[1, 581, 896]",torch.float16,3
+d_model_layers_9_self_attn,model.layers.9.self_attn,Qwen2SdpaAttention,D_layer9_attention,none_or_indirect,D gap: not covered by current sampled D targets,1,1,148.0,"[1, 581, 896]",torch.float16,3
+d_model_layers_9_self_attn_k_proj,model.layers.9.self_attn.k_proj,Linear,D_layer9_attention,none_or_indirect,D gap: not covered by current sampled D targets,1,1,148.0,"[1, 581, 128]",torch.float16,3
+d_model_layers_9_self_attn_o_proj,model.layers.9.self_attn.o_proj,Linear,D_layer9_attention,none_or_indirect,D gap: not covered by current sampled D targets,1,1,148.0,"[1, 581, 896]",torch.float16,3
+d_model_layers_9_self_attn_q_proj,model.layers.9.self_attn.q_proj,Linear,D_layer9_attention,none_or_indirect,D gap: not covered by current sampled D targets,1,1,148.0,"[1, 581, 896]",torch.float16,3
+d_model_layers_9_self_attn_rotary_emb,model.layers.9.self_attn.rotary_emb,Qwen2RotaryEmbedding,D_layer9_attention,none_or_indirect,D gap: not covered by current sampled D targets,1,1,148.0,"[581, 64]",torch.float16,3
+d_model_layers_9_self_attn_v_proj,model.layers.9.self_attn.v_proj,Linear,D_layer9_attention,none_or_indirect,D gap: not covered by current sampled D targets,1,1,148.0,"[1, 581, 128]",torch.float16,3
+d_model_layers_0,model.layers.0,Qwen2DecoderLayer,D_layer0,v44_D_sampled_layers,sampled-layer coverage only; not dense structural coverage,1,1,148.0,"[1, 581, 896]",torch.float16,8
+d_model_layers_0_input_layernorm,model.layers.0.input_layernorm,Qwen2RMSNorm,D_layer0_norm_residual,v44_D_sampled_layers,sampled-layer coverage only; not dense structural coverage,1,1,148.0,"[1, 581, 896]",torch.float16,8
+d_model_layers_0_mlp,model.layers.0.mlp,Qwen2MLP,D_layer0_mlp,v44_D_sampled_layers,sampled-layer coverage only; not dense structural coverage,1,1,148.0,"[1, 581, 896]",torch.float16,8
+d_model_layers_0_mlp_act_fn,model.layers.0.mlp.act_fn,SiLU,D_layer0_mlp,v44_D_sampled_layers,sampled-layer coverage only; not dense structural coverage,1,1,148.0,"[1, 581, 4864]",torch.float16,8
+d_model_layers_0_mlp_down_proj,model.layers.0.mlp.down_proj,Linear,D_layer0_mlp,v44_D_sampled_layers,sampled-layer coverage only; not dense structural coverage,1,1,148.0,"[1, 581, 896]",torch.float16,8
+d_model_layers_0_mlp_gate_proj,model.layers.0.mlp.gate_proj,Linear,D_layer0_mlp,v44_D_sampled_layers,sampled-layer coverage only; not dense structural coverage,1,1,148.0,"[1, 581, 4864]",torch.float16,8
+d_model_layers_0_mlp_up_proj,model.layers.0.mlp.up_proj,Linear,D_layer0_mlp,v44_D_sampled_layers,sampled-layer coverage only; not dense structural coverage,1,1,148.0,"[1, 581, 4864]",torch.float16,8
+d_model_layers_0_post_attention_layernorm,model.layers.0.post_attention_layernorm,Qwen2RMSNorm,D_layer0_norm_residual,v44_D_sampled_layers,sampled-layer coverage only; not dense structural coverage,1,1,148.0,"[1, 581, 896]",torch.float16,8
+d_model_layers_0_self_attn,model.layers.0.self_attn,Qwen2SdpaAttention,D_layer0_attention,v44_D_sampled_layers,sampled-layer coverage only; not dense structural coverage,1,1,148.0,"[1, 581, 896]",torch.float16,8
+d_model_layers_0_self_attn_k_proj,model.layers.0.self_attn.k_proj,Linear,D_layer0_attention,v44_D_sampled_layers,sampled-layer coverage only; not dense structural coverage,1,1,148.0,"[1, 581, 128]",torch.float16,8
+d_model_layers_0_self_attn_o_proj,model.layers.0.self_attn.o_proj,Linear,D_layer0_attention,v44_D_sampled_layers,sampled-layer coverage only; not dense structural coverage,1,1,148.0,"[1, 581, 896]",torch.float16,8
+d_model_layers_0_self_attn_q_proj,model.layers.0.self_attn.q_proj,Linear,D_layer0_attention,v44_D_sampled_layers,sampled-layer coverage only; not dense structural coverage,1,1,148.0,"[1, 581, 896]",torch.float16,8
+d_model_layers_0_self_attn_rotary_emb,model.layers.0.self_attn.rotary_emb,Qwen2RotaryEmbedding,D_layer0_attention,v44_D_sampled_layers,sampled-layer coverage only; not dense structural coverage,1,1,148.0,"[581, 64]",torch.float16,8
+d_model_layers_0_self_attn_v_proj,model.layers.0.self_attn.v_proj,Linear,D_layer0_attention,v44_D_sampled_layers,sampled-layer coverage only; not dense structural coverage,1,1,148.0,"[1, 581, 128]",torch.float16,8
+d_model_layers_12,model.layers.12,Qwen2DecoderLayer,D_layer12,v44_D_sampled_layers,sampled-layer coverage only; not dense structural coverage,1,1,148.0,"[1, 581, 896]",torch.float16,8
+d_model_layers_12_input_layernorm,model.layers.12.input_layernorm,Qwen2RMSNorm,D_layer12_norm_residual,v44_D_sampled_layers,sampled-layer coverage only; not dense structural coverage,1,1,148.0,"[1, 581, 896]",torch.float16,8
+d_model_layers_12_mlp,model.layers.12.mlp,Qwen2MLP,D_layer12_mlp,v44_D_sampled_layers,sampled-layer coverage only; not dense structural coverage,1,1,148.0,"[1, 581, 896]",torch.float16,8
+d_model_layers_12_mlp_act_fn,model.layers.12.mlp.act_fn,SiLU,D_layer12_mlp,v44_D_sampled_layers,sampled-layer coverage only; not dense structural coverage,1,1,148.0,"[1, 581, 4864]",torch.float16,8
+d_model_layers_12_mlp_down_proj,model.layers.12.mlp.down_proj,Linear,D_layer12_mlp,v44_D_sampled_layers,sampled-layer coverage only; not dense structural coverage,1,1,148.0,"[1, 581, 896]",torch.float16,8
+d_model_layers_12_mlp_gate_proj,model.layers.12.mlp.gate_proj,Linear,D_layer12_mlp,v44_D_sampled_layers,sampled-layer coverage only; not dense structural coverage,1,1,148.0,"[1, 581, 4864]",torch.float16,8
+d_model_layers_12_mlp_up_proj,model.layers.12.mlp.up_proj,Linear,D_layer12_mlp,v44_D_sampled_layers,sampled-layer coverage only; not dense structural coverage,1,1,148.0,"[1, 581, 4864]",torch.float16,8
+d_model_layers_12_post_attention_layernorm,model.layers.12.post_attention_layernorm,Qwen2RMSNorm,D_layer12_norm_residual,v44_D_sampled_layers,sampled-layer coverage only; not dense structural coverage,1,1,148.0,"[1, 581, 896]",torch.float16,8
+d_model_layers_12_self_attn,model.layers.12.self_attn,Qwen2SdpaAttention,D_layer12_attention,v44_D_sampled_layers,sampled-layer coverage only; not dense structural coverage,1,1,148.0,"[1, 581, 896]",torch.float16,8
+d_model_layers_12_self_attn_k_proj,model.layers.12.self_attn.k_proj,Linear,D_layer12_attention,v44_D_sampled_layers,sampled-layer coverage only; not dense structural coverage,1,1,148.0,"[1, 581, 128]",torch.float16,8
+d_model_layers_12_self_attn_o_proj,model.layers.12.self_attn.o_proj,Linear,D_layer12_attention,v44_D_sampled_layers,sampled-layer coverage only; not dense structural coverage,1,1,148.0,"[1, 581, 896]",torch.float16,8
+d_model_layers_12_self_attn_q_proj,model.layers.12.self_attn.q_proj,Linear,D_layer12_attention,v44_D_sampled_layers,sampled-layer coverage only; not dense structural coverage,1,1,148.0,"[1, 581, 896]",torch.float16,8
+d_model_layers_12_self_attn_rotary_emb,model.layers.12.self_attn.rotary_emb,Qwen2RotaryEmbedding,D_layer12_attention,v44_D_sampled_layers,sampled-layer coverage only; not dense structural coverage,1,1,148.0,"[581, 64]",torch.float16,8
+d_model_layers_12_self_attn_v_proj,model.layers.12.self_attn.v_proj,Linear,D_layer12_attention,v44_D_sampled_layers,sampled-layer coverage only; not dense structural coverage,1,1,148.0,"[1, 581, 128]",torch.float16,8
+d_model_layers_18,model.layers.18,Qwen2DecoderLayer,D_layer18,v44_D_sampled_layers,sampled-layer coverage only; not dense structural coverage,1,1,148.0,"[1, 581, 896]",torch.float16,8
+d_model_layers_18_input_layernorm,model.layers.18.input_layernorm,Qwen2RMSNorm,D_layer18_norm_residual,v44_D_sampled_layers,sampled-layer coverage only; not dense structural coverage,1,1,148.0,"[1, 581, 896]",torch.float16,8
+d_model_layers_18_mlp,model.layers.18.mlp,Qwen2MLP,D_layer18_mlp,v44_D_sampled_layers,sampled-layer coverage only; not dense structural coverage,1,1,148.0,"[1, 581, 896]",torch.float16,8
+d_model_layers_18_mlp_act_fn,model.layers.18.mlp.act_fn,SiLU,D_layer18_mlp,v44_D_sampled_layers,sampled-layer coverage only; not dense structural coverage,1,1,148.0,"[1, 581, 4864]",torch.float16,8
+d_model_layers_18_mlp_down_proj,model.layers.18.mlp.down_proj,Linear,D_layer18_mlp,v44_D_sampled_layers,sampled-layer coverage only; not dense structural coverage,1,1,148.0,"[1, 581, 896]",torch.float16,8
+d_model_layers_18_mlp_gate_proj,model.layers.18.mlp.gate_proj,Linear,D_layer18_mlp,v44_D_sampled_layers,sampled-layer coverage only; not dense structural coverage,1,1,148.0,"[1, 581, 4864]",torch.float16,8
+d_model_layers_18_mlp_up_proj,model.layers.18.mlp.up_proj,Linear,D_layer18_mlp,v44_D_sampled_layers,sampled-layer coverage only; not dense structural coverage,1,1,148.0,"[1, 581, 4864]",torch.float16,8
+d_model_layers_18_post_attention_layernorm,model.layers.18.post_attention_layernorm,Qwen2RMSNorm,D_layer18_norm_residual,v44_D_sampled_layers,sampled-layer coverage only; not dense structural coverage,1,1,148.0,"[1, 581, 896]",torch.float16,8
+d_model_layers_18_self_attn,model.layers.18.self_attn,Qwen2SdpaAttention,D_layer18_attention,v44_D_sampled_layers,sampled-layer coverage only; not dense structural coverage,1,1,148.0,"[1, 581, 896]",torch.float16,8
+d_model_layers_18_self_attn_k_proj,model.layers.18.self_attn.k_proj,Linear,D_layer18_attention,v44_D_sampled_layers,sampled-layer coverage only; not dense structural coverage,1,1,148.0,"[1, 581, 128]",torch.float16,8
+d_model_layers_18_self_attn_o_proj,model.layers.18.self_attn.o_proj,Linear,D_layer18_attention,v44_D_sampled_layers,sampled-layer coverage only; not dense structural coverage,1,1,148.0,"[1, 581, 896]",torch.float16,8
+d_model_layers_18_self_attn_q_proj,model.layers.18.self_attn.q_proj,Linear,D_layer18_attention,v44_D_sampled_layers,sampled-layer coverage only; not dense structural coverage,1,1,148.0,"[1, 581, 896]",torch.float16,8
+d_model_layers_18_self_attn_rotary_emb,model.layers.18.self_attn.rotary_emb,Qwen2RotaryEmbedding,D_layer18_attention,v44_D_sampled_layers,sampled-layer coverage only; not dense structural coverage,1,1,148.0,"[581, 64]",torch.float16,8
+d_model_layers_18_self_attn_v_proj,model.layers.18.self_attn.v_proj,Linear,D_layer18_attention,v44_D_sampled_layers,sampled-layer coverage only; not dense structural coverage,1,1,148.0,"[1, 581, 128]",torch.float16,8
+d_model_layers_23,model.layers.23,Qwen2DecoderLayer,D_layer23,v44_D_sampled_layers,sampled-layer coverage only; not dense structural coverage,1,1,148.0,"[1, 581, 896]",torch.float16,8
+d_model_layers_23_input_layernorm,model.layers.23.input_layernorm,Qwen2RMSNorm,D_layer23_norm_residual,v44_D_sampled_layers,sampled-layer coverage only; not dense structural coverage,1,1,148.0,"[1, 581, 896]",torch.float16,8
+d_model_layers_23_mlp,model.layers.23.mlp,Qwen2MLP,D_layer23_mlp,v44_D_sampled_layers,sampled-layer coverage only; not dense structural coverage,1,1,148.0,"[1, 581, 896]",torch.float16,8
+d_model_layers_23_mlp_act_fn,model.layers.23.mlp.act_fn,SiLU,D_layer23_mlp,v44_D_sampled_layers,sampled-layer coverage only; not dense structural coverage,1,1,148.0,"[1, 581, 4864]",torch.float16,8
+d_model_layers_23_mlp_down_proj,model.layers.23.mlp.down_proj,Linear,D_layer23_mlp,v44_D_sampled_layers,sampled-layer coverage only; not dense structural coverage,1,1,148.0,"[1, 581, 896]",torch.float16,8
+d_model_layers_23_mlp_gate_proj,model.layers.23.mlp.gate_proj,Linear,D_layer23_mlp,v44_D_sampled_layers,sampled-layer coverage only; not dense structural coverage,1,1,148.0,"[1, 581, 4864]",torch.float16,8
+d_model_layers_23_mlp_up_proj,model.layers.23.mlp.up_proj,Linear,D_layer23_mlp,v44_D_sampled_layers,sampled-layer coverage only; not dense structural coverage,1,1,148.0,"[1, 581, 4864]",torch.float16,8
+d_model_layers_23_post_attention_layernorm,model.layers.23.post_attention_layernorm,Qwen2RMSNorm,D_layer23_norm_residual,v44_D_sampled_layers,sampled-layer coverage only; not dense structural coverage,1,1,148.0,"[1, 581, 896]",torch.float16,8
+d_model_layers_23_self_attn,model.layers.23.self_attn,Qwen2SdpaAttention,D_layer23_attention,v44_D_sampled_layers,sampled-layer coverage only; not dense structural coverage,1,1,148.0,"[1, 581, 896]",torch.float16,8
+d_model_layers_23_self_attn_k_proj,model.layers.23.self_attn.k_proj,Linear,D_layer23_attention,v44_D_sampled_layers,sampled-layer coverage only; not dense structural coverage,1,1,148.0,"[1, 581, 128]",torch.float16,8
+d_model_layers_23_self_attn_o_proj,model.layers.23.self_attn.o_proj,Linear,D_layer23_attention,v44_D_sampled_layers,sampled-layer coverage only; not dense structural coverage,1,1,148.0,"[1, 581, 896]",torch.float16,8
+d_model_layers_23_self_attn_q_proj,model.layers.23.self_attn.q_proj,Linear,D_layer23_attention,v44_D_sampled_layers,sampled-layer coverage only; not dense structural coverage,1,1,148.0,"[1, 581, 896]",torch.float16,8
+d_model_layers_23_self_attn_rotary_emb,model.layers.23.self_attn.rotary_emb,Qwen2RotaryEmbedding,D_layer23_attention,v44_D_sampled_layers,sampled-layer coverage only; not dense structural coverage,1,1,148.0,"[581, 64]",torch.float16,8
+d_model_layers_23_self_attn_v_proj,model.layers.23.self_attn.v_proj,Linear,D_layer23_attention,v44_D_sampled_layers,sampled-layer coverage only; not dense structural coverage,1,1,148.0,"[1, 581, 128]",torch.float16,8
+d_model_layers_6,model.layers.6,Qwen2DecoderLayer,D_layer6,v44_D_sampled_layers,sampled-layer coverage only; not dense structural coverage,1,1,148.0,"[1, 581, 896]",torch.float16,8
+d_model_layers_6_input_layernorm,model.layers.6.input_layernorm,Qwen2RMSNorm,D_layer6_norm_residual,v44_D_sampled_layers,sampled-layer coverage only; not dense structural coverage,1,1,148.0,"[1, 581, 896]",torch.float16,8
+d_model_layers_6_mlp,model.layers.6.mlp,Qwen2MLP,D_layer6_mlp,v44_D_sampled_layers,sampled-layer coverage only; not dense structural coverage,1,1,148.0,"[1, 581, 896]",torch.float16,8
+d_model_layers_6_mlp_act_fn,model.layers.6.mlp.act_fn,SiLU,D_layer6_mlp,v44_D_sampled_layers,sampled-layer coverage only; not dense structural coverage,1,1,148.0,"[1, 581, 4864]",torch.float16,8
+d_model_layers_6_mlp_down_proj,model.layers.6.mlp.down_proj,Linear,D_layer6_mlp,v44_D_sampled_layers,sampled-layer coverage only; not dense structural coverage,1,1,148.0,"[1, 581, 896]",torch.float16,8
+d_model_layers_6_mlp_gate_proj,model.layers.6.mlp.gate_proj,Linear,D_layer6_mlp,v44_D_sampled_layers,sampled-layer coverage only; not dense structural coverage,1,1,148.0,"[1, 581, 4864]",torch.float16,8
+d_model_layers_6_mlp_up_proj,model.layers.6.mlp.up_proj,Linear,D_layer6_mlp,v44_D_sampled_layers,sampled-layer coverage only; not dense structural coverage,1,1,148.0,"[1, 581, 4864]",torch.float16,8
+d_model_layers_6_post_attention_layernorm,model.layers.6.post_attention_layernorm,Qwen2RMSNorm,D_layer6_norm_residual,v44_D_sampled_layers,sampled-layer coverage only; not dense structural coverage,1,1,148.0,"[1, 581, 896]",torch.float16,8
+d_model_layers_6_self_attn,model.layers.6.self_attn,Qwen2SdpaAttention,D_layer6_attention,v44_D_sampled_layers,sampled-layer coverage only; not dense structural coverage,1,1,148.0,"[1, 581, 896]",torch.float16,8
+d_model_layers_6_self_attn_k_proj,model.layers.6.self_attn.k_proj,Linear,D_layer6_attention,v44_D_sampled_layers,sampled-layer coverage only; not dense structural coverage,1,1,148.0,"[1, 581, 128]",torch.float16,8
+d_model_layers_6_self_attn_o_proj,model.layers.6.self_attn.o_proj,Linear,D_layer6_attention,v44_D_sampled_layers,sampled-layer coverage only; not dense structural coverage,1,1,148.0,"[1, 581, 896]",torch.float16,8
+d_model_layers_6_self_attn_q_proj,model.layers.6.self_attn.q_proj,Linear,D_layer6_attention,v44_D_sampled_layers,sampled-layer coverage only; not dense structural coverage,1,1,148.0,"[1, 581, 896]",torch.float16,8
+d_model_layers_6_self_attn_rotary_emb,model.layers.6.self_attn.rotary_emb,Qwen2RotaryEmbedding,D_layer6_attention,v44_D_sampled_layers,sampled-layer coverage only; not dense structural coverage,1,1,148.0,"[581, 64]",torch.float16,8
+d_model_layers_6_self_attn_v_proj,model.layers.6.self_attn.v_proj,Linear,D_layer6_attention,v44_D_sampled_layers,sampled-layer coverage only; not dense structural coverage,1,1,148.0,"[1, 581, 128]",torch.float16,8

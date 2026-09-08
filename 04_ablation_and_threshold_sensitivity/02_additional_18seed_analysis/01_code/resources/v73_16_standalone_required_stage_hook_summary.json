@@ -1,0 +1,6 @@
+{
+  "version": "v73_16_standalone_required_stage_hook_specs",
+  "required_stage_count": 52,
+  "missing_stage_names": [],
+  "note": "Generated from v73.16 standalone data contract source columns; adds s_bev_encoder_layer5 required by layer0->layer5 propagation features; v63_dout_decode_token is handled by dedicated decode-token hook, not stage-hook-specs."
+}

@@ -1,0 +1,23 @@
+{
+  "version": "v54_internal_scdout_global_random_record_audit_pack",
+  "main_scope": "S + C + D + D_out internal neural exp-bit faults in one global-random campaign",
+  "included": {
+    "S0": "can_bus groups from the v35/v38 S0 input-state family",
+    "S": "S1-S5 Full-S registry targets from the v36/v38 full-leaf scan; legacy CLI argument still names this S1_only",
+    "C": "mm_projector_scene and its layer0/1/2 targets",
+    "D": "runtime-hit LLM module targets from the D audit, with model.norm/lm_head logged as D boundary targets",
+    "D_out": "model.norm and lm_head/logits boundary targets are explicitly present in v49_d_full_targets.txt"
+  },
+  "excluded": [
+    "A input interface",
+    "E0 token ids/text",
+    "E1 output-interface trajectory object",
+    "E2 final output perturbation",
+    "Evaluator/GT/metrics/label generation"
+  ],
+  "sampling_policy": "global random over all eligible S/C/D/D_out targets; scope weights are proportional to eligible target counts and all within-scope target weights are 1 unless overridden",
+  "not_allowed": "Do not use 33/33/34 module balancing; do not inflate C artificially.",
+  "logging_policy": "Keep exact v35.1 detector-input features, extra online diagnostics for future detector improvement, analysis-only fault metadata/labels/deltas, target pool manifest, sampled target summary, and record-completeness audit.",
+  "note": "v54 record-audit package: D_out targets d_model_norm and d_lm_head are included. Posthoc labels are evaluation-only and never detector features.",
+  "base_package": "v50_internal_scd_global_random_lite_formal_pack"
+}

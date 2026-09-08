@@ -1,0 +1,150 @@
+{
+  "acceptance_criterion": "Explain and replay the historical Table 5 feature/schema, OOF, threshold, consistency, veto, policy, and outcome chain without rerunning OpenDriveVLA or requiring from-scratch refitting.",
+  "caveat": "Retrospective Table 5 replay is complete from saved OOF signals. A prospective new-scene/new-seed test must name and freeze one exact candidate among any retained outcome-equivalent configurations before test labels are used.",
+  "exact_replay": {
+    "exact_match_rows": 54,
+    "historical_result_grid_rows": 134196,
+    "historical_result_rows": 54,
+    "mismatch_rows": 0,
+    "oof_rows": 6000,
+    "oof_seed_counts": {
+      "955916": 1200,
+      "955917": 1200,
+      "955918": 1200,
+      "955919": 1200,
+      "955920": 1200
+    },
+    "replayed_result_rows": 54,
+    "unsupported_result_rows": 0
+  },
+  "focused_report": {
+    "bytes": 40488,
+    "path": "H:\\Problem4\\New_S_detector\\FullS\\OpenDriveVLA_v61_4_current5_focused_report_v2.docx",
+    "sha256": "a3b68fa7394a0e3f1683d29d52f6b70a3106df00c123cb42a097233989119538"
+  },
+  "inputs": {
+    "v54_results": {
+      "bytes": 1317514080,
+      "path": "H:\\Problem4\\New_S_detector\\FullS\\v54\\v54_4_formal_10seeds_compact_analysis_v2_for_return.tar.gz",
+      "sha256": "5e62678c8f17594dbdae289d074494b088e77bf10103deccba1866c6cb4b3678"
+    },
+    "v59_code": {
+      "bytes": 243959,
+      "path": "H:\\Problem4\\实验\\Full_S\\v59\\v59_3_targeted_feature_smoke_pack.zip",
+      "sha256": "53c9a7a1ad0f5eb617dfd15ebf828d7c565313b212051fd153463df09b6b9354"
+    },
+    "v59_results": {
+      "bytes": 117756933,
+      "path": "H:\\Problem4\\New_S_detector\\FullS\\v59_3_targeted_feature_formal_additional_5seeds_955916_955920_for_return.tar.gz",
+      "sha256": "18d06886bf3480e4ca37eacbf6e079547c1ad3ddda1616ccb79234c8a4da6597"
+    },
+    "v61_code": {
+      "bytes": 12483,
+      "path": "H:\\Problem4\\实验\\Full_S\\v61\\v61_4_best_feature_consistency_probe_pack.zip",
+      "sha256": "13167a61ce9fb844ca17fc02f7f042f0cb12cde833dd2502cfe041198b37f229"
+    },
+    "v61_results": {
+      "bytes": 2374611,
+      "path": "H:\\Problem4\\New_S_detector\\FullS\\v61\\v61_4_best_feature_consistency_probe_current5_955916_955920_for_return.tar.gz",
+      "sha256": "0f8b06dd58c76e70427848f9f3eeabeac0bf173bd2221ca8b4d6e20823b66d42"
+    }
+  },
+  "purpose": "Table 5 reviewer-facing reproducibility contract and exact OOF replay",
+  "v54_old_exact": {
+    "exact_features": 2605,
+    "matrix_columns": 2641
+  },
+  "v59_current5": {
+    "detector_features": 7573,
+    "high_risk_rows": 127,
+    "matrix_columns": 7579,
+    "metadata_columns": [
+      "seed",
+      "sample_id",
+      "row_source",
+      "exact_layer",
+      "harmful",
+      "severe_harmful"
+    ],
+    "transform_counts": {
+      "clip": 1540,
+      "extreme": 1540,
+      "miss": 1540,
+      "safe_raw": 1413,
+      "slog1p": 1540
+    }
+  },
+  "v61_current5": {
+    "oof_seed_counts": {
+      "955916": 1200,
+      "955917": 1200,
+      "955918": 1200,
+      "955919": 1200,
+      "955920": 1200
+    },
+    "summary": {
+      "consistency_groups": {
+        "output_ego_diag_group_anomaly": 794,
+        "v59_d_llm_dout_group_anomaly": 2152,
+        "v59_dout_group_anomaly": 538,
+        "v59_s4_group_anomaly": 5537,
+        "v59_s4_seg_group_anomaly": 1550,
+        "v59_s4_track_group_anomaly": 3987
+      },
+      "diagnostics_source": "/root/autodl-tmp/DriveVLA/output/OpenDriveVLA-0.5B/20260518_v59_3_targeted_feature_formal_8seeds_pos800900/v54_online_exports/v54_online_all_deployable_diagnostics_matrix.csv",
+      "feature_sets": {
+        "old_exact": 2605,
+        "old_exact_plus_scores": 2611,
+        "old_exact_plus_v59_all_plus_scores": 10184,
+        "selected_score_features": 6,
+        "v59_all_plus_scores": 7579,
+        "v59_all_sanitized": 7573,
+        "v59_d_llm_dout_plus_scores": 2126,
+        "v59_s4_plus_scores": 5459
+      },
+      "formal_dir": "/root/autodl-tmp/DriveVLA/output/OpenDriveVLA-0.5B/20260518_v59_3_targeted_feature_formal_8seeds_pos800900",
+      "labels": [
+        "harmful",
+        "severe_harmful",
+        "v31_speed_alter_harmful_compatible"
+      ],
+      "models": [
+        "extra_trees_depth5",
+        "hist_gradient_boosting"
+      ],
+      "note": "2-seed quickcheck is diagnostic only. Use more seeds before making formal claims.",
+      "old_exact_source": "/root/autodl-tmp/DriveVLA/output/OpenDriveVLA-0.5B/20260518_v59_3_targeted_feature_formal_8seeds_pos800900/v54_online_exports/v54_online_deployable_feature_matrix.csv",
+      "outputs": {
+        "best_all": "/root/autodl-tmp/DriveVLA/output/OpenDriveVLA-0.5B/20260518_v59_3_targeted_feature_formal_8seeds_pos800900/v61_1_best_feature_consistency_probe_quickcheck/v61_1_best_candidates_ALL.csv",
+        "incremental_all": "/root/autodl-tmp/DriveVLA/output/OpenDriveVLA-0.5B/20260518_v59_3_targeted_feature_formal_8seeds_pos800900/v61_1_best_feature_consistency_probe_quickcheck/v61_1_incremental_improvement_ALL.csv",
+        "results_by_scope": "/root/autodl-tmp/DriveVLA/output/OpenDriveVLA-0.5B/20260518_v59_3_targeted_feature_formal_8seeds_pos800900/v61_1_best_feature_consistency_probe_quickcheck/v61_1_best_feature_consistency_results_by_scope.csv"
+      },
+      "quantiles": [
+        0.975,
+        0.99,
+        0.995
+      ],
+      "recall_targets": [
+        0.98,
+        0.99,
+        1.0
+      ],
+      "rows": 6000,
+      "score_source": "/root/autodl-tmp/DriveVLA/output/OpenDriveVLA-0.5B/20260518_v59_3_targeted_feature_formal_8seeds_pos800900/v54_online_exports/v54_detector_score_cache.csv",
+      "seeds": [
+        955916,
+        955917,
+        955918,
+        955919,
+        955920
+      ],
+      "version": "v61_1_best_feature_consistency_probe",
+      "veto_thresholds": [
+        0.005,
+        0.01,
+        0.02,
+        0.05
+      ]
+    }
+  }
+}

@@ -1,0 +1,80 @@
+{
+  "purpose": "Final runtime-overhead benchmark for Reviewer 1 Comment 6.",
+  "deployment_configuration": "Conservative maximal final configuration: base/veto detector dependencies + Table-5 speed-alter targeted branch + D-LLM/D-out consistency. This configuration contains the largest hook set among the three final targets.",
+  "dependency_audit": {
+    "rows": 6000,
+    "base_runtime_replay_alarm_exact": true,
+    "base_pruning_alarm_exact": true,
+    "targeted_pruning_heldout_alarm_exact": true,
+    "final_required_source_scalars": 2120,
+    "stage_summary_hooks": 42,
+    "separate_can_bus_vector_capture": 1,
+    "separate_online_head_capture": 1,
+    "total_forward_callbacks": 44,
+    "note": "v26_vision_model is a required stage-summary hook and is distinct from the separate v26 online-head capture."
+  },
+  "benchmark": {
+    "batch_size": 1,
+    "warmup_samples": 20,
+    "measured_samples": 100,
+    "same_ordered_samples_for_baseline_and_monitor": true,
+    "latency_statistics": [
+      "mean",
+      "std",
+      "median",
+      "p95",
+      "min",
+      "max"
+    ],
+    "trajectory_output_parity_required": true,
+    "note": "This package benchmarks the deployment-optimized monitor. Percentile statistics use the frozen bounded deterministic approximation described in percentile_deployment_optimization."
+  },
+  "timed_components": [
+    "hooks",
+    "feature extraction",
+    "feature aggregation",
+    "detector inference",
+    "total online monitor"
+  ],
+  "excluded_from_latency": [
+    "dataset / NuScenes initialization",
+    "dataloader iteration outside the inference timer",
+    "file serialization and disk I/O",
+    "logging I/O",
+    "memory-size bookkeeping",
+    "offline detector training / calibration",
+    "fault injection",
+    "GT / clean-reference evaluation",
+    "post-hoc metrics",
+    "archive creation"
+  ],
+  "memory_reporting": [
+    "per-component directly accounted CPU working/resident memory",
+    "total accounted CPU monitor working memory and percentage of baseline VLA RSS",
+    "paired incremental GPU peak and percentage of baseline GPU peak",
+    "raw process-RSS deltas retained only as diagnostics"
+  ],
+  "auxiliary_cpu_reporting": [
+    "process CPU core-equivalent utilization percentage",
+    "normalized percentage of logical CPU capacity"
+  ],
+  "large_tensor_quantile": "Same linear p95/p99 definition. torch.quantile for ordinary tensors; torch.kthvalue order statistics + linear interpolation for large tensors that exceed the CUDA torch.quantile element-count limit.",
+  "percentile_deployment_optimization": {
+    "applies_to": "p95_abs and p99_abs only",
+    "sample_cap": 4096,
+    "sampling": "deterministic evenly distributed midpoint sampling over the flattened tensor",
+    "small_tensor_behavior": "exact when numel <= 4096",
+    "large_tensor_behavior": "approximate percentile from <=4096 deterministic samples",
+    "randomness": "none",
+    "feature_names_and_dimensions_changed": false,
+    "reason": "Bound percentile cost for very large autoregressive activations/logits; avoid full-tensor sort/order-statistic cost while retaining percentile semantics."
+  },
+  "synchronization_profiler": {
+    "purpose": "Quantify synchronization overhead requested by Reviewer 2.",
+    "new_synchronization_added_for_measurement": false,
+    "stage_hook_internal_device_to_host_waits_measured": true,
+    "feature_extraction_existing_boundary_waits_measured": true,
+    "feature_aggregation_existing_boundary_waits_measured": true,
+    "detector_execution_required_cuda_synchronization": false
+  }
+}

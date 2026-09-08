@@ -1,0 +1,17 @@
+{
+  "policy_name": "historical_Table5_severe_B_deployable_refit",
+  "target": "severe_harmful",
+  "feature_set": "old_exact",
+  "feature_count": 2605,
+  "model_family": "extra_trees_depth5",
+  "selected_k": 256,
+  "feature_model_threshold": 0.2055820757066283,
+  "threshold_source": "pre-existing Table5 exact-replay contract; severe_harmful/ALL/old_exact/extra_trees_depth5/rt1.0",
+  "combination": "(base_alarm OR feature_model_alarm) AND NOT veto",
+  "base_detector": "lineA_old_extra_trees_high_recall_online_all_no_temporal",
+  "veto": "base_alarm == 1 AND max(old_hgb_score, speed_hgb_score) <= 0.005",
+  "test_threshold_tuning": false,
+  "heldout_inference_reused_without_rerun": true,
+  "deployable_model_file": "../../../../frozen_policy/table5_severe_old_exact_extratrees_final.joblib",
+  "note": "The final-refit estimator was frozen before held-out inference; this manifest corrects only the wrapper operating threshold to the pre-existing historical Table5-B value."
+}

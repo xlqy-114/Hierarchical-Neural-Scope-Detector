@@ -1,0 +1,22 @@
+{
+  "scope": "Additional 18-seed veto analysis",
+  "rows": 108342,
+  "seed_count": 18,
+  "primary_public_comparison": {
+    "criterion": "minimum FAR subject to the same Recall >= 99% requirement",
+    "before_veto": {
+      "recall_percent": 99.3212669683258,
+      "far_percent": 0.19738607182552997,
+      "tp": 3951,
+      "fp": 206
+    },
+    "with_veto": {
+      "recall_percent": 99.04474610356964,
+      "far_percent": 0.18013874516116,
+      "tp": 3940,
+      "fp": 188
+    }
+  },
+  "exact_recall_frontier_note": "All shared exact-TP operating points with recall >=99% are exported for both model families. The effect is model- and operating-point-dependent; the file is included for transparency rather than to claim universal FAR reduction.",
+  "target_note": "The released sample-level data represent the binary evaluation target generically as target_label."
+}

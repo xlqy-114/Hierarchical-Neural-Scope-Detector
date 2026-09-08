@@ -1,0 +1,4 @@
+target,matched_recall_percent,matched_tp,base_fp,veto_fp,fp_removed,base_far_percent,veto_far_percent,absolute_far_reduction_percentage_points,relative_far_reduction_percent,veto_feature_family,veto_model,veto_training_recall_target,veto_threshold_family,veto_threshold
+harmful,98.55769230769232,205,27,8,19,0.46616022099446996,0.13812154696132,0.32803867403314996,70.37037037037132,other,extra_trees_depth5,0.99,maximum-HGB-confidence conservative veto,0.005
+severe_harmful,99.48717948717947,194,38,18,20,0.65460809646856,0.31007751937984,0.34453057708872,52.631578947369064,other,extra_trees_depth5,1.0,maximum-HGB-confidence conservative veto,0.005
+speed_alter,98.08612440191388,205,27,15,12,0.46624071835606,0.25902262130892,0.20721809704714,44.44444444444492,other,extra_trees_depth5,0.99,maximum-HGB-confidence conservative veto,0.005

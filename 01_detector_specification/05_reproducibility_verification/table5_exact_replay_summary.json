@@ -1,0 +1,16 @@
+{
+  "exact_match_rows": 54,
+  "historical_result_grid_rows": 134196,
+  "historical_result_rows": 54,
+  "mismatch_rows": 0,
+  "oof_rows": 6000,
+  "oof_seed_counts": {
+    "955916": 1200,
+    "955917": 1200,
+    "955918": 1200,
+    "955919": 1200,
+    "955920": 1200
+  },
+  "replayed_result_rows": 54,
+  "unsupported_result_rows": 0
+}

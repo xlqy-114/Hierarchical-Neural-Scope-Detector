@@ -1,0 +1,19 @@
+{
+  "rows": 6000,
+  "seeds": [
+    955916,
+    955917,
+    955918,
+    955919,
+    955920
+  ],
+  "historically_confirmed_candidate": "segment_no_origin__none__signed_error_degradation",
+  "baseline_expected_tp_fn_fp_tn": [
+    205,
+    4,
+    7,
+    5784
+  ],
+  "sklearn_version": "1.2.2",
+  "note": "Speed-specific thresholds are varied one at a time; inherited harmful threshold remains fixed at 0.5 m and collision condition at >0."
+}

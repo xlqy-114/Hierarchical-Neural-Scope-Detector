@@ -1,0 +1,13 @@
+step_mode,mask_mode,gt_degradation_form,mismatch_rows,predicted_speed_alter_total,speed_condition_total,historical_total,exact_match
+segment_no_origin,none,signed_error_degradation,0,209,188,209,1
+segment_with_origin,none,signed_error_degradation,0,209,190,209,1
+segment_no_origin,gt_segment_valid_no_origin,signed_error_degradation,1,208,189,209,0
+segment_with_origin,gt_segment_valid_with_origin,signed_error_degradation,3,210,200,209,0
+segment_no_origin,gt_segment_valid_no_origin,absolute_error_degradation_delta,6,213,194,209,0
+segment_with_origin,gt_segment_valid_with_origin,absolute_error_degradation_delta,7,214,204,209,0
+segment_with_origin,none,absolute_error_degradation_delta,10,219,206,209,0
+segment_no_origin,none,absolute_error_degradation_delta,12,221,208,209,0
+waypoint_norm,none,signed_error_degradation,27,236,217,209,0
+waypoint_norm,gt_waypoint_valid,signed_error_degradation,30,237,236,209,0
+waypoint_norm,gt_waypoint_valid,absolute_error_degradation_delta,48,255,254,209,0
+waypoint_norm,none,absolute_error_degradation_delta,58,267,266,209,0

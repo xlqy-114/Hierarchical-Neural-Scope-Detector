@@ -1,0 +1,33 @@
+{
+  "training_seeds": [
+    955916,
+    955917,
+    955918,
+    955919
+  ],
+  "held_out_seed": 955920,
+  "target": "speed_alter",
+  "targeted": {
+    "frozen_selected_features": 256,
+    "model": "ExtraTreesClassifier(n_estimators=160,max_depth=5,min_samples_leaf=3,class_weight=balanced_subsample)",
+    "threshold": 0.23990174970136274,
+    "training_positives": 182,
+    "heldout_positives": 27,
+    "compact_self_parity_max_abs_score_diff": 2.220446049250313e-16,
+    "compact_self_parity_alarm_mismatch": 0
+  },
+  "consistency": {
+    "transformed_features": 2120,
+    "source_scalars": 424,
+    "quantile": 0.975,
+    "threshold": 13161.935336194923
+  },
+  "veto": {
+    "hgb_max_threshold": 0.005,
+    "base_detector": "lineA_old_extra_trees_high_recall_online_all_no_temporal",
+    "support_detectors": [
+      "lineA_old_hgb_online_all_no_temporal",
+      "lineA_speed_alter_hgb_online_compact"
+    ]
+  }
+}

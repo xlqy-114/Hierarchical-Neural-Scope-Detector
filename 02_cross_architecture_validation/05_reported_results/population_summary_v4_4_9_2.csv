@@ -1,0 +1,4 @@
+split,seeds,rows,internal_nonfinite,no_internal_nonfinite,no_nf_final_risk,no_nf_final_safe,no_nf_validity_alarm,learned_eligible,learned_positive,learned_negative,fault_effective,planned_but_ineffective,normal_control,system_positive,system_negative
+train,"[959101, 959102, 959103, 959104, 959105, 959113, 959114, 959115, 959116, 959117, 959118, 959119, 959120, 959121, 959122]",90285,9395,80890,883,80007,158,80732,725,80007,74488,250,15547,10278,80007
+validation,"[959106, 959123]",12038,1258,10780,131,10649,21,10759,110,10649,9998,34,2006,1389,10649
+test,"[959107, 959124]",12038,1304,10734,104,10630,23,10711,81,10630,9931,42,2065,1408,10630

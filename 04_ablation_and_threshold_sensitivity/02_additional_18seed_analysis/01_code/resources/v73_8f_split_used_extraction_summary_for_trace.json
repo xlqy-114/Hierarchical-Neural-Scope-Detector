@@ -1,0 +1,19 @@
+{
+  "version": "v73_8f_split_used_extraction_from_saved_models",
+  "output_dir": "/root/autodl-tmp/DriveVLA/pack_output_analysis/v73_8e_fullfeature_train_extract_primary",
+  "bundle_count": 128,
+  "split_used_rows": 93169,
+  "split_used_union_count_by_stage": {
+    "C1": 7946,
+    "C2": 1453
+  },
+  "contract_source_counts": {
+    "v63_full": 5982,
+    "old_exact": 1928,
+    "generated_consistency": 40,
+    "this_round_c1_internal": 3
+  },
+  "unknown_source_count": 0,
+  "pass": true,
+  "end_time": "2026-05-24 01:46:22"
+}

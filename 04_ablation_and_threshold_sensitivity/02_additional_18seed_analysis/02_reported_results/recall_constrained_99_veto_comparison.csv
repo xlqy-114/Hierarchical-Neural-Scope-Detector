@@ -1,0 +1,3 @@
+configuration,recall_requirement,tp,fn,fp,tn,recall_percent,far_percent,precision_percent
+"Primary detector, minimum FAR subject to Recall >= 99%",>=99%,3951,27,206,104158,99.3212669683258,0.19738607182552997,95.04450324753428
+"With conservative veto, minimum FAR subject to Recall >= 99%",>=99%,3940,38,188,104176,99.04474610356964,0.18013874516116,95.44573643410853

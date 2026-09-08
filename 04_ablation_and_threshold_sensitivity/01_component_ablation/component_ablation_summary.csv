@@ -1,0 +1,13 @@
+target,stage_order,configuration,recall_percent,far_percent,tp,fn,fp,tn,comparison_note
+harmful,1,Base detector,98.5576923076923,0.4661602209944752,205,3,27,5765,"Recall-oriented cumulative ablation on the fixed 6,000-sample OOF dataset."
+harmful,2,Base + Targeted evidence,99.51923076923076,1.0013812154696131,207,1,58,5734,"Recall-oriented cumulative ablation on the fixed 6,000-sample OOF dataset."
+harmful,3,Base + Targeted evidence + Consistency signal,99.51923076923076,1.0013812154696131,207,1,58,5734,"Recall-oriented cumulative ablation on the fixed 6,000-sample OOF dataset."
+harmful,4,Conservative veto (recall-matched),98.55769230769232,0.13812154696132,205,3,8,5784,Veto contribution evaluated at the same observed recall as the corresponding base detector; this is an operating-point-matched ablation rather than a direct cumulative continuation of stage 3.
+severe_harmful,1,Base detector,99.48717948717947,0.6546080964685617,194,1,38,5767,"Recall-oriented cumulative ablation on the fixed 6,000-sample OOF dataset."
+severe_harmful,2,Base + Targeted evidence,100.0,0.8440999138673558,195,0,49,5756,"Recall-oriented cumulative ablation on the fixed 6,000-sample OOF dataset."
+severe_harmful,3,Base + Targeted evidence + Consistency signal,100.0,0.8440999138673558,195,0,49,5756,"Recall-oriented cumulative ablation on the fixed 6,000-sample OOF dataset."
+severe_harmful,4,Conservative veto (recall-matched),99.48717948717947,0.31007751937984,194,1,18,5787,Veto contribution evaluated at the same observed recall as the corresponding base detector; this is an operating-point-matched ablation rather than a direct cumulative continuation of stage 3.
+speed_alter,1,Base detector,98.08612440191388,0.4662407183560697,205,4,27,5764,"Recall-oriented cumulative ablation on the fixed 6,000-sample OOF dataset."
+speed_alter,2,Base + Targeted evidence,99.52153110047848,0.9842859609739252,208,1,57,5734,"Recall-oriented cumulative ablation on the fixed 6,000-sample OOF dataset."
+speed_alter,3,Base + Targeted evidence + Consistency signal,99.52153110047848,0.9842859609739252,208,1,57,5734,"Recall-oriented cumulative ablation on the fixed 6,000-sample OOF dataset."
+speed_alter,4,Conservative veto (recall-matched),98.08612440191388,0.25902262130892,205,4,15,5776,Veto contribution evaluated at the same observed recall as the corresponding base detector; this is an operating-point-matched ablation rather than a direct cumulative continuation of stage 3.
