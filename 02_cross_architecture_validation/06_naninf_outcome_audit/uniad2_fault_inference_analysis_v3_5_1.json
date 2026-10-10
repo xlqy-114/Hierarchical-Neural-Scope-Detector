@@ -1,0 +1,163 @@
+{
+  "version": "uniad2_fault_output_analysis_v3_5_1",
+  "out_dir": "/root/autodl-tmp/UniAD2/outputs/fault_inference_v3_5_1/full6019_seed958101",
+  "files": {
+    "raw": "/root/autodl-tmp/UniAD2/outputs/fault_inference_v3_5_1/full6019_seed958101/uniad2_clean_fault_raw_ingredients_v3_5_1.jsonl",
+    "metadata": "/root/autodl-tmp/UniAD2/outputs/fault_inference_v3_5_1/full6019_seed958101/uniad2_fault_metadata_v3_5_1.jsonl",
+    "features": "/root/autodl-tmp/UniAD2/outputs/fault_inference_v3_5_1/full6019_seed958101/uniad2_fault_online_features_v3_5_1.jsonl"
+  },
+  "counters": {
+    "samples": 6019,
+    "planned": 4897,
+    "applied": 4883,
+    "effective": 4883,
+    "output_illegal_or_missing": 483,
+    "output_nonfinite": 483,
+    "output_missing": 0,
+    "output_shape_invalid": 0,
+    "traj_delta_available": 5536,
+    "l2max_gt_0.5": 61,
+    "l2final_gt_0.5": 37,
+    "l2max_gt_1.0": 37,
+    "l2final_gt_1.0": 20
+  },
+  "planned_group_counts": {
+    "U2_bev_encoder": 941,
+    "U3_track_det_head": 781,
+    "U7_planning_head": 479,
+    "U1_img_backbone_neck": 482,
+    "U4_map_seg_head": 778,
+    "U6_occ_head": 687,
+    "U5_motion_head": 749
+  },
+  "planned_level_counts": {
+    "L3_attention_ffn": 3125,
+    "L4_leaf_weighted_op": 653,
+    "L2_block_layer": 1059,
+    "L1_major_module": 60
+  },
+  "planned_bit_op_counts": {
+    "stuck0": 1625,
+    "flip": 1666,
+    "stuck1": 1606
+  },
+  "delta_unavailable_reasons": {
+    "nonfinite": 483
+  },
+  "l2_mean_stats": {
+    "count": 5536,
+    "mean": 1.9467716106675981e+34,
+    "median": 5.082580641048052e-07,
+    "max": 5.426717344711165e+37,
+    "p90": 5.36033247928957e-05,
+    "p95": 0.002225899222103847,
+    "p99": 0.19726045766856626
+  },
+  "l2_max_stats": {
+    "count": 5536,
+    "mean": 3.3123370648465e+34,
+    "median": 9.830249847454215e-07,
+    "max": 9.227769012054627e+37,
+    "p90": 0.00012776685692435788,
+    "p95": 0.005586289183034039,
+    "p99": 0.6579730005977407
+  },
+  "l2_final_stats": {
+    "count": 5536,
+    "mean": 3.311757730806969e+34,
+    "median": 9.5367431640625e-07,
+    "max": 9.227769012054627e+37,
+    "p90": 9.270744673902937e-05,
+    "p95": 0.002114679370483313,
+    "p99": 0.205841509769943
+  },
+  "per_group": {
+    "U2_bev_encoder": {
+      "planned": 941,
+      "applied": 941,
+      "effective": 941,
+      "output_illegal_or_missing": 148,
+      "output_nonfinite": 148,
+      "traj_delta_available": 793,
+      "l2max_gt_0.5": 2,
+      "l2final_gt_0.5": 2,
+      "l2max_gt_1.0": 2,
+      "l2final_gt_1.0": 2
+    },
+    "U3_track_det_head": {
+      "planned": 781,
+      "applied": 781,
+      "effective": 781,
+      "output_illegal_or_missing": 110,
+      "output_nonfinite": 110,
+      "traj_delta_available": 671,
+      "l2max_gt_0.5": 4,
+      "l2final_gt_0.5": 4
+    },
+    "U7_planning_head": {
+      "planned": 479,
+      "applied": 479,
+      "effective": 479,
+      "output_illegal_or_missing": 65,
+      "output_nonfinite": 65,
+      "traj_delta_available": 414,
+      "l2max_gt_0.5": 32,
+      "l2final_gt_0.5": 15,
+      "l2max_gt_1.0": 27,
+      "l2final_gt_1.0": 13
+    },
+    "U1_img_backbone_neck": {
+      "planned": 482,
+      "applied": 482,
+      "effective": 482,
+      "output_illegal_or_missing": 9,
+      "output_nonfinite": 9,
+      "traj_delta_available": 473,
+      "l2max_gt_0.5": 2,
+      "l2final_gt_0.5": 2,
+      "l2max_gt_1.0": 1,
+      "l2final_gt_1.0": 1
+    },
+    "U4_map_seg_head": {
+      "planned": 778,
+      "applied": 778,
+      "effective": 778,
+      "output_illegal_or_missing": 141,
+      "output_nonfinite": 141,
+      "traj_delta_available": 637,
+      "l2max_gt_0.5": 1,
+      "l2final_gt_0.5": 1
+    },
+    "U6_occ_head": {
+      "planned": 687,
+      "applied": 673,
+      "effective": 673,
+      "output_illegal_or_missing": 0,
+      "output_nonfinite": 0,
+      "traj_delta_available": 687,
+      "l2max_gt_0.5": 14,
+      "l2max_gt_1.0": 6,
+      "l2final_gt_0.5": 10,
+      "l2final_gt_1.0": 3
+    },
+    "U5_motion_head": {
+      "planned": 749,
+      "applied": 749,
+      "effective": 749,
+      "output_illegal_or_missing": 10,
+      "output_nonfinite": 10,
+      "traj_delta_available": 739,
+      "l2max_gt_0.5": 6,
+      "l2final_gt_0.5": 3,
+      "l2max_gt_1.0": 1,
+      "l2final_gt_1.0": 1
+    }
+  },
+  "feature_key_count": 1567,
+  "suspicious_feature_keys": [],
+  "notes": [
+    "output_illegal_or_missing now includes missing, nonfinite, shape-invalid, and forward-error trajectories.",
+    "L2 thresholds are diagnostic summaries only; final harmful labels should be explicitly confirmed before detector training.",
+    "Feature rows are audited for obvious leakage strings, but train feature filtering should still remove sample_i and all metadata columns."
+  ]
+}

@@ -1,0 +1,2 @@
+02_cross_architecture_validation/06_naninf_outcome_audit/*.tar.gz filter=lfs diff=lfs merge=lfs -text
+02_cross_architecture_validation/06_naninf_outcome_audit/*.jsonl filter=lfs diff=lfs merge=lfs -text

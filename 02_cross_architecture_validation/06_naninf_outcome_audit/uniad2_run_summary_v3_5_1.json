@@ -1,0 +1,44 @@
+{
+  "version": "uniad2_fault_inference_v3_5_1",
+  "out_dir": "/root/autodl-tmp/UniAD2/outputs/fault_inference_v3_5_1/full6019_seed958101",
+  "sample_count": 6019,
+  "seed": 958101,
+  "elapsed_sec": 10736.614024400711,
+  "counters": {
+    "samples": 6019,
+    "planned": 4897,
+    "applied": 4883,
+    "effective": 4883,
+    "fault_forward_error": 0,
+    "clean_forward_error": 0,
+    "output_illegal_or_missing": 483,
+    "output_nonfinite": 483,
+    "output_missing": 0,
+    "output_shape_invalid": 0
+  },
+  "planned_group_counts": {
+    "U2_bev_encoder": 941,
+    "U3_track_det_head": 781,
+    "U7_planning_head": 479,
+    "U1_img_backbone_neck": 482,
+    "U4_map_seg_head": 778,
+    "U6_occ_head": 687,
+    "U5_motion_head": 749
+  },
+  "hook_status": {
+    "registered_count": 147,
+    "missing_count": 0,
+    "missing": []
+  },
+  "files": {
+    "plan": "/root/autodl-tmp/UniAD2/outputs/fault_inference_v3_5_1/full6019_seed958101/uniad2_fault_plan_v3_5_1.json",
+    "features": "/root/autodl-tmp/UniAD2/outputs/fault_inference_v3_5_1/full6019_seed958101/uniad2_fault_online_features_v3_5_1.jsonl",
+    "metadata": "/root/autodl-tmp/UniAD2/outputs/fault_inference_v3_5_1/full6019_seed958101/uniad2_fault_metadata_v3_5_1.jsonl",
+    "raw_ingredients": "/root/autodl-tmp/UniAD2/outputs/fault_inference_v3_5_1/full6019_seed958101/uniad2_clean_fault_raw_ingredients_v3_5_1.jsonl"
+  },
+  "notes": [
+    "Online feature rows intentionally do not include target/module/bit metadata.",
+    "Delta L2 is saved as raw ingredient for later label analysis, not as deployable online feature.",
+    "This smoke version uses UniAD module hook outputs only; U8 postprocess semantics require a separate output-semantics scan."
+  ]
+}
