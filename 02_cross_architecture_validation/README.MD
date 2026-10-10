@@ -1,10 +1,10 @@
 # Cross-Architecture Validation on UniAD2
 
-This directory contains the code, configuration, feature contract, and reported results for the UniAD2 cross-architecture validation experiment.
+This directory contains the code, configuration, feature contract, and reported results for the UniAD2 cross-architecture validation experiment, together with a supplementary analysis of internal NaN/Inf events.
 
 ## Experiment Protocol
 
-The experiment uses 19 full inference seeds with a fixed 15/2/2 train/validation/test split.
+The main experiment uses 19 full inference seeds with a fixed 15/2/2 train/validation/test split.
 
 - Training seeds:  
   `959101, 959102, 959103, 959104, 959105, 959113, 959114, 959115, 959116, 959117, 959118, 959119, 959120, 959121, 959122`
@@ -23,9 +23,9 @@ The complete campaign contains 114,361 sample-level evaluations. Model fitting i
   UniAD2 inference and runtime feature-collection code.
 
 - `02_exact_feature_contract/`  
-  Code used to construct and audit the repair-aware exact feature contract.
+  Code used to construct and audit the exact UniAD2 feature contract.
 
-- `03_detector_training_and_evaluation/`  
+- `03_fixed_split_training/`  
   Final fixed-split detector training, validation selection, and held-out test evaluation code.
 
 - `04_reproducibility_config/`  
@@ -33,6 +33,9 @@ The complete campaign contains 114,361 sample-level evaluations. Model fitting i
 
 - `05_reported_results/`  
   Validation-selected policies, held-out test predictions, aggregate metrics, and population summary.
+
+- `06_naninf_outcome_audit/`  
+  Original records from an earlier UniAD2 fault-injection experiment (v3.5.1, seed `958101`) supporting the internal NaN/Inf outcome analysis in Table B3.
 
 ## Reproduction Notes
 
@@ -56,8 +59,11 @@ On the held-out test split, this policy gives:
 - Samples: 12,038
 - Positive cases: 1,408
 - TP / FN / FP / TN: 1,386 / 22 / 21 / 10,609
-- Recall: 98.44%
+- Composite system-alarm recall: 98.44%
 - FAR: 0.198%
+- Learned-branch recall on eligible trajectory-discrepancy cases: 59 / 81 (72.84%)
+
+The supplementary v3.5.1 analysis in `06_naninf_outcome_audit/` is separate from the 19-seed evaluation. Among 900 effectively fault-injected samples with observed internal NaN/Inf events, 483 had non-finite planning outputs and 10 additional samples had finite outputs with maximum point-wise trajectory deviation exceeding 1.0 m relative to the fault-free output. Thus, 493 / 900 (54.78%) met the final-output abnormality criterion in Table B3.
 
 Columns related to fault metadata, labels, or evaluation status in the released prediction files are retained for offline analysis and evaluation only. They are not deployment-time detector input features.
 
