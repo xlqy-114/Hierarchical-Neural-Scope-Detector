@@ -35,7 +35,7 @@ The complete campaign contains 114,361 sample-level evaluations. Model fitting i
   Validation-selected policies, held-out test predictions, aggregate metrics, and population summary.
 
 - `06_naninf_outcome_audit/`  
-  Original records from an earlier UniAD2 fault-injection experiment (v3.5.1, seed `958101`) supporting the internal NaN/Inf outcome analysis in Table B3.
+  Original records from an earlier UniAD2 fault-injection experiment (v3.5.1, seed `958101`) supporting the internal NaN/Inf outcome analysis in Table A3.
 
 ## Reproduction Notes
 
@@ -63,7 +63,7 @@ On the held-out test split, this policy gives:
 - FAR: 0.198%
 - Learned-branch recall on eligible trajectory-discrepancy cases: 59 / 81 (72.84%)
 
-The supplementary v3.5.1 analysis in `06_naninf_outcome_audit/` is separate from the 19-seed evaluation. Among 900 effectively fault-injected samples with observed internal NaN/Inf events, 483 had non-finite planning outputs and 10 additional samples had finite outputs with maximum point-wise trajectory deviation exceeding 1.0 m relative to the fault-free output. Thus, 493 / 900 (54.78%) met the final-output abnormality criterion in Table B3.
+The supplementary v3.5.1 analysis in `06_naninf_outcome_audit/` is separate from the 19-seed evaluation. Among 900 effectively fault-injected samples with observed internal NaN/Inf events, 483 had non-finite planning outputs and 10 additional samples had finite outputs with maximum point-wise trajectory deviation exceeding 1.0 m relative to the fault-free output. Thus, 493 / 900 (54.78%) met the final-output abnormality criterion in Table A3.
 
 Columns related to fault metadata, labels, or evaluation status in the released prediction files are retained for offline analysis and evaluation only. They are not deployment-time detector input features.
 
